@@ -1,7 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import NoPage from "./pages/NoPage";
+import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
 
-const myFirstElement = <h1>Hello React!</h1>
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<AboutMe />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myFirstElement);
+root.render(<App />);
