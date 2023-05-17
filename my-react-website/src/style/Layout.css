@@ -2,23 +2,26 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(154, 105, 37);
-    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 255, 255);
+    /* some common bold fonts i can use are:*/
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    font-weight: 500;
     position: sticky;
     padding: 10px;
     /* margin-top: 0px;     */
 }
 
 .navigator a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: rgb(39, 159, 63);
+    background-color: rgb(36, 132, 55);
     padding: 1rem 1.3rem;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 10px 100px / 120px;
     width: 50%;
+    text-align: center;
 }
 
 .navigator a:hover {
@@ -30,5 +33,5 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: rgb(185, 222, 255);
+    background-color: rgb(255, 255, 255);
 }
