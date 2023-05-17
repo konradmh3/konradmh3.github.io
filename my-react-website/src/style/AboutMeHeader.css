@@ -1,0 +1,42 @@
+.about-me-header {
+    /* background-image: require('../images/monstera.jpg'); */
+    background-position: center; 
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to make it so once too small, items will stack on top of each other */
+    flex-wrap: wrap;
+}
+
+.about-me-header-text {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    width: 45%;
+    border: 5px solid rgb(39, 159, 63);
+    border-radius: 10px;
+    background-color: rgba(39, 159, 63, 0.6);
+    overflow-y: scroll;
+    max-height: 200px;
+    margin: 2.5;
+    margin-left: 2.5%;
+
+}
+
+.about-me-header-rnd-image {
+    width: 45%;
+    max-width: 300px;
+    min-width: 150px;
+    margin: 2.5%;
+    margin-right: 2.5%;
+}    
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+

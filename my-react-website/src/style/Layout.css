@@ -1,27 +1,53 @@
 .navigator {
+    /* add css to align items to the right */
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    background-color: rgb(255, 255, 255);
     /* some common bold fonts i can use are:*/
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     position: sticky;
-    padding: 10px;
+    height: 75px;
     /* margin-top: 0px;     */
+
 }
 
-.navigator a {
+.top-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 0px;     */
+    overflow-x: scroll;
+    /* make this div stick to top of screen when scrolling down */
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.title {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.navButtons {
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: rgb(36, 132, 55);
-    padding: 1rem 1.3rem;
-    margin-left: 5px;
     margin-right: 5px;
     border-radius: 10px 100px / 120px;
-    width: 50%;
+    width: 115px;
+    height: 35px;
     text-align: center;
+    padding-top: 5px;
 }
 
 .navigator a:hover {

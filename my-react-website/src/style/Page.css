@@ -8,3 +8,8 @@ h1 {
     padding: 0;
     margin-bottom: 10px;
 }
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}

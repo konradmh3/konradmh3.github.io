@@ -1,13 +1,16 @@
 import "../../style/Page.css";
 // to import an exponent, from this path: my-react-website/src/pages/AboutMeContent.js
 import AboutMeContent from "./AboutMeContent.js";
-
-
+import AboutMeHeader from "./AboutMeHeader.js";
+import AboutMeSkills from "./AboutMeSkills.js";
 const AboutMe = () => {
     return (
     <>
-      <h1>About Me</h1>
+      <AboutMeHeader />
+      <h1>About Me!</h1>
       <AboutMeContent />
+      <h1>My Skills</h1>
+      <AboutMeSkills />
     </>
     );
   };
