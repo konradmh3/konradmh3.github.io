@@ -9,9 +9,9 @@ const Layout = () => {
           
             <Link to="projects">Projects</Link>
           
-            <a href="https://github.com/konradmh3">Github</a>
+            <a href="https://github.com/konradmh3" target="_blank">Github</a>
           
-            <a href="https://www.linkedin.com/in/konrad-hernandez/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/konrad-hernandez/" target="_blank">LinkedIn</a>
           
       </div>
 
