@@ -16,7 +16,7 @@ p  {
     text-align: center;
 }
 
-.aboutMeContent{
+.content{
     display: flex;
     justify-content: center;
 }

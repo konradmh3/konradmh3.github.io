@@ -3,7 +3,7 @@ import "../../style/PageContent.css";
 
 const AboutMeContentSkills = () => {
     return (
-        <div className="aboutMeContent">
+        <div className="content">
     <content>
             <p>My skills include : blah blah blahblah blah blah. blah blah blahblah blah blah. blah blah blahblah blah blah. blah blah blahblah blah blah. blah blah blahblah blah blah. blah blah blahblah blah blah. blah blah blahblah blah blah.</p>
     </content>
