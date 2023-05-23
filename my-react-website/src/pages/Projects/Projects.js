@@ -9,6 +9,7 @@ const Projects = () => {
     <AnimatedProj projectName = "KeyLogger" delay={.99}/>
     <AnimatedProj projectName = "Web Remote" delay={1.32}/>
     <AnimatedProj projectName = "Pi Car" delay={1.65}/>
+    <AnimatedProj projectName = "Home System" delay={1.98}/>
 
     </>);
   };
