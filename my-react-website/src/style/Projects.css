@@ -1,0 +1,16 @@
+.projectContainer {
+    /* border: 5px solid rgb(39, 159, 63); */
+    display: flex;
+    justify-content: center;
+}
+
+.projectContainerContent {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+
+
+  
+  

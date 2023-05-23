@@ -1,12 +1,15 @@
 import "../../style/Page.css";
-import ProjectsContent from "./ProjectsContent.js";
+import AnimatedProj from "./AnimatedProj";
 import Header from "../Templates/Header.js";
 
 const Projects = () => {
     return (<>
     <Header page = "Projects"/>
-    <h1>Projects</h1>
-    <ProjectsContent />
+    <AnimatedProj projectName = "FooDood" delay={.66}/>
+    <AnimatedProj projectName = "KeyLogger" delay={.99}/>
+    <AnimatedProj projectName = "Web Remote" delay={1.32}/>
+    <AnimatedProj projectName = "Pi Car" delay={1.65}/>
+
     </>);
   };
   

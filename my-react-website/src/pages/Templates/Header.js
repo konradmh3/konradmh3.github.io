@@ -1,18 +1,32 @@
-import "../../style/Header.css"
+import "../../style/Header.css";
+import { motion, scale } from "framer-motion";
 
 const Header = (props) => {
-    return (
+  return (
     <>
-        <div className="about-me-header" style={{ backgroundImage: `url(${require("../../assets/monstera.jpg")})` }}>
-            <div className="about-me-header-text">
-            <p>{ props.page }</p>
-            </div>
-            <div className="about-me-header-rnd-image">
-                <img src={require("../../assets/profilepic.png")} alt="profile pic" />
-            </div>
-        </div>
+      <div
+        className="about-me-header"
+        style={{
+          backgroundImage: `url(${require("../../assets/monstera.jpg")})`,
+        }}
+      >
+        <motion.div
+          animate={{ opacity: [0, 1], x: [-200, 0] }}
+          transition={{ duration: .75, delay: 0.33 }}
+          className="about-me-header-text"
+        >
+          <p>{props.page}</p>
+        </motion.div>
+        <motion.div
+          animate={{ opacity: [0, 1], x: [200, 0] }}
+          transition={{ duration: .75, delay: 0.33 }}
+          className="about-me-header-rnd-image"
+        >
+          <img src={require("../../assets/profilepic.png")} alt="profile pic" />
+        </motion.div>
+      </div>
     </>
-    );
-  };
-  
+  );
+};
+
 export default Header;

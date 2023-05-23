@@ -5,8 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* to make it so once too small, items will stack on top of each other */
+    /* to make it so once too small, items will stack on top of each other use flex-wrap: wrap;
+    */
     flex-wrap: wrap;
+    
     
 }
 
@@ -14,17 +16,14 @@
     /* font-family: 'Roboto', sans-serif; */
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    align-items: center;
+    font-size: 3rem;
     font-weight: 600;
-    width: 200px;
+    width: 270px;
     color: #fefefe;
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    background-color: rgba(20, 20, 20, 0.6);
-    overflow-y: scroll;
-    max-height: 200px;
-    margin: 2.5;
-    margin-left: 2.5%;
+    /* background-color: rgba(20, 20, 20, 0.6); */
+    /* margin-left: 2.5%; */
+    height: 90px;
 
 }
 
