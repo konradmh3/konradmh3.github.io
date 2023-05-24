@@ -24,7 +24,7 @@
     overflow: hidden;
     padding: 2%;
     /* height: 1000px; */
-    border: solid 5px rgb(0, 0, 0);
+    /* border: solid 5px rgb(0, 0, 0); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

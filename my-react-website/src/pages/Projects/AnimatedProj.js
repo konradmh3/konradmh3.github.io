@@ -11,7 +11,7 @@ const AnimatedProj = (props) => {
 
         <motion.div id="parallelogram" initial={{x: "60%", skew: 10}} whileHover={{scale: 1.1, x: "0%", skew: 10 }}>
           <div className="projectContentContainer">
-            <p>hello</p>
+            <p>display is set to none for content container</p>
           </div>
 
         </motion.div>

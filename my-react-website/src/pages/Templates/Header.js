@@ -1,5 +1,6 @@
 import "../../style/Header.css";
-import { motion, scale } from "framer-motion";
+import "../../style/Fonts.css";
+import { motion } from "framer-motion";
 
 const Header = (props) => {
   return (
@@ -14,6 +15,7 @@ const Header = (props) => {
           animate={{ opacity: [0, 1], x: [-200, 0] }}
           transition={{ duration: .75, delay: 0.33 }}
           className="about-me-header-text"
+          id="headerTitle"
         >
           <p>{props.page}</p>
         </motion.div>

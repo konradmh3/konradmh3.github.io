@@ -4,11 +4,8 @@
     justify-content: flex-end;
     align-items: center;
     /* some common bold fonts i can use are:*/
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: sticky;
-    height: 75px;
+    /* position: sticky; */
+    height: 80%;
     /* margin-top: 0px;     */
 
 }
@@ -17,19 +14,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 0px;     */
     overflow-x: scroll;
-    /* make this div stick to top of screen when scrolling down */
     position: sticky;
     top: 0;
+    height: 5rem;
     background-color: white;
-
+    z-index: 1;
 }
+.top-header-container-down {
+    display: none;
+}
+
 
 .title a {
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    
 }
 
 .title {
@@ -55,4 +55,3 @@
     color: white;
 }
 
-/* use body {} to style the whole page */
