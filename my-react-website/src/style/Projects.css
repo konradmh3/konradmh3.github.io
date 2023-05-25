@@ -1,39 +1,49 @@
 
 
-.projectContentContainer {
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    width: 30%;
-    margin: 10px;
-    transform: skew(350deg);
-    display: none;
+.projectContainer{
+    overflow: hidden;
+    /* padding: 2%; */
+    /* height: 1000px; */
+    /* border: solid 5px rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
 
+.projectTitle {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.projectTitle img{
+    width: 60%;
 }
 
 
-#parallelogram {
-        width: 90%;
+.projectInfo {
+    width: 50%;
+}
+
+p {
+    padding: 5%;
+}
+
+.parallelogramContainer-right {
+    width: 50%;   
+}
+.parallelogramContainer-left {
+    width: 50%;   
+    direction: rtl;
+}
+
+.parallelogram {
+        width: 170%;
         height: 300px;
         background: rgb(255, 255, 255);
         box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.5);
         border-radius: 5px;
-  }
-
-.projectContainer{
-    
-    overflow: hidden;
-    padding: 2%;
-    /* height: 1000px; */
-    /* border: solid 5px rgb(0, 0, 0); */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-h1 {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-  
+} 
   
