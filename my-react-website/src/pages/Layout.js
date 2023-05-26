@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 const Layout = () => {
 
-
+///////////////////////////////////////////////////////////////////////////
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
   
@@ -29,10 +29,9 @@ const Layout = () => {
   
     return scrollDirection;
   };
-
-
+////////////////////////////////////////////////////////////////////////////
   const scrollDirection = useScrollDirection();
-  const className = scrollDirection === "down" ? "top-header-container-down" : "top-header-container";
+  const className = scrollDirection === "down" ? "top-header-container-down" : "top-header-container-down";
   // console.log(scrollDirection);
   // console.log(className);
 
