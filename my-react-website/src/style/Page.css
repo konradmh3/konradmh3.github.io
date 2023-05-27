@@ -14,33 +14,43 @@ body {
     margin: 0;
 }
 
-.staticScrollerProject1{
-    height: 25px;
-    width: 100px;
-    border-radius: 20%;
+.staticScrollerUp{
+    opacity: 0;
+    height: 50px;
+    width: 50px;
     position:fixed;
-    top: 5%;
-    left: 40%;
-    background-color: white;
+    top: 92%;
+    left: 100%;
+    box-shadow: 0 0 10px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
 }
 
-.staticScrollerProject2{
-    height: 25px;
-    width: 100px;
-    border-radius: 20%;
+.staticScrollerDown{
+    opacity: 0;
+    height: 50px;
+    width: 50px;
     position:fixed;
-    top: 5%;
-    left: 50%;
-    background-color: white;
+    top: 102%;
+    left: 100%;
+    box-shadow: 0 0 10px 2px black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
 }
 
-.staticScrollerProject3{
-    height: 25px;
-    width: 100px;
-    border-radius: 20%;
-    position:fixed;
-    top: 5%;
-    left: 60%;
-    background-color: white;
+.staticScrollerDown img{
+    height: 100%;
+    width: 100%;
+    
 }
+.staticScrollerUp img{
+    height: 100%;
+    width: 100%;
+}
+
 
