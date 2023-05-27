@@ -1,4 +1,5 @@
 import "../../style/Page.css";
+
 import ProjectsNew from "../ProjectsNew";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -49,39 +50,37 @@ const Projects = () => {
   };
 
   return (
-    <div className="scrollContainer">
+    <>
       <motion.div
         style={{ display: arrowUpDisplay }}
-        animate={{ opacity: [0, 1], rotate: [0, -90] }}
-        transition={{ duration: 1 }}
-        initial={{ x: -100, y: -100 }}
-        whileHover={{ scale: 1.1, x: -100, y: -100 }}
+        animate={{ y: [-100], transition: { duration: 1 } }}
         onClick={executeScrollUp}
         className="staticScrollerUp"
       >
-        <img
-          src={require("../../assets/" + "arrow(1)" + ".png")}
-          alt={"arrow"}
-        />
+        <motion.div initial={{rotate: -90}} whileHover={{scale: 1.1, rotate: [-90, -180, -270, -360, -450]}} transition={{duration: .25}} className="imgContainerUp">
+          <img
+            src={require("../../assets/" + "arrowFinal" + ".png")}
+            alt={"arrow"}
+          />
+        </motion.div>
       </motion.div>
       <motion.div
         style={{ display: arrowDownDisplay }}
-        animate={{ opacity: [0, 1], rotate: [0, 90] }}
-        transition={{ duration: 1 }}
-        initial={{ x: -100, y: -100 }}
-        whileHover={{ scale: 1.1, x: -100, y: -100 }}
+        animate={{ y: [-100], transition: { duration: 1 } }}
         onClick={executeScrollDown}
         className="staticScrollerDown"
       >
-        <img
-          src={require("../../assets/" + "arrow(1)" + ".png")}
-          alt={"arrow"}
-        />
+        <motion.div initial={{rotate: 90}} whileHover={{scale: 1.1, rotate: [90, 180, 270, 360, 450]}} transition={{duration: .25}} className="imgContainerDown">
+          <img
+            src={require("../../assets/" + "arrowFinal" + ".png")}
+            alt={"arrow"}
+          />
+        </motion.div>
       </motion.div>
       <ProjectsNew ref={projectRefs[0]} backgroundColor="lightblue" />
       <ProjectsNew ref={projectRefs[1]} backgroundColor="lightgreen" />
       <ProjectsNew ref={projectRefs[2]} backgroundColor="#ffb365" />
-    </div>
+    </>
   );
 };
 

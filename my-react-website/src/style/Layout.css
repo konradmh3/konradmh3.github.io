@@ -1,30 +1,16 @@
-.navigator {
-    /* add css to align items to the right */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* some common bold fonts i can use are:*/
-    /* position: sticky; */
-    height: 80%;
-    /* margin-top: 0px;     */
-
-}
 
 .top-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: scroll;
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 5rem;
-    background-color: white;
-    z-index: 1;
-}
-.top-header-container-down {
-    display: none;
-}
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
 
+}
 
 .title a {
     text-decoration: none;
@@ -33,25 +19,27 @@
 }
 
 .title {
-    margin-left: 30px;
+    margin-left: 10px;
     margin-right: 30px;
 }
 
+.MenuButton {
+    margin-left: 30px;
+    margin-right: 10px;
 
-.navButtons {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: rgb(36, 132, 55);
-    margin-right: 5px;
-    border-radius: 10px 100px / 120px;
-    width: 115px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
 }
 
-.navigator a:hover {
-    background-color: rgb(39, 159, 63);
-    color: white;
+.menuContainer {
+    position: fixed;
+    flex-wrap: wrap;
+    display: flex;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: white; */
+}
+.menuSection {
+    width: 25%;
+    background-color: green;
 }
 

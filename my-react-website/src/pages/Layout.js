@@ -5,56 +5,78 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const Layout = () => {
+  // here lets add a state var to save if menu is open
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
+  const [menuSectionHeight, setMenuSectionHeight] = useState("0vh")
+  const [pageNameDisplayed, setPageNamedisplayed] = useState("block")
+  const [zIndexOfMenu, setZIndexOfMenu] = useState("block")
 
-///////////////////////////////////////////////////////////////////////////
-  function useScrollDirection() {
-    const [scrollDirection, setScrollDirection] = useState(null);
-  
-    useEffect(() => {
-      let lastScrollY = window.pageYOffset;
-  
-      const updateScrollDirection = () => {
-        const scrollY = window.pageYOffset;
-        const direction = scrollY > lastScrollY ? "down" : "up";
-        if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
-          setScrollDirection(direction);
-        }
-        lastScrollY = scrollY > 0 ? scrollY : 0;
-      };
-      window.addEventListener("scroll", updateScrollDirection); // add event listener
-      return () => {
-        window.removeEventListener("scroll", updateScrollDirection); // clean up
-      }
-    }, [scrollDirection]);
-  
-    return scrollDirection;
-  };
-////////////////////////////////////////////////////////////////////////////
-  const scrollDirection = useScrollDirection();
-  const className = scrollDirection === "down" ? "top-header-container-down" : "top-header-container-down";
-  // console.log(scrollDirection);
-  // console.log(className);
+
+
+  useEffect(()=>{
+    if (menuIsOpen){
+      setMenuSectionHeight("100vh")
+      setPageNamedisplayed("none")
+      setZIndexOfMenu(2)
+    }else{
+      setMenuSectionHeight("0vh")
+      setPageNamedisplayed("block")
+      setZIndexOfMenu(0)
+    }
+    console.log(menuSectionHeight)
+  }, [menuIsOpen])
+
+
+  function OpenMenu() {
+    setMenuIsOpen(menuIsOpen=>!menuIsOpen)
+  }
+
 
 
 
   return (
     <>
-      <div className={className}>
+      <div className="top-header-container">
         <motion.div
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
           className="title"
         >
-          <Link id="title" to="/">Konrad's Portfolio</Link>
+          <Link style={{display: pageNameDisplayed}} id="title" to="projects">Portfolio</Link>
         </motion.div>
 
-        <motion.div
+        <motion.div className="MenuButton" onClick={OpenMenu} whileHover={{scale: 1.1}}>
+          <img src={require("../assets/staticMenu.png")} alt="menu pic" />
+        </motion.div>
+      </div>
+      <div style={{zIndex: zIndexOfMenu}} className="menuContainer">
+        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: 0}} className="menuSection">
+
+        </motion.div>
+        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: .25}} className="menuSection">
+          
+        </motion.div>
+        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: .5}} className="menuSection">
+          
+        </motion.div>
+        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: .75}} className="menuSection">
+          
+        </motion.div>
+      </div>
+
+
+
+
+
+
+
+
+        {/* <motion.div
           animate={{ opacity: [0, 1], x: [-200, 0], marginRight: [20, 5] }}
           transition={{ duration: 0.75 }}
           className="navigator"
         >
-          {/* if we want to use motion for the Link component, we have to use the motion version of the Link component, which is motion.a
-           */}
+         
           <Link id="titleFont" className="navButtons" to="/">
             About
           </Link>
@@ -82,8 +104,8 @@ const Layout = () => {
           >
             LinkedIn
           </a>
-        </motion.div>
-      </div>
+        </motion.div> */}
+      
 
       <Outlet />
     </>

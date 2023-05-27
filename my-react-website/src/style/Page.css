@@ -1,56 +1,55 @@
 h1 {
-    color: #000000;
-    text-align: center;
-    font-family: 'Lora', serif;
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+  color: #000000;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+.staticScrollerUp {
+  position: fixed;
+  width: 100vw;
+  top: 93%;
+  display: flex;
+  direction: rtl;
+  z-index: 1;
+  /* transform: translate(0, -100%); */
 }
 
-.staticScrollerUp{
-    opacity: 0;
-    height: 50px;
-    width: 50px;
-    position:fixed;
-    top: 92%;
-    left: 100%;
-    box-shadow: 0 0 10px 2px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-
+.staticScrollerUp img {
+  height: 100%;
+  width: 100%;
 }
 
-.staticScrollerDown{
-    opacity: 0;
-    height: 50px;
-    width: 50px;
-    position:fixed;
-    top: 102%;
-    left: 100%;
-    box-shadow: 0 0 10px 2px black;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    
+.imgContainerDown {
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
 }
 
-.staticScrollerDown img{
-    height: 100%;
-    width: 100%;
-    
-}
-.staticScrollerUp img{
-    height: 100%;
-    width: 100%;
+.imgContainerUp {
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
 }
 
+.staticScrollerDown {
+  position: fixed;
+  width: 100vw;
+  top: 104%;
+  display: flex;
+  direction: rtl;
+  z-index: 1;
+}
 
+.staticScrollerDown img {
+  height: 100%;
+  width: 100%;
+}
