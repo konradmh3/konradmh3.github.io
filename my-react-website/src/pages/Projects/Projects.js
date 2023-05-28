@@ -51,6 +51,7 @@ const Projects = () => {
 
   return (
     <>
+      {/* ABSOLUTE */}
       <motion.div
         style={{ display: arrowUpDisplay }}
         animate={{ y: [-100], transition: { duration: 1 } }}
@@ -77,6 +78,7 @@ const Projects = () => {
           />
         </motion.div>
       </motion.div>
+      {/* ^^ABSOLUTE^^ */}
       <ProjectsNew ref={projectRefs[0]} backgroundColor="lightblue" />
       <ProjectsNew ref={projectRefs[1]} backgroundColor="lightgreen" />
       <ProjectsNew ref={projectRefs[2]} backgroundColor="#ffb365" />
