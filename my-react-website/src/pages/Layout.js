@@ -101,9 +101,9 @@ const Layout = () => {
           >
             Projects
           </Link>
-          <div className="menuContentContainer">LinkedIn</div>
-          <div className="menuContentContainer">Github</div>
-          <div className="menuContentContainer">Resume</div>
+          <a className="menuContentContainer" href="https://www.linkedin.com/in/konrad-hernandez/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a className="menuContentContainer" href="https://github.com/konradmh3" target="_blank" rel="noreferrer">Github</a>
+          <a className="menuContentContainer" href={require("../assets/Resume_Konrad_Hernandez.pdf")} target="_blank" rel="noreferrer">Resume</a>
         </motion.div>
         <motion.div
           initial={{ height: 0 }}
@@ -124,41 +124,6 @@ const Layout = () => {
           className="menuSection"
         ></motion.div>
       </div>
-
-      {/* <motion.div
-          animate={{ opacity: [0, 1], x: [-200, 0], marginRight: [20, 5] }}
-          transition={{ duration: 0.75 }}
-          className="navigator"
-        >
-         
-          <Link to="/">
-            About
-          </Link>
-
-          <Link id="titleFont" className="navButtons" to="projects">
-            Projects
-          </Link>
-
-          <a
-            id="titleFont"
-            className="navButtons"
-            href="https://github.com/konradmh3"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Github
-          </a>
-
-          <a
-            id="titleFont"
-            className="navButtons"
-            href="https://www.linkedin.com/in/konrad-hernandez/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-        </motion.div> */}
 
       <Outlet />
     </>
