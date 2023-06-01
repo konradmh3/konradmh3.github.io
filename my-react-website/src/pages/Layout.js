@@ -6,92 +6,126 @@ import { useState, useEffect } from "react";
 
 const Layout = () => {
   // here lets add a state var to save if menu is open
-  const [menuIsOpen, setMenuIsOpen] = useState(false)
-  const [menuSectionHeight, setMenuSectionHeight] = useState("0vh")
-  const [pageNameDisplayed, setPageNamedisplayed] = useState(1)
-  const [nameDelay, setNameDelay] = useState(0)
-  const [nameDuration, setNameDuration] = useState(0)
-  const [zIndexOfMenu, setZIndexOfMenu] = useState(2)
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [menuSectionHeight, setMenuSectionHeight] = useState("0vh");
+  const [pageNameDisplayed, setPageNamedisplayed] = useState(1);
+  const [nameDelay, setNameDelay] = useState(0);
+  const [nameDuration, setNameDuration] = useState(0);
+  const [zIndexOfMenu, setZIndexOfMenu] = useState(2);
+  const [titleMenuColor, setTitleMenuColor] = useState("rgb(255,255,255)");
 
   // ALSO we are going to need to add a variable for the collor of the title of page and menu button to turn white
 
-
-
-  useEffect(()=>{
-    if (menuIsOpen){
-      setNameDuration(0)
-      setNameDelay(0)
-      setMenuSectionHeight("100vh")
-      setPageNamedisplayed(0)
-      setZIndexOfMenu(2)
-    }else{
-      setNameDuration(1)
-      setNameDelay(1)
-      setMenuSectionHeight("0vh")
-      setPageNamedisplayed(1)
-      setZIndexOfMenu(0)
+  useEffect(() => {
+    if (menuIsOpen) {
+      setNameDuration(0);
+      setNameDelay(0);
+      setMenuSectionHeight("100vh");
+      setPageNamedisplayed(0);
+      setZIndexOfMenu(2);
+    } else {
+      setNameDuration(1);
+      setNameDelay(1);
+      setMenuSectionHeight("0vh");
+      setPageNamedisplayed(1);
+      setZIndexOfMenu(0);
     }
-    console.log(menuSectionHeight)
-  }, [menuIsOpen])
-
+    console.log(menuSectionHeight);
+  }, [menuIsOpen]);
 
   function OpenMenu() {
-    setMenuIsOpen(menuIsOpen=>!menuIsOpen)
+    setMenuIsOpen((menuIsOpen) => !menuIsOpen);
   }
-
-
-
+  function OpenMenuAboutMe() {
+    setMenuIsOpen((menuIsOpen) => !menuIsOpen);
+    // here we also want to set title color to white
+    setTitleMenuColor("rgb(255,255,255)");
+  }
+  function OpenMenuProjects() {
+    setMenuIsOpen((menuIsOpen) => !menuIsOpen);
+    // here we also want to set title color to black
+    setTitleMenuColor("rgb(0, 0, 0)");
+  }
 
   return (
     <>
       <div className="top-header-container">
         <motion.div
-        initial={{opacity: 0}}
-          animate={{ opacity: pageNameDisplayed }}
+          initial={{ opacity: 0 }}
+          animate={{ color: titleMenuColor, opacity: pageNameDisplayed }}
           transition={{ duration: nameDuration, delay: nameDelay }}
           className="title"
         >
           <div id="title">Portfolio</div>
         </motion.div>
 
-        <motion.div className="MenuButton" onClick={OpenMenu} whileHover={{scale: 1.1}}>
-          <img src={require("../assets/staticMenu.png")} alt="menu pic" />
+        <motion.div
+          className="MenuButton"
+          onClick={OpenMenu}
+          whileHover={{ scale: 1.1 }}
+        >
+          {/* <img src={require("../assets/staticMenu.png")} alt="menu pic" /> */}
+          <motion.div
+            animate={{ backgroundColor: titleMenuColor }}
+            className="menuButtonLine"
+          ></motion.div>
+          <motion.div
+            animate={{ backgroundColor: titleMenuColor }}
+            className="menuButtonLine"
+          ></motion.div>
+          <motion.div
+            animate={{ backgroundColor: titleMenuColor }}
+            className="menuButtonLine"
+          ></motion.div>
         </motion.div>
       </div>
-      <div style={{zIndex: zIndexOfMenu}} className="menuContainer">
-        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: 0}} className="menuSection">
-
-          <div className="menuContentContainer">Menu</div>
-          <Link onClick={OpenMenu} className="menuContentContainer" to="/">
+      <div style={{ zIndex: zIndexOfMenu }} className="menuContainer">
+        <motion.div
+          initial={{ height: 0 }}
+          animate={{ height: menuSectionHeight }}
+          transition={{ duration: 1, delay: 0 }}
+          className="menuSection"
+        >
+          <div className="menuContentContainerTitle">Menu</div>
+          <Link
+            onClick={OpenMenuAboutMe}
+            className="menuContentContainer"
+            to="/"
+          >
             About Me
           </Link>
-          <Link onClick={OpenMenu} className="menuContentContainer" to="projects">
+          <Link
+            onClick={OpenMenuProjects}
+            className="menuContentContainer"
+            to="projects"
+          >
             Projects
           </Link>
           <div className="menuContentContainer">LinkedIn</div>
           <div className="menuContentContainer">Github</div>
           <div className="menuContentContainer">Resume</div>
-
-
         </motion.div>
-        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: .25}} className="menuSection">
-        </motion.div>
-        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: .5}} className="menuSection">
-          
-        </motion.div>
-        <motion.div initial={{height: 0}} animate={{height: menuSectionHeight}} transition={{duration:1, delay: .75}} className="menuSection">
-          
-        </motion.div>
+        <motion.div
+          initial={{ height: 0 }}
+          animate={{ height: menuSectionHeight }}
+          transition={{ duration: 1, delay: 0.25 }}
+          className="menuSection"
+        ></motion.div>
+        <motion.div
+          initial={{ height: 0 }}
+          animate={{ height: menuSectionHeight }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="menuSection"
+        ></motion.div>
+        <motion.div
+          initial={{ height: 0 }}
+          animate={{ height: menuSectionHeight }}
+          transition={{ duration: 1, delay: 0.75 }}
+          className="menuSection"
+        ></motion.div>
       </div>
 
-
-
-
-
-
-
-
-        {/* <motion.div
+      {/* <motion.div
           animate={{ opacity: [0, 1], x: [-200, 0], marginRight: [20, 5] }}
           transition={{ duration: 0.75 }}
           className="navigator"
@@ -125,7 +159,6 @@ const Layout = () => {
             LinkedIn
           </a>
         </motion.div> */}
-      
 
       <Outlet />
     </>

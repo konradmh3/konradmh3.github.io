@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poltawski+Nowy&display=swap');
-/* FONTS ^^^ */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Gruppo&family=Saira+Condensed:wght@200&family=Space+Mono&display=swap');
 
 #titleFont {
-    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
 #title {
-    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
 }
 
 #headerTitle {
-    font-family: 'Poltawski Nowy', serif; 
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 3rem;
     font-weight: 600;
 }

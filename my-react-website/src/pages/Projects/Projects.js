@@ -1,6 +1,5 @@
 import "../../style/Page.css";
-
-import ProjectsNew from "../ProjectsNew";
+import ProjectsNew from "./ProjectsNew";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useRef } from "react";

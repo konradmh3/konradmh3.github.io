@@ -34,10 +34,18 @@ body {
   width: 50px;
 }
 
+.imgContainerDown:hover {
+  cursor: pointer;
+}
+
 .imgContainerUp {
   height: 50px;
   margin-right: 10px;
   width: 50px;
+}
+
+.imgContainerUp:hover {
+  cursor: pointer;
 }
 
 .staticScrollerDown {

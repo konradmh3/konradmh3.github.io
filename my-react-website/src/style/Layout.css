@@ -11,11 +11,6 @@
     z-index: 4;
 }
 
-.title a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    
-}
 
 .title {
     margin-left: 10px;
@@ -25,7 +20,24 @@
 .MenuButton {
     margin-left: 30px;
     margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.MenuButton:hover {
+    cursor: pointer;
+}
+
+.menuButtonLine {
+    height: 3px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
 }
 
 .menuContainer {
@@ -38,7 +50,7 @@
 }
 .menuSection {
     width: 25%;
-    background-color: green;
+    background-color: rgb(98, 169, 98);
     overflow: hidden;
 }
 
@@ -47,5 +59,17 @@
     justify-content: center;
     margin-top: 10%;
     width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
+.menuContentContainerTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30%;
+}
