@@ -54,10 +54,9 @@ const Projects = () => {
       <motion.div
         style={{ display: arrowUpDisplay }}
         animate={{ y: [-100], transition: { duration: 1 } }}
-        onClick={executeScrollUp}
         className="staticScrollerUp"
       >
-        <motion.div initial={{rotate: -90}} whileHover={{scale: 1.1, rotate: [-90, -180, -270, -360, -450]}} transition={{duration: .25}} className="imgContainerUp">
+        <motion.div    onClick={executeScrollUp} initial={{rotate: -90}} whileHover={{scale: 1.1, rotate: [-90, -180, -270, -360, -450]}} transition={{duration: .25}} className="imgContainerUp">
           <img
             src={require("../../assets/" + "arrowFinal" + ".png")}
             alt={"arrow"}
@@ -67,10 +66,10 @@ const Projects = () => {
       <motion.div
         style={{ display: arrowDownDisplay }}
         animate={{ y: [-100], transition: { duration: 1 } }}
-        onClick={executeScrollDown}
+        
         className="staticScrollerDown"
       >
-        <motion.div initial={{rotate: 90}} whileHover={{scale: 1.1, rotate: [90, 180, 270, 360, 450]}} transition={{duration: .25}} className="imgContainerDown">
+        <motion.div onClick={executeScrollDown} initial={{rotate: 90}} whileHover={{scale: 1.1, rotate: [90, 180, 270, 360, 450]}} transition={{duration: .25}} className="imgContainerDown">
           <img
             src={require("../../assets/" + "arrowFinal" + ".png")}
             alt={"arrow"}
@@ -78,9 +77,9 @@ const Projects = () => {
         </motion.div>
       </motion.div>
       {/* ^^ABSOLUTE^^ */}
-      <ProjectsNew ref={projectRefs[0]} backgroundColor="lightblue" />
-      <ProjectsNew ref={projectRefs[1]} backgroundColor="lightgreen" />
-      <ProjectsNew ref={projectRefs[2]} backgroundColor="#ffb365" />
+      <ProjectsNew ref={projectRefs[0]} backgroundColor="lightblue" projectName="FooDood"/>
+      <ProjectsNew ref={projectRefs[1]} backgroundColor="lightgreen" projectName="none"/>
+      <ProjectsNew ref={projectRefs[2]} backgroundColor="#ffb365" projectName="none"/>
     </>
   );
 };

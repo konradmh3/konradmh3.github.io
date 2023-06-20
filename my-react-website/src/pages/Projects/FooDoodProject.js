@@ -1,19 +1,19 @@
 import "../../style/Projects.css";
 import { motion } from "framer-motion";
 
-const AnimatedProj = (props) => {
+const FooDoodProject = (props) => {
   const projectPosition =
     props.position === "right" ? (
       <>
         <motion.div
-          animate={{ opacity: [0, 1], transition: { delay: props.delay } }}
+          animate={{ opacity: [0, 1], transition: { delay: 1 } }}
           className="projectContainer"
         >
           <div className="projectTitle">
             {/* insert an image here */}
             <img
-              src={require("../../assets/" + props.projectName + ".png")}
-              alt={props.projectName}
+              src={require("../../assets/" + "fooDoodTitle" + ".png")}
+              alt={"foodood title"}
             />
           </div>
 
@@ -37,14 +37,14 @@ const AnimatedProj = (props) => {
     ) : (
       <>
         <motion.div
-          animate={{ opacity: [0, 1], transition: { delay: props.delay } }}
+          animate={{ opacity: [0, 1], transition: { delay: 1 } }}
           className="projectContainer"
         >
           <div className="projectTitle">
             {/* insert an image here */}
             <img
-              src={require("../../assets/" + props.projectName + ".png")}
-              alt={props.projectName}
+              src={require("../../assets/" + "fooDoodTitle" + ".png")}
+              alt={"foodood title"}
             />
           </div>
 
@@ -72,4 +72,4 @@ const AnimatedProj = (props) => {
   return projectPosition;
 };
 
-export default AnimatedProj;
+export default FooDoodProject;

@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import "../style/Layout.css";
 import "../style/Fonts.css";
 import { motion } from "framer-motion";
@@ -13,8 +13,8 @@ const Layout = () => {
   const [nameDuration, setNameDuration] = useState(0);
   const [zIndexOfMenu, setZIndexOfMenu] = useState(2);
   const [titleMenuColor, setTitleMenuColor] = useState("rgb(255,255,255)");
+  const [currentPage, setCurrentPage] = useState(useLocation().pathname);      
 
-  // ALSO we are going to need to add a variable for the collor of the title of page and menu button to turn white
 
   useEffect(() => {
     if (menuIsOpen) {
@@ -23,12 +23,21 @@ const Layout = () => {
       setMenuSectionHeight("100vh");
       setPageNamedisplayed(0);
       setZIndexOfMenu(2);
+      console.log(currentPage);
+      setTitleMenuColor("rgb(0, 0, 0)");
     } else {
       setNameDuration(1);
       setNameDelay(1);
       setMenuSectionHeight("0vh");
       setPageNamedisplayed(1);
       setZIndexOfMenu(0);
+      console.log(currentPage);
+      if (currentPage === "/") {
+        setTitleMenuColor("rgb(255,255,255)");
+      }
+
+      // setCurrentPage(useLocation().pathname);
+      // console.log(useLocation().pathname);
     }
     console.log(menuSectionHeight);
   }, [menuIsOpen]);
@@ -40,11 +49,13 @@ const Layout = () => {
     setMenuIsOpen((menuIsOpen) => !menuIsOpen);
     // here we also want to set title color to white
     setTitleMenuColor("rgb(255,255,255)");
+    setCurrentPage("/");
   }
   function OpenMenuProjects() {
     setMenuIsOpen((menuIsOpen) => !menuIsOpen);
     // here we also want to set title color to black
     setTitleMenuColor("rgb(0, 0, 0)");
+    setCurrentPage("/projects");
   }
 
   return (
@@ -63,18 +74,21 @@ const Layout = () => {
           className="MenuButton"
           onClick={OpenMenu}
           whileHover={{ scale: 1.1 }}
+          
         >
-          {/* <img src={require("../assets/staticMenu.png")} alt="menu pic" /> */}
           <motion.div
             animate={{ backgroundColor: titleMenuColor }}
+            transition={{ duration: 1, delay: nameDelay }}
             className="menuButtonLine"
           ></motion.div>
           <motion.div
             animate={{ backgroundColor: titleMenuColor }}
+            transition={{ duration: 1, delay: nameDelay }}
             className="menuButtonLine"
           ></motion.div>
           <motion.div
             animate={{ backgroundColor: titleMenuColor }}
+            transition={{ duration: 1, delay: nameDelay }}
             className="menuButtonLine"
           ></motion.div>
         </motion.div>
@@ -94,6 +108,7 @@ const Layout = () => {
           >
             About Me
           </Link>
+          {/* <a href="https://www.flaticon.com/free-icons/about" title="about icons">About icons created by srip - Flaticon</a> */}
           <Link
             onClick={OpenMenuProjects}
             className="menuContentContainer"
@@ -101,9 +116,13 @@ const Layout = () => {
           >
             Projects
           </Link>
+          {/* <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">Folder icons created by Freepik - Flaticon</a> */}
           <a className="menuContentContainer" href="https://www.linkedin.com/in/konrad-hernandez/" target="_blank" rel="noreferrer">LinkedIn</a>
+          {/* <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> */}
           <a className="menuContentContainer" href="https://github.com/konradmh3" target="_blank" rel="noreferrer">Github</a>
+          {/* <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a> */}
           <a className="menuContentContainer" href={require("../assets/Resume_Konrad_Hernandez.pdf")} target="_blank" rel="noreferrer">Resume</a>
+          {/* <a href="https://www.flaticon.com/free-icons/clip" title="clip icons">Clip icons created by Freepik - Flaticon</a> */}
         </motion.div>
         <motion.div
           initial={{ height: 0 }}
