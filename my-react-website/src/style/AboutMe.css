@@ -1,8 +1,14 @@
 /* aboutmeContainer */
 
-.aboutMeContainer {
+
+.aboutMeTextContainer {
+  color: white;
   background-color: black;
   min-height: 100vh;
   height: fit-content;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: 'Chakra Petch', sans-serif;
 }
