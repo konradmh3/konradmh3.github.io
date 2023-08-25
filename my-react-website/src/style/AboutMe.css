@@ -1,7 +1,7 @@
 /* aboutmeContainer */
 
 
-.aboutMeTextContainer {
+.aboutMeTitleContainer {
   color: white;
   background-color: black;
   min-height: 100vh;
@@ -11,4 +11,42 @@
   align-items: center;
   font-size: 50px;
   font-family: 'Chakra Petch', sans-serif;
+}
+
+.aboutMeDescriptionContainer {
+  color: white;
+  background-color: black;
+  height: fit-content;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.aboutMeDescriptionBorder {
+  border: 1px solid white;
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+  margin: 1%;
+}
+.aboutMeDescriptionTitle {
+  color: white;
+  font-size: calc(1vw + 1vh + 1vmin);
+  font-family: 'Chakra Petch', sans-serif;
+  width: 100%;
+  text-align: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.aboutMeDescriptionText {
+  font-size: calc(.6vw + .6vh + .6vmin);
+  font-family: 'Chakra Petch', sans-serif;
+  width: 100%;
+  text-align: left;
+  margin-left: 2%;
+  margin-right: 2%;
+
 }
