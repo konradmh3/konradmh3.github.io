@@ -66,8 +66,19 @@ const Layout = () => {
           animate={{ color: titleMenuColor, opacity: pageNameDisplayed }}
           transition={{ duration: nameDuration, delay: nameDelay }}
           className="title"
-        >
-          <div id="title">Portfolio</div>
+        > 
+          {/* <div id="title">Portfolio</div> */}
+          {/* lets update the above title to slide in from the left on render with framer */}
+            <motion.div
+              initial={{ x: -1000 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              id="title"
+              // to make it so each letter animate in one after another we can use the staggerChildren prop
+            >Portfolio</motion.div>
+            {/* Lets rewrite the above motion div to instead use typewriter effect to type out once */}
+
+
         </motion.div>
 
         <motion.div

@@ -8,8 +8,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const AboutMeDescription = (props, ref) => {
-  // lets create a useState for the animation so that we can change the width of the div when it is in view
-  const isInView = useInView(ref);
+
+
+  const isInView = useInView(ref, { once: true, amount: 1 });
+
+
 
   return (
     <div className="aboutMeDescriptionContainer">
@@ -17,7 +20,6 @@ const AboutMeDescription = (props, ref) => {
         <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: 2}}  className="animateContent"></motion.div>
         <div className="aboutMeDescriptionTitle">{props.title}</div>
         <div className="aboutMeDescriptionText">{props.text}</div>
-        
       </div>
     </div>
   );

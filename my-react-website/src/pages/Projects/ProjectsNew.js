@@ -9,7 +9,7 @@ const ProjectsNew = (props, ref) => {
   const project1 = props.projectName === "FooDood" ? <FooDoodProject position="right"/> : <></>;
 return (<>
     <motion.div className="fatherContainer" ref={ref} style={{backgroundColor: props.backgroundColor}}>
-      {project1}
+      {/* {project1} */}
       
     </motion.div>
     </>);

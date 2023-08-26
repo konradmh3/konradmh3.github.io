@@ -27,18 +27,16 @@
   color: white;
   font-size: calc(1vw + 1vh + 1vmin);
   font-family: 'Chakra Petch', sans-serif;
-  width: 100%;
   text-align: left;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 2%;
+  margin-bottom: 1%;
 }
 .aboutMeDescriptionText {
-  font-size: calc(.6vw + .6vh + .6vmin);
+  font-size: calc(.7vw + .7vh + .7vmin);
   font-family: 'Chakra Petch', sans-serif;
-  width: 100%;
   text-align: left;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 2%;
+  margin-top: 1%;
 
 }
 
@@ -47,7 +45,7 @@
   background-color: black;
   padding: 3%;
   /* add font to adjust to screen size */
-  font-size: calc(.6vw + .6vh + .6vmin);
+  font-size: calc(.7vw + .7vh + .7vmin);
 }
 
 .aboutMeDescriptionBorder {
