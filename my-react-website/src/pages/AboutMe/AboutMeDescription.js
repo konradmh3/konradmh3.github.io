@@ -4,19 +4,20 @@ import React, { useEffect } from "react";
 import "../../style/AboutMe.css";
 import { useInView } from "framer-motion";
 import { forwardRef } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 const AboutMeDescription = (props, ref) => {
-    const isInView = useInView(ref);
-    useEffect(() => {
-        console.log(isInView);
-    }, [isInView]);
+  // lets create a useState for the animation so that we can change the width of the div when it is in view
+  const isInView = useInView(ref);
 
-// the above will return true to console if the component is in view
   return (
     <div className="aboutMeDescriptionContainer">
       <div ref={ref} className="aboutMeDescriptionBorder">
+        <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: 1}}  className="animateContent"></motion.div>
         <div className="aboutMeDescriptionTitle">{props.title}</div>
         <div className="aboutMeDescriptionText">{props.text}</div>
+        
       </div>
     </div>
   );

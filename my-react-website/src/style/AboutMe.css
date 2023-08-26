@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: calc(1.4vw + 1.4vh + 1.4vmin);
   font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -22,16 +22,7 @@
   justify-content: center;
 }
 
-.aboutMeDescriptionBorder {
-  border: 1px solid white;
-  width: 90%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1%;
-  margin: 1%;
-}
+
 .aboutMeDescriptionTitle {
   color: white;
   font-size: calc(1vw + 1vh + 1vmin);
@@ -54,5 +45,28 @@
 .aboutMeSubtitles{
   color: white;
   background-color: black;
-  padding: 2%;
+  padding: 3%;
+  /* add font to adjust to screen size */
+  font-size: calc(.6vw + .6vh + .6vmin);
 }
+
+.aboutMeDescriptionBorder {
+  border: 1px solid white;
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+  position: relative;
+}
+
+.animateContent{
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 1;
+}
+
