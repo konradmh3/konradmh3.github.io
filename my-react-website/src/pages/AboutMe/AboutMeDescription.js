@@ -14,7 +14,7 @@ const AboutMeDescription = (props, ref) => {
   return (
     <div className="aboutMeDescriptionContainer">
       <div ref={ref} className="aboutMeDescriptionBorder">
-        <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: 1}}  className="animateContent"></motion.div>
+        <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: 2}}  className="animateContent"></motion.div>
         <div className="aboutMeDescriptionTitle">{props.title}</div>
         <div className="aboutMeDescriptionText">{props.text}</div>
         
