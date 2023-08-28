@@ -50,12 +50,16 @@ const Layout = () => {
     // here we also want to set title color to white
     setTitleMenuColor("rgb(255,255,255)");
     setCurrentPage("/");
+    window.scrollTo(0, 0);
+    // resets page to top when menu is closed
   }
   function OpenMenuProjects() {
     setMenuIsOpen((menuIsOpen) => !menuIsOpen);
     // here we also want to set title color to black
     setTitleMenuColor("rgb(0, 0, 0)");
     setCurrentPage("/projects");
+    window.scrollTo(0, 0);
+    // resets page to top when menu is closed
   }
 
   return (

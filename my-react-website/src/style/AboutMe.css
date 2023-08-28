@@ -25,11 +25,12 @@
 
 .aboutMeDescriptionTitle {
   color: white;
-  font-size: calc(1vw + 1vh + 1vmin);
+  font-size: calc(1.5vw + 1.5vh + 1.5vmin);
   font-family: 'Chakra Petch', sans-serif;
   text-align: left;
   margin: 2%;
   margin-bottom: 1%;
+  font-weight: 800;
 }
 .aboutMeDescriptionText {
   font-size: calc(.7vw + .7vh + .7vmin);
@@ -37,7 +38,6 @@
   text-align: left;
   margin: 2%;
   margin-top: 1%;
-
 }
 
 .aboutMeSubtitles{
@@ -45,7 +45,7 @@
   background-color: black;
   padding: 3%;
   /* add font to adjust to screen size */
-  font-size: calc(.7vw + .7vh + .7vmin);
+  font-size: calc(.9vw + .9vh + .9vmin);
 }
 
 .aboutMeDescriptionBorder {

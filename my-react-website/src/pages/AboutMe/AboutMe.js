@@ -14,19 +14,19 @@ import { useInView } from "framer-motion";
 import { useEffect } from "react";
 
 const AboutMe = () => {
-  const aboutMeRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
-
+  const aboutMeRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
     return (
     <>
       <div className="aboutMeTitleContainer">
-        <NewTextAnimation text="Hello! My name is KONRAD!" />
+        <NewTextAnimation text="Hello! My name is Konrad!" />
       </div>
 
-
+      {/* lets wrap bottom in a motiondiv to delay opacity in case of closing menu when staying on the page and it appears over the menu */}
+      
       <CodeSubtitles subtitle='<AboutMe yeah="YourBoi">' />
       <AboutMeDescription ref={aboutMeRefs[0]} title="Home Town" text="My home town is Long Beach, California! I was born here and have lived here for 23 years now!" />
       <AboutMeDescription ref={aboutMeRefs[1]} title="Schooling" text="I went to school at Long Beach State to recieve my Bachelors in Computer Science as well as a minor in Mathematics." />
-      <AboutMeDescription ref={aboutMeRefs[2]} title="Extra Curriculars" text="I like doing things and other things and boom! More things!" />
+      <AboutMeDescription ref={aboutMeRefs[2]} title="Extracurriculars" text="I like doing things and other things and boom! More things!" />
       <CodeSubtitles subtitle='</AboutMe>' />
 
       {/* Next section on about me should be about */}
@@ -36,6 +36,9 @@ const AboutMe = () => {
       <AboutMeDescription ref={aboutMeRefs[5]} title="Stick" text="Stick is a 2D platformer built with unity!" />
       <CodeSubtitles subtitle='</Grind>' />
 
+      <CodeSubtitles subtitle='<Grind work="Experience">' />      
+      <AboutMeDescription ref={aboutMeRefs[6]} title="ASI" text="Associated Students Inc. for one year."/>
+      <CodeSubtitles subtitle='</Grind>' />
 
     </>
     );
