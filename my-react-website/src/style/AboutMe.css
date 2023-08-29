@@ -1,6 +1,5 @@
 /* aboutmeContainer */
 
-
 .aboutMeTitleContainer {
   color: white;
   background-color: black;
@@ -10,7 +9,8 @@
   justify-content: center;
   align-items: center;
   font-size: calc(1.4vw + 1.4vh + 1.4vmin);
-  font-family: 'Chakra Petch', sans-serif;}
+  font-family: "Chakra Petch", sans-serif;
+}
 
 .aboutMeDescriptionContainer {
   color: white;
@@ -21,30 +21,37 @@
   justify-content: center;
 }
 
-
 .aboutMeDescriptionTitle {
   color: white;
   font-size: calc(1.5vw + 1.5vh + 1.5vmin);
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   text-align: left;
   margin: 2%;
   margin-bottom: 1%;
   font-weight: 800;
+  /* remove option to highlight text */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 .aboutMeDescriptionText {
-  font-size: calc(.7vw + .7vh + .7vmin);
-  font-family: 'Chakra Petch', sans-serif;
+  font-size: calc(0.7vw + 0.7vh + 0.7vmin);
+  font-family: "Chakra Petch", sans-serif;
   text-align: left;
   margin: 2%;
   margin-top: 1%;
 }
 
-.aboutMeSubtitles{
+.aboutMeSubtitles {
   color: white;
   background-color: black;
   padding: 3%;
   /* add font to adjust to screen size */
-  font-size: calc(.9vw + .9vh + .9vmin);
+  font-size: calc(0.9vw + 0.9vh + 0.9vmin);
 }
 
 .aboutMeDescriptionBorder {
@@ -59,7 +66,7 @@
   position: relative;
 }
 
-.animateContent{
+.animateContent {
   background-color: rgba(122, 122, 122, 0.144);
   backdrop-filter: blur(8px);
   position: absolute;
@@ -68,10 +75,9 @@
   height: 100%;
   opacity: 1;
   border-radius: 10px;
-
 }
 
-.animateHoverContent{
+.animateHoverContent {
   background-color: rgb(167, 167, 167);
   position: absolute;
   top: 0;
@@ -81,4 +87,3 @@
   border-radius: 10px;
   cursor: pointer;
 }
-
