@@ -71,3 +71,14 @@
 
 }
 
+.animateHoverContent{
+  background-color: rgb(167, 167, 167);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

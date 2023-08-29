@@ -4,19 +4,23 @@ import Typewriter from 'typewriter-effect';
 import React from 'react';
 import {motion} from 'framer-motion';
 
-const NewTextAnimation = ({ sth1tag, text , endh1tag}) => {
+const NewTextAnimation = ( props ) => {
 
     return (
         <motion.div style={{  display: "flex", flexDirection: "row"}} animate={{ opacity: [0, 1], transition: {delay: 1} }}>
-        {sth1tag}
+        {props.lttag1}
+        {props.sth1tag}
+        {props.gttag1}
         <Typewriter
         options={{
-            strings: text,
+            strings: props.text,
             autoStart: true,
             loop: true,
         }}
         />
-        {endh1tag}
+        {props.lttag2}
+        {props.endh1tag}
+        {props.gttag2}
         </motion.div>
     );
 };
