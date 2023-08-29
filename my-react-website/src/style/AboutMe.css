@@ -10,8 +10,7 @@
   justify-content: center;
   align-items: center;
   font-size: calc(1.4vw + 1.4vh + 1.4vmin);
-  font-family: 'Chakra Petch', sans-serif;
-}
+  font-family: 'Chakra Petch', sans-serif;}
 
 .aboutMeDescriptionContainer {
   color: white;
@@ -49,6 +48,7 @@
 }
 
 .aboutMeDescriptionBorder {
+  border-radius: 10px;
   border: 1px solid white;
   width: 90%;
   height: fit-content;
@@ -60,11 +60,14 @@
 }
 
 .animateContent{
-  background-color: white;
+  background-color: rgba(122, 122, 122, 0.144);
+  backdrop-filter: blur(8px);
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   opacity: 1;
+  border-radius: 10px;
+
 }
 
