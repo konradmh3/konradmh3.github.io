@@ -25,15 +25,24 @@ const Layout = () => {
       setZIndexOfMenu(2);
       console.log(currentPage);
       setTitleMenuColor("rgb(0, 0, 0)");
+      document.body.style.overflow = "hidden";
+
     } else {
       setNameDuration(1);
       setNameDelay(1);
       setMenuSectionHeight("0vh");
       setPageNamedisplayed(1);
       setZIndexOfMenu(0);
-      console.log(currentPage);
+      console.log(currentPage);        
+      window.scrollTo(0, 0);
+
       if (currentPage === "/") {
-        setTitleMenuColor("rgb(255,255,255)");
+        setTitleMenuColor("rgb(255,255,255)");      
+        // enable scrolling with mouse wheel and add scroll bar:
+        document.body.style.overflow = "auto";
+      }else if (currentPage === "/projects") {
+        // disable scrolling with mouse wheel and remove scroll bar:
+        document.body.style.overflow = "hidden";
       }
 
       // setCurrentPage(useLocation().pathname);
