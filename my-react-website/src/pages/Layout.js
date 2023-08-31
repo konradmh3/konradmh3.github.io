@@ -3,6 +3,7 @@ import "../style/Layout.css";
 import "../style/Fonts.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import CodeSubtitles from "./AboutMe/CodeSubtitles";
 
 const Layout = () => {
   // here lets add a state var to save if menu is open
@@ -84,7 +85,13 @@ const Layout = () => {
             transition={{ duration: 1, delay: 0.5 }}
             id="title"
           >
+            <span style={{ color: "grey" }}>&lt;</span>
+            <span style={{color: "rgb(21, 110, 173)"}}>h1</span>
+            <span style={{ color: "grey" }}>&gt;</span>
             Portfolio
+            <span style={{ color: "grey" }}>&lt;/</span>
+            <span style={{color: "rgb(21, 110, 173)"}}>h1</span>
+            <span style={{ color: "grey" }}>&gt;</span>
           </motion.div>
         </motion.div>
 

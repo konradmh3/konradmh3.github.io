@@ -2,7 +2,7 @@
 
 .aboutMeTitleContainer {
   color: white;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   min-height: 100vh;
   height: fit-content;
   display: flex;
@@ -14,7 +14,7 @@
 
 .aboutMeDescriptionContainer {
   color: white;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   height: fit-content;
   display: flex;
   width: 100%;
@@ -48,7 +48,7 @@
 
 .aboutMeSubtitles {
   color: white;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   padding: 3%;
   /* add font to adjust to screen size */
   font-size: calc(0.9vw + 0.9vh + 0.9vmin);
