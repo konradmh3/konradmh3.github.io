@@ -31,11 +31,11 @@ const AboutMeDescription = (props, ref) => {
       {/* div to handle click spring animation */}
       <motion.div ref={ref} whileTap={{scale: .95}} onClick={moreInfo} transition={{type: "spring"}} className="aboutMeDescriptionBorder">
         
-        {/* Div to handle on click and its animations */}
-        <motion.div initial={{opacity:0}} whileHover={{opacity:1}} transition={{duration: 1}} className="animateHoverContent"></motion.div>
+        {/* Div to handle hover and its animations */}
+        <motion.div initial={{opacity:0}} whileHover={{opacity:1}} transition={{duration: .25}} className="animateHoverContent"></motion.div>
         
         {/* Div to handle on first view blur animation */}
-        <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: 2}}  className="animateContent"></motion.div>
+        <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: .5}}  className="animateContent"></motion.div>
         <div className="aboutMeDescriptionTitle">{props.title}</div>
         <div className="aboutMeDescriptionText">{props.text}</div>
       </motion.div>
