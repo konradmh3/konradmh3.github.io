@@ -5,7 +5,6 @@ import React from 'react';
 import {motion} from 'framer-motion';
 
 const NewTextAnimation = ( props ) => {
-
     return (
         <motion.div style={{  display: "flex", flexDirection: "row"}} animate={{ opacity: [0, 1], transition: {delay: 1} }}>
         {props.lttag1}

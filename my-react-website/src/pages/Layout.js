@@ -112,57 +112,88 @@ const Layout = () => {
           ></motion.div>
         </motion.div>
       </div>
+
+
+
+
+
       <div style={{ zIndex: zIndexOfMenu }} className="menuContainer">
-        {/* lets add nicer animated links to other pages and locations
-        and lets position these buttons over all 4 sections of the menu*/}
-        
+          <motion.div style={{top: "20%"}} initial={{width: "0vw"}} animate={{width: menuIsOpen ? "90vw" : "0vw"}} transition={{delay: menuIsOpen ? 1 : .2, duration: menuIsOpen ? 1 : .25}} className="linkContainer">
+            <Link
+              onClick={OpenMenuAboutMe}
+              className="link"
+              to="/"
+            >
+              About Me
+            </Link>
+          </motion.div>
+          <motion.div style={{top: "35%"}} initial={{width: "0vw"}} animate={{width: menuIsOpen ? "90vw" : "0vw"}} transition={{delay: menuIsOpen ? 1.25 : .15, duration: menuIsOpen ? 1 : .25}} className="linkContainer">
+            <Link
+              onClick={OpenMenuProjects}
+              className="link"
+              to="projects"
+            >
+              Projects
+            </Link>
+          </motion.div>
+          <motion.div style={{top: "50%"}} initial={{width: "0vw"}} animate={{width: menuIsOpen ? "90vw" : "0vw"}} transition={{delay: menuIsOpen ? 1.50 : .1, duration: menuIsOpen ? 1 : .25}} className="linkContainer">
+              <a className="link" href="https://www.linkedin.com/in/konrad-hernandez/" target="_blank" rel="noreferrer">LinkedIn</a>
 
+          </motion.div>
+          <motion.div style={{top: "65%"}} initial={{width: "0vw"}} animate={{width: menuIsOpen ? "90vw" : "0vw"}} transition={{delay: menuIsOpen ? 1.75 : .05, duration: menuIsOpen ? 1 : .25}} className="linkContainer">
+                      <a className="link" href="https://github.com/konradmh3" target="_blank" rel="noreferrer">Github</a>
 
-
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: menuSectionHeight }}
-          transition={{ duration: 1, delay: 0 }}
-          className="menuSection"
-        >
-           <Link
-            onClick={OpenMenuAboutMe}
-            className="menuContentContainer"
-            to="/"
-            style={{display: "flex", height: "5vh", marginTop: "10rem", backgroundColor: "red", alignItems: "center"}}
-          >
-            {/* going to have to change each link to its own component as well as insert a motino div within link to add hover and click animations */}
-            About Me
-          </Link>
-          <Link
+          </motion.div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          {/* <Link
             onClick={OpenMenuProjects}
             className="menuContentContainer"
             to="projects"
           >
             Projects
           </Link>
-          <a className="menuContentContainer" href="https://www.linkedin.com/in/konrad-hernandez/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a className="menuContentContainer" href="https://github.com/konradmh3" target="_blank" rel="noreferrer">Github</a>
-          <a className="menuContentContainer" href={require("../assets/Resume_Konrad_Hernandez.pdf")} target="_blank" rel="noreferrer">Resume</a>
+          <a className="menuContentContainer" href={require("../assets/Resume_Konrad_Hernandez.pdf")} target="_blank" rel="noreferrer">Resume</a> */}
+        
+        
+        
+        
+        
+        <motion.div
+          initial={{ height: 0 }}
+          animate={{ height: menuSectionHeight }}
+          transition={{ duration: 1, delay: menuIsOpen ? 0: .75 }}
+          className="menuSection"
+        >
         </motion.div>
         <motion.div
           initial={{ height: 0 }}
           animate={{ height: menuSectionHeight }}
-          transition={{ duration: 1, delay: 0.25 }}
+          transition={{ duration: 1, delay: menuIsOpen ? 0.25: .5  }}
           className="menuSection"
         ></motion.div>
         <motion.div
           initial={{ height: 0 }}
           animate={{ height: menuSectionHeight }}
-          transition={{ duration: 1, delay: 0.5 }}
+          transition={{ duration: 1, delay: menuIsOpen ? 0.5: .25  }}
           className="menuSection"
         ></motion.div>
         <motion.div
           initial={{ height: 0 }}
           animate={{ height: menuSectionHeight }}
-          transition={{ duration: 1, delay: 0.75 }}
+          transition={{ duration: 1, delay: menuIsOpen ? 0.75: 0  }}
           className="menuSection"
         ></motion.div>
+
+
+        
       </div>
 
       <Outlet />

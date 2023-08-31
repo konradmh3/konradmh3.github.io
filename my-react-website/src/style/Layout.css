@@ -54,35 +54,32 @@
     overflow: hidden;
 }
 
-.menuContentContainer{
-    display: flex;
+.link{
+    /* display: flex;
     justify-content: center;
     margin-top: 10%;
     width: 100%;
     font-family: 'Chakra Petch', sans-serif;
     text-decoration: none;
-    color: black;
-}
-
-.menuContentContainerTitle{
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
+    color: black; */
     width: 100%;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 30%;
+    padding: 10px;    
+    text-decoration: none;
+    color: white;
+    font-size: calc(1.5rem + 1vw);
+    /* add no wrap so that text wont return*/
+    white-space: nowrap;
+    padding-left: 1%;
 }
 
-.linkButton{
-    height: fit-content;
+.linkContainer{
     position: absolute;
-    background-color: rgb(95, 95, 95);
+    left: 5%;
     display: flex;
-    align-items: center;
-    width: 90vw;    
-    margin-left: 5vw;
+    /* width: 90vw; */
+    background-color: rgb(85, 85, 85);
     font-family: 'Chakra Petch', sans-serif;
-    font-size: calc(5vh);
-    cursor: pointer;
+    overflow: hidden;
+    
 }
+
