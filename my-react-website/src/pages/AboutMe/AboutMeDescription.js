@@ -4,21 +4,22 @@ import React from "react";
 import "../../style/AboutMe.css";
 import { useInView } from "framer-motion";
 import { forwardRef } from "react";
+import { useState } from "react";
 
 
 import { motion } from "framer-motion";
 
 const AboutMeDescription = (props, ref) => {
   const isInView = useInView(ref, { once: true, amount: 1 });
+  const [count, setCount] = useState(0);
   
-  var count = 0;
 
 
   
 // create more info function to handle the animation of the div    
 // count to see how many times the div has been clicked for testing
   const moreInfo = () => {
-    count++;
+    setCount(count + 1);
     console.log("This button clicked", count, "times!");
   };
 
@@ -32,7 +33,7 @@ const AboutMeDescription = (props, ref) => {
       <motion.div ref={ref} whileTap={{scale: .95}} onClick={moreInfo} transition={{type: "spring"}} className="aboutMeDescriptionBorder">
         
         {/* Div to handle hover and its animations */}
-        <motion.div initial={{opacity:0}} whileHover={{opacity:1}} transition={{duration: .25}} className="animateHoverContent"></motion.div>
+        <motion.div initial={{opacity:0}}style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}} whileHover={{opacity:1}} transition={{duration: .25}} className="animateHoverContent">+{count}</motion.div>
         
         {/* Div to handle on first view blur animation */}
         <motion.div initial={{width:"100%"}} animate={{width:isInView ? "0%":"100%"}} transition={{duration: .5}}  className="animateContent"></motion.div>
