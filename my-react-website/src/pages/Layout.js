@@ -80,18 +80,13 @@ const Layout = () => {
           transition={{ duration: nameDuration, delay: nameDelay }}
           className="title"
         > 
-          {/* <div id="title">Portfolio</div> */}
-          {/* lets update the above title to slide in from the left on render with framer */}
-            <motion.div
-              initial={{ x: -1000 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              id="title"
-              // to make it so each letter animate in one after another we can use the staggerChildren prop
-            >Portfolio</motion.div>
-            {/* Lets rewrite the above motion div to instead use typewriter effect to type out once */}
-
-
+          <motion.div
+                initial={{ x: -1000 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                id="title"
+              >Portfolio
+          </motion.div>
         </motion.div>
 
         <motion.div
@@ -118,21 +113,27 @@ const Layout = () => {
         </motion.div>
       </div>
       <div style={{ zIndex: zIndexOfMenu }} className="menuContainer">
+        {/* lets add nicer animated links to other pages and locations
+        and lets position these buttons over all 4 sections of the menu*/}
+        
+
+
+
         <motion.div
           initial={{ height: 0 }}
           animate={{ height: menuSectionHeight }}
           transition={{ duration: 1, delay: 0 }}
           className="menuSection"
         >
-          <div className="menuContentContainerTitle">Menu</div>
-          <Link
+           <Link
             onClick={OpenMenuAboutMe}
             className="menuContentContainer"
             to="/"
+            style={{display: "flex", height: "5vh", marginTop: "10rem", backgroundColor: "red", alignItems: "center"}}
           >
+            {/* going to have to change each link to its own component as well as insert a motino div within link to add hover and click animations */}
             About Me
           </Link>
-          {/* <a href="https://www.flaticon.com/free-icons/about" title="about icons">About icons created by srip - Flaticon</a> */}
           <Link
             onClick={OpenMenuProjects}
             className="menuContentContainer"
@@ -140,13 +141,9 @@ const Layout = () => {
           >
             Projects
           </Link>
-          {/* <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">Folder icons created by Freepik - Flaticon</a> */}
           <a className="menuContentContainer" href="https://www.linkedin.com/in/konrad-hernandez/" target="_blank" rel="noreferrer">LinkedIn</a>
-          {/* <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> */}
           <a className="menuContentContainer" href="https://github.com/konradmh3" target="_blank" rel="noreferrer">Github</a>
-          {/* <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a> */}
           <a className="menuContentContainer" href={require("../assets/Resume_Konrad_Hernandez.pdf")} target="_blank" rel="noreferrer">Resume</a>
-          {/* <a href="https://www.flaticon.com/free-icons/clip" title="clip icons">Clip icons created by Freepik - Flaticon</a> */}
         </motion.div>
         <motion.div
           initial={{ height: 0 }}
@@ -172,4 +169,4 @@ const Layout = () => {
     </>
   );
 };
-export default Layout;
+export default (Layout);
