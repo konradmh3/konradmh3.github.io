@@ -78,7 +78,8 @@
 }
 
 .animateHoverContent {
-  background-color: rgb(167, 167, 167);
+  background-color: rgba(122, 122, 122, 0.144);
+  backdrop-filter: blur(8px);
   position: absolute;
   top: 0;
   left: 0;
