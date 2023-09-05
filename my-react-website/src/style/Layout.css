@@ -70,6 +70,9 @@
     /* add no wrap so that text wont return*/
     white-space: nowrap;
     padding-left: 1%;
+        border-style: solid; 
+    border-color: black;
+     border-radius: 15px;
 }
 
 .linkContainer{
@@ -77,7 +80,11 @@
     left: 5%;
     display: flex;
     /* width: 90vw; */
-    background-color: rgb(85, 85, 85);
+    background-color: rgba(85, 85, 85, 0);
+    /* add solid black borer */
+    /* border-style: solid; */
+    /* border-color: black; */
+    /* border-radius: 15px; */
     font-family: 'Chakra Petch', sans-serif;
     overflow: hidden;
     

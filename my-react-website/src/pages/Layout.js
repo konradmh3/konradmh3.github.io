@@ -189,7 +189,7 @@ const Layout = () => {
         </motion.div>
         <motion.div
           style={{ top: "75%" }}
-          initial={{ width: "0vw" }}
+          initial={{ width: "0vw"}}
           animate={{ width: menuIsOpen ? "90vw" : "0vw" }}
           transition={{
             delay: menuIsOpen ? 2 : 0.05,
