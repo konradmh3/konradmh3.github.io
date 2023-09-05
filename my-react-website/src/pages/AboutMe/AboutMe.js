@@ -35,6 +35,9 @@ const AboutMe = () => {
       <AboutMeDescription ref={aboutMeRefs[6]} title="ASI" text="Associated Students Inc. for one year."/>
       <CodeSubtitles titleClass="Grind" state="0" />
 
+      
+
+
     </>
     );
   };

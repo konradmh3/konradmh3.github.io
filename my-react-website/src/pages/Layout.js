@@ -4,6 +4,7 @@ import "../style/Fonts.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import CodeSubtitles from "./AboutMe/CodeSubtitles";
+import NewTextAnimation from "./AboutMe/NewTextAnimation";
 
 const Layout = () => {
   // here lets add a state var to save if menu is open
