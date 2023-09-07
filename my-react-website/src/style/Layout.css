@@ -49,12 +49,15 @@
     top: 0;
     height: 100vh;
     width: 100vw;
+    /* transform: rotate(180deg); */
+    /* we can use the above rotate trick in order to make the extra details portion of the menu */
 }
 
 .menuSection {
     width: 25%;
     background-color: rgb(98, 169, 98);
     overflow: hidden;
+    /* rotate this entire div 180 */
 }
 
 .link{
