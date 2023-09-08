@@ -10,7 +10,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const AboutMeDescription = (props, ref) => {
-  const isInView = useInView(ref, { once: true, amount: 1 });
+  const isInView = useInView(ref, { once: true, amount: .1 });
   
 
 
