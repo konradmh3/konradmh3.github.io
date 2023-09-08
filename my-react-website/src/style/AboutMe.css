@@ -111,19 +111,12 @@
 }
 
 .detailSection {
+  position: absolute;
   width: 25%;
   background-color: rgb(198, 183, 152);
   overflow: hidden;
   /* rotate this entire div 180 */
 }
 
-.closeDetailed {
-    position: fixed;
-    top: 75%;
-    left: 50%;
-    z-index: 3;
-    background-color: red;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-}
+
+

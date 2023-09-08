@@ -1,14 +1,25 @@
 import "../../style/Page.css";
 import "../../style/AboutMe.css";
-import React from "react";
+import React, { useEffect } from "react";
 import NewTextAnimation from "./NewTextAnimation";
 import AboutMeDescription from "./AboutMeDescription";
 import CodeSubtitles from "./CodeSubtitles";
 import { useRef } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 const AboutMe = () => {
   const aboutMeRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
+  const [moreDetailsOpen, setMoreDetailsOpen] = useState(false);
+
+
+  const closeMoreDetails = () => {
+    setMoreDetailsOpen(false);
+  }
+
+  
+
 
   
     return (
@@ -18,22 +29,33 @@ const AboutMe = () => {
       </div>
       
       <CodeSubtitles titleClass="AboutMe"  prop1="yeah" propText='"YourBoi"' state="1" />
-      <AboutMeDescription ref={aboutMeRefs[0]} title="Home Town" text="My home town is Long Beach, California! I was born here and have lived here for 23 years now!" />
-      <AboutMeDescription ref={aboutMeRefs[1]} title="Schooling" text="I went to school at Long Beach State to recieve my Bachelors in Computer Science as well as a minor in Mathematics." />
-      <AboutMeDescription ref={aboutMeRefs[2]} title="Extracurriculars" text="I like doing things and other things and boom! More things!" />
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[0]} title="Home Town" text="My home town is Long Beach, California! I was born here and have lived here for 23 years now!" />
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[1]} title="Schooling" text="I went to school at Long Beach State to recieve my Bachelors in Computer Science as well as a minor in Mathematics." />
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[2]} title="Extracurriculars" text="I like doing things and other things and boom! More things!" />
       <CodeSubtitles titleClass="AboutMe" state="0" />
 
 
       <CodeSubtitles titleClass="Grind"  prop1="projects" propText='"Mid"' state="1" />
-      <AboutMeDescription ref={aboutMeRefs[3]} title="FoodDood" text="FooDood is a mobile app built with react native to help local businesses grow and consumers eat!"/>
-      <AboutMeDescription ref={aboutMeRefs[4]} title="This Website!" text="My personal website is built with react, framer motion for animation!" />
-      <AboutMeDescription ref={aboutMeRefs[5]} title="Stick" text="Stick is a 2D platformer built with unity!" />
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[3]} title="FoodDood" text="FooDood is a mobile app built with react native to help local businesses grow and consumers eat!"/>
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[4]} title="This Website!" text="My personal website is built with react, framer motion for animation!" />
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[5]} title="Stick" text="Stick is a 2D platformer built with unity!" />
       <CodeSubtitles titleClass="Grind" state="0" />
 
 
       <CodeSubtitles titleClass="Grind"  prop1="work" propText='"Experience"' state="1" />
-      <AboutMeDescription ref={aboutMeRefs[6]} title="ASI" text="Associated Students Inc. for one year."/>
+      <AboutMeDescription setMoreDetailsOpen={setMoreDetailsOpen} ref={aboutMeRefs[6]} title="ASI" text="Associated Students Inc. for one year."/>
       <CodeSubtitles titleClass="Grind" state="0" />
+
+
+
+      <motion.div style={{ zIndex: 4}} animate={{display: moreDetailsOpen ? "flex":"none"}} transition={{delay: moreDetailsOpen? 0:1.75}} className="detailContainer">
+      <motion.div style={{left: "0%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}} transition={{duration: 1, delay:0}} className="detailSection"><motion.button onClick={closeMoreDetails} className="closeButton">X</motion.button></motion.div>
+      <motion.div style={{left: "25%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}   transition={{duration: 1, delay:0.25}} className="detailSection"></motion.div>
+      <motion.div style={{left: "50%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}  transition={{duration: 1, delay:0.50}} className="detailSection"></motion.div>
+      <motion.div style={{left: "75%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}  transition={{duration: 1, delay:0.75}} className="detailSection">
+        
+      </motion.div>
+      </motion.div>
 
       
 
