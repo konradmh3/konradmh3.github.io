@@ -4,21 +4,17 @@ import React from "react";
 import "../../style/AboutMe.css";
 import { useInView } from "framer-motion";
 import { forwardRef } from "react";
-import { useState } from "react";
 
 
 import { motion } from "framer-motion";
 
 const AboutMeDescription = (props, ref) => {
   const isInView = useInView(ref, { once: true, amount: .1 });
-  
 
 
-  
-// create more info function to handle the animation of the div    
-// count to see how many times the div has been clicked for testing
   const moreInfo = () => {
     props.setMoreDetailsOpen(!props.moreDetailsOpen);
+    props.setClickedIndex(props.index);
   };
 
 
@@ -39,6 +35,7 @@ const AboutMeDescription = (props, ref) => {
         <div className="aboutMeDescriptionText">{props.text}</div>
       </motion.div>
     </div>
+
     </>
   );
 };
