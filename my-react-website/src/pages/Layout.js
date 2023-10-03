@@ -15,6 +15,7 @@ const Layout = () => {
   const [titleMenuColor, setTitleMenuColor] = useState("rgb(255,255,255)");
   const [currentPage, setCurrentPage] = useState(useLocation().pathname);
 
+
   useEffect(() => {
     if (menuIsOpen) {
       setNameDuration(0);
@@ -235,7 +236,7 @@ const Layout = () => {
           className="menuSection"
         ></motion.div>
       </div>
-
+      
       <Outlet />
     </>
   );

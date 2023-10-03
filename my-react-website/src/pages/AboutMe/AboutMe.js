@@ -18,6 +18,7 @@ const AboutMe = () => {
   const [clickedIndex, setClickedIndex] = useState(null);
 
 
+
   // TO ASSIGN THE CLICKED INDEX TO THE STATE WE WILL NEED TO PASS A FUNCTION TO THE ABOUTMEDESCRIPTION COMPONENT THAT WILL SET THE STATE
   // THIS FUNCTION WILL BE CALLED WHEN THE ABOUTMEDESCRIPTION COMPONENT IS CLICKED
   useEffect(() => {
@@ -27,10 +28,7 @@ const AboutMe = () => {
   , [clickedIndex]);
 
 
-  const closeMoreDetails = () => {
-    setMoreDetailsOpen(false);
-    document.body.style.overflow = "auto";  
-  }
+
 
   
 
@@ -64,9 +62,9 @@ const AboutMe = () => {
 
       <motion.div style={{ zIndex: 4}} animate={{display: moreDetailsOpen ? "flex":"none"}} transition={{delay: moreDetailsOpen? 0:1.75}} className="detailContainer">
       <motion.div style={{left: "0%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}} transition={{duration: 1, delay:0}} className="detailSection"></motion.div>
-      <motion.div style={{left: "25%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}   transition={{duration: 1, delay:0.25}} className="detailSection"><motion.button onClick={closeMoreDetails} className="closeButton">X</motion.button></motion.div>
-      <motion.div style={{left: "50%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}  transition={{duration: 1, delay:0.50}} className="detailSection"></motion.div>
-      <motion.div style={{left: "75%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}  transition={{duration: 1, delay:0.75}} className="detailSection"></motion.div>
+      <motion.div style={{left: "25%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}transition={{duration: 1, delay:0.25}} className="detailSection"></motion.div>
+      <motion.div style={{left: "50%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}transition={{duration: 1, delay:0.50}} className="detailSection"></motion.div>
+      <motion.div style={{left: "75%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}transition={{duration: 1, delay:0.75}} className="detailSection"></motion.div>
       </motion.div>
 
       {/* i could also insert a new component here that will handle the rendering of the details depending on which one is clicked, the tricky part is how to know which one is clicked
@@ -76,7 +74,7 @@ const AboutMe = () => {
         */}
 
       <motion.div animate={{display: moreDetailsOpen ? "block":"none"}} transition={{delay: moreDetailsOpen? 1.75:0}}>
-        <AbtMeXtraDetails index={clickedIndex} />
+        <AbtMeXtraDetails setMoreDetailsOpen={setMoreDetailsOpen} index={clickedIndex} />
       </motion.div>
 
 
