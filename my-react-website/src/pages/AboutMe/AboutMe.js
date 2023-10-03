@@ -60,7 +60,7 @@ const AboutMe = () => {
 
 
 
-      <motion.div style={{ zIndex: 4}} animate={{display: moreDetailsOpen ? "flex":"none"}} transition={{delay: moreDetailsOpen? 0:1.75}} className="detailContainer">
+      <motion.div style={{ zIndex: 4}} initial={{display: "none"}} animate={{display: moreDetailsOpen ? "flex":"none"}} transition={{delay: moreDetailsOpen? 0:1.75}} className="detailContainer">
       <motion.div style={{left: "0%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}} transition={{duration: 1, delay:0}} className="detailSection"></motion.div>
       <motion.div style={{left: "25%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}transition={{duration: 1, delay:0.25}} className="detailSection"></motion.div>
       <motion.div style={{left: "50%", }} animate={{height: moreDetailsOpen ? "100%": "0%"}}transition={{duration: 1, delay:0.50}} className="detailSection"></motion.div>
