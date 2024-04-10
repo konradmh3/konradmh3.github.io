@@ -199,7 +199,7 @@ const Layout = () => {
         >
           <a
             className="link"
-            href={require("../assets/Resume_Konrad_Hernandez.pdf")}
+            href={require("../assets/Resume_Konrad_Hernandez1.pdf")}
             target="_blank"
             rel="noreferrer"
           >
