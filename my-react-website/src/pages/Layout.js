@@ -14,6 +14,7 @@ const Layout = () => {
   const [zIndexOfMenu, setZIndexOfMenu] = useState(2);
   const [titleMenuColor, setTitleMenuColor] = useState("rgb(255,255,255)");
   const [currentPage, setCurrentPage] = useState(useLocation().pathname);
+  const [portfolioPosition, setPortfolioPosition] = useState(0)
 
 
   useEffect(() => {
@@ -27,6 +28,7 @@ const Layout = () => {
       setTitleMenuColor("rgb(0, 0, 0)");
       document.body.style.overflow = "hidden";
     } else {
+      setPortfolioPosition(0)
       setNameDuration(1);
       setNameDelay(1);
       setMenuSectionHeight("0vh");
@@ -47,8 +49,20 @@ const Layout = () => {
       // setCurrentPage(useLocation().pathname);
       // console.log(useLocation().pathname);
     }
+    console.log(window.scrollY)
     console.log(menuSectionHeight);
   }, [menuIsOpen, currentPage, menuSectionHeight]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      //perform action on scroll
+      setPortfolioPosition(-1000)
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
 
   function OpenMenu() {
     setMenuIsOpen((menuIsOpen) => !menuIsOpen);
@@ -70,6 +84,7 @@ const Layout = () => {
     // resets page to top when menu is closed
   }
 
+
   return (
     <>
       <div className="top-header-container">
@@ -81,10 +96,16 @@ const Layout = () => {
         >
           <motion.div
             initial={{ x: -1000 }}
-            animate={{ x: 0 }}
+            animate={{ x: portfolioPosition }}
             transition={{ duration: 1, delay: 0.5 }}
             id="title"
-          >
+          > 
+          {/* to change the opacity of title div on scroll here are the following steps:
+          1. add a state var to save the opacity of the title div
+          2. add a useEffect to change the opacity of the title div based on the scroll position
+          3. add a scroll event listener to the window object to update the state var based on the scroll position
+          4. add a cleanup function to remove the event listener when the component is unmounted
+          */}
             <span style={{ color: "grey" }}>&lt;</span>
             <span style={{color: "rgb(21, 110, 173)"}}>h1</span>
             <span style={{ color: "grey" }}>&gt;</span>
