@@ -15,6 +15,7 @@ const AboutMeDescription = (props, ref) => {
   const moreInfo = () => {
     props.setMoreDetailsOpen(!props.moreDetailsOpen);
     props.setClickedIndex(props.index);
+    props.setDetailBackColor(props.backColor);
   };
 
 

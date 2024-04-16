@@ -63,11 +63,22 @@ const AbtMeXtraDetails = (props) => {
             )
         case 5:
             return (
+                // CODE BELOW FOR STICK GAME
                 <>
                 <div className="extraDetails">
-                    {props.index}
-                    <button onClick={closeMoreDetails}>X</button>
+                    <div className="extraDetailsContent">
+
+                    {/* {props.index} */}
+                    
                     <p>Stick is a 2D platformer built with unity!</p>
+                    {/* 
+                    lets insert a LOCAL video clip here of me playing https://youtu.be/Ls3ZGHq0C3c
+                    and lets also make sure its compatible with all browsers:
+                    */}
+                    <iframe style={{height:"40vh"}} src="https://www.youtube.com/embed/Ls3ZGHq0C3c?si=4O_JOzaibWULeWYv&amp;autoplay=1&loop=10&modestbranding=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    {/* lets fix the above line's styling so the styling is compatible with react syntax: */}
+                    <button className='closeDetails' onClick={closeMoreDetails}>Done</button>
+                    </div>
                 </div>
                 </>
             )
