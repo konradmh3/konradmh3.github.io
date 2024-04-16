@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa8f16c8.css",
-    "main.js": "/static/js/main.d8683906.js",
+    "main.css": "/static/css/main.edba1467.css",
+    "main.js": "/static/js/main.b47ecc62.js",
     "static/media/Resume_Konrad_Hernandez1.pdf": "/static/media/Resume_Konrad_Hernandez1.d3d56c84fe27e7115684.pdf",
     "static/media/fooDoodTitle.png": "/static/media/fooDoodTitle.29dd8ee72a4d56d8493b.png",
     "index.html": "/index.html",
-    "main.fa8f16c8.css.map": "/static/css/main.fa8f16c8.css.map",
-    "main.d8683906.js.map": "/static/js/main.d8683906.js.map"
+    "main.edba1467.css.map": "/static/css/main.edba1467.css.map",
+    "main.b47ecc62.js.map": "/static/js/main.b47ecc62.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa8f16c8.css",
-    "static/js/main.d8683906.js"
+    "static/css/main.edba1467.css",
+    "static/js/main.b47ecc62.js"
   ]
 }
