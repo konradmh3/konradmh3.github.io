@@ -39,7 +39,7 @@ const AboutMe = () => {
     return (
     <>
       <div className="aboutMeTitleContainer">
-        <NewTextAnimation lttag1={<span style={{color:"grey"}}>&lt;</span>} sth1tag={<span style={{color: "rgb(21, 110, 173)"}}>h1</span>} gttag1={<span style={{color:"grey"}}>&gt;</span>} text="Hello! My name is Konrad!...This website is a work in progress. Please ignore the unfinished or mispelled content :)" lttag2={<span style={{color:"grey"}}>&lt;/</span>} endh1tag={<span style={{color: "rgb(21, 110, 173)"}}>h1</span>} gttag2={<span style={{color:"grey"}}>&gt;</span>} />
+        <NewTextAnimation lttag1={<span style={{color:"grey"}}>&lt;</span>} sth1tag={<span style={{color: "rgb(21, 110, 173)"}}>h1</span>} gttag1={<span style={{color:"grey"}}>&gt;</span>} text="Hello! My name is Konrad!...This website is a work in progress. Please ignore any unfinished sections or mispelled words :)" lttag2={<span style={{color:"grey"}}>&lt;/</span>} endh1tag={<span style={{color: "rgb(21, 110, 173)"}}>h1</span>} gttag2={<span style={{color:"grey"}}>&gt;</span>} />
       </div>
       
       <CodeSubtitles titleClass="AboutMe"  prop1="yeah" propText='"YourBoi"' state="1" />
