@@ -43,7 +43,7 @@ const AboutMe = () => {
       </div>
       
       <CodeSubtitles titleClass="AboutMe"  prop1="yeah" propText='"YourBoi"' state="1" />
-      <AboutMeDescription setDetailBackColor={setDetailBackColor} backColor={'pink'} setClickedIndex={setClickedIndex} setMoreDetailsOpen={setMoreDetailsOpen} index={0} ref={aboutMeRefs[0]} title="Home Town" text="My home town is Long Beach, California! I was born here and have lived here for 23 years now!" />
+      <AboutMeDescription setDetailBackColor={setDetailBackColor} backColor={'brown'} setClickedIndex={setClickedIndex} setMoreDetailsOpen={setMoreDetailsOpen} index={0} ref={aboutMeRefs[0]} title="Home Town" text="My home town is Long Beach, California! I was born here and have lived here for 23 years now!" />
       <AboutMeDescription setDetailBackColor={setDetailBackColor} backColor={'yellow'} setClickedIndex={setClickedIndex} setMoreDetailsOpen={setMoreDetailsOpen} index={1} ref={aboutMeRefs[1]} title="Schooling" text="I went to school at Long Beach State to recieve my Bachelors in Computer Science as well as a minor in Mathematics." />
       <AboutMeDescription setDetailBackColor={setDetailBackColor} backColor={'lightgray'} setClickedIndex={setClickedIndex} setMoreDetailsOpen={setMoreDetailsOpen} index={2} ref={aboutMeRefs[2]} title="Extracurriculars" text="I like doing things and other things and boom! More things!" />
       <CodeSubtitles titleClass="AboutMe" state="0" />
