@@ -51,13 +51,13 @@ const AbtMeXtraDetails = (props) => {
                 <div className="extraDetails">
                     <Container>
                         <Row className="titleRow">
-                            <Col xs={2} lg={4} className="titleCol">
+                            <Col xs={0} lg={2} className="titleCol">
                             <Hidden xs sm md>One of three columns</Hidden>
                             </Col>
-                            <Col xs={8} lg={4} className="titleCol">
+                            <Col xs={12} lg={8} className="titleCol">
                             <img src={doodLogo} alt="foodood" className="doodImage"/>
                             </Col>
-                            <Col xs={2} lg={4} className="titleCol">
+                            <Col xs={0} lg={2} className="titleCol">
                             <Hidden xs sm md>One of three columns</Hidden>
                             </Col>
                         </Row>
