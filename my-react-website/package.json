@@ -9,6 +9,7 @@
     "framer-motion": "^10.12.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-grid-system": "^8.2.0",
     "react-scripts": "^5.0.1",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"

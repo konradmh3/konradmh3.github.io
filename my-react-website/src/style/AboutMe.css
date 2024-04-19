@@ -117,48 +117,7 @@
   /* rotate this entire div 180 */
 }
 
-.extraDetails{
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  color: "black";
-  z-index: 5;
-  width: 100vw;
-  height: 100vh;
-  /* add styling so everything within this div is centered 
-  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 
-.extraDetailsContent{
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  padding: 2%;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  
-}
-
-.closeDetails{
-  background-color: lightcoral;
-  border-radius: 10px;
-  border: 0cap;
-  /* add on hover select mouse */
-  cursor: pointer;
-  /* move to top right */
-  width: 80px;
-  align-self: center;
-  margin-top: 5%;
-  
-}
 
 /* this is a test of githubs activity feature */
 /* git remote set-url origin https://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@github.com/konradmh3/reactBio.git */

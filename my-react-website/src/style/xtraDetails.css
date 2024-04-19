@@ -1,0 +1,45 @@
+.extraDetails{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    color: "black";
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    /* add styling so everything within this div is centered 
+    */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+      flex-direction: column;
+  
+  }
+  
+  .closeDetails{
+    background-color: lightcoral;
+    border-radius: 10px;
+    border: 0cap;
+    /* add on hover select mouse */
+    cursor: pointer;
+    /* move to top right */
+    width: 80px;
+    align-self: center;
+    
+  }
+
+
+
+  .titleRow{
+    padding-top: 1%;
+  }
+
+  .titleCol{
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doodImage{
+    width: 100%;
+  }

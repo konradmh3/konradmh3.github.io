@@ -1,5 +1,9 @@
 // imports 
+import "../../style/xtraDetails.css";
+import doodLogo from "../../assets/fooDoodTitle.png";
 import React from 'react';
+import { Container, Row, Col, Visible, Hidden } from 'react-grid-system';
+
 
 
 const AbtMeXtraDetails = (props) => {
@@ -45,9 +49,21 @@ const AbtMeXtraDetails = (props) => {
             return (
                 <>
                 <div className="extraDetails">
-                    {props.index}
-                    <button onClick={closeMoreDetails}>X</button>
+                    <Container>
+                        <Row className="titleRow">
+                            <Col xs={2} lg={4} className="titleCol">
+                            <Hidden xs sm md>One of three columns</Hidden>
+                            </Col>
+                            <Col xs={8} lg={4} className="titleCol">
+                            <img src={doodLogo} alt="foodood" className="doodImage"/>
+                            </Col>
+                            <Col xs={2} lg={4} className="titleCol">
+                            <Hidden xs sm md>One of three columns</Hidden>
+                            </Col>
+                        </Row>
+                        </Container>
                     <p>FooDood is a mobile app built with react native to help local businesses grow and consumers eat!</p>
+                    <button className='closeDetails' onClick={closeMoreDetails}>Done</button>
                 </div>
                 </>
             )
@@ -66,7 +82,6 @@ const AbtMeXtraDetails = (props) => {
                 // CODE BELOW FOR STICK GAME
                 <>
                 <div className="extraDetails">
-                    <div className="extraDetailsContent">
 
                     {/* {props.index} */}
                     
@@ -78,7 +93,6 @@ const AbtMeXtraDetails = (props) => {
                     <iframe style={{height:"40vh"}} src="https://www.youtube.com/embed/Ls3ZGHq0C3c?si=4O_JOzaibWULeWYv&amp;autoplay=1&loop=10&modestbranding=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     {/* lets fix the above line's styling so the styling is compatible with react syntax: */}
                     <button className='closeDetails' onClick={closeMoreDetails}>Done</button>
-                    </div>
                 </div>
                 </>
             )
