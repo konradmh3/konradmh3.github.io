@@ -3,6 +3,7 @@ import "../../style/xtraDetails.css";
 import doodLogo from "../../assets/fooDoodTitle.png";
 import React from 'react';
 import { Container, Row, Col, Visible, Hidden } from 'react-grid-system';
+import FirstCanvas from "../../scenes/FirstScene";
 
 
 
@@ -51,17 +52,21 @@ const AbtMeXtraDetails = (props) => {
                 <div className="extraDetails">
                     <Container>
                         <Row className="titleRow">
-                            <Col xs={0} lg={2} className="titleCol">
-                            <Hidden xs sm md>One of three columns</Hidden>
+                            <Col lg={2} className="titleCol">
+                                <Hidden xs sm md>
+                                    <FirstCanvas />
+                                </Hidden>
                             </Col>
                             <Col xs={12} lg={8} className="titleCol">
-                            <img src={doodLogo} alt="foodood" className="doodImage"/>
+                                <img src={doodLogo} alt="foodood" className="doodImage"/>
                             </Col>
-                            <Col xs={0} lg={2} className="titleCol">
-                            <Hidden xs sm md>One of three columns</Hidden>
+                            <Col xs={12} lg={2} className="titleCol">
+                                <FirstCanvas />
                             </Col>
                         </Row>
-                        </Container>
+                    </Container>
+                    {/* <FirstCanvas /> */}
+
                     <p>FooDood is a mobile app built with react native to help local businesses grow and consumers eat!</p>
                     <button className='closeDetails' onClick={closeMoreDetails}>Done</button>
                 </div>
