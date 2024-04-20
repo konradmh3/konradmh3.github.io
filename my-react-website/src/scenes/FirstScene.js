@@ -9,6 +9,8 @@ const FirstScene = () => {
         const time = clock.getElapsedTime();
         boxMesh.current.rotation.x = time;
         boxMesh.current.rotation.y = time;
+        // boxMesh.current.rotation.x = 10;
+
     })
     
     return (

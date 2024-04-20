@@ -61,10 +61,19 @@ const AbtMeXtraDetails = (props) => {
                                 <img src={doodLogo} alt="foodood" className="doodImage"/>
                             </Col>
                             <Col xs={12} lg={2} className="titleCol">
-                                <FirstCanvas />
+                                <Hidden xs sm md>
+                                    <FirstCanvas />
+                                </Hidden>
                             </Col>
                         </Row>
+                        
                     </Container>
+
+                    <Visible xs sm md>
+                            <FirstCanvas />
+                    </Visible>
+
+                           
                     {/* <FirstCanvas /> */}
 
                     <p>FooDood is a mobile app built with react native to help local businesses grow and consumers eat!</p>

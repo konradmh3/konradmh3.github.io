@@ -15,6 +15,8 @@ const NewTextAnimation = ( props ) => {
             strings: props.text,
             autoStart: true,
             loop: true,
+            delay: 25,
+            deleteSpeed: 20,
         }}
         />
         {props.lttag2}
