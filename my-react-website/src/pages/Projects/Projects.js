@@ -77,7 +77,7 @@ const Projects = () => {
         </motion.div>
       </motion.div>
       {/* ^^ABSOLUTE^^ */}
-      <ProjectsNew ref={projectRefs[0]} backgroundColor="	#e20d0d" projectName="FooDood"/>
+      <ProjectsNew ref={projectRefs[0]} backgroundColor="blue" projectName="FooDood"/>
       <ProjectsNew ref={projectRefs[1]} backgroundColor="#f0d817" projectName="none"/>
       <ProjectsNew ref={projectRefs[2]} backgroundColor="#3eb308" projectName="none"/>
     </>

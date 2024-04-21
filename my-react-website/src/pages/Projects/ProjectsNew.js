@@ -10,6 +10,7 @@ const ProjectsNew = (props, ref) => {
 return (<>
     <motion.div className="fatherContainer" ref={ref} style={{backgroundColor: props.backgroundColor}}>
       {/* {project1} */}
+
       
     </motion.div>
     </>);
