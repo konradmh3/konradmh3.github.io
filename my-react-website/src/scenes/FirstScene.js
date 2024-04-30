@@ -24,10 +24,11 @@ const FirstScene = () => {
 
 const FirstCanvas = () => {
     return (
-        <Canvas className="boxCanvas">
+        <Canvas>
             <FirstScene />            
             <ambientLight intensity={0.1} />
             <directionalLight position={[0, 0, 5]} />
+            {/* camera */}
         </Canvas>
     )
 
