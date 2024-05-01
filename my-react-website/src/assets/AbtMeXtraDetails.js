@@ -29,62 +29,62 @@ const AbtMeXtraDetails = (props) => {
       );
     case 1:
       return (
-        <>
-          <div className="extraDetails">
-            {props.index}
-            <button onClick={closeMoreDetails}>X</button>
+         <>
+    {/*        <div className="extraDetails">
+             {props.index}
+             <button onClick={closeMoreDetails}>X</button>
             <p>
-              I went to school at Long Beach State to recieve my Bachelors in
-              Computer Science as well as a minor in Mathematics.
-            </p>
-          </div>
-        </>
-      );
-    case 2:
-      return (
-        <>
-          <div className="extraDetails">
-            {props.index}
-            <button onClick={closeMoreDetails}>X</button>
-            <p>I like doing things and other things and boom! More things!</p>
-          </div>
-        </>
-      );
-    case 3:
-      return (
-        <>
-          <div className="extraDetails">
-            <Container>
-              <Row className="titleRow">
-                <Col lg={2} className="titleCol">
-                  <Hidden xs sm md>
-                    <BurgerCanvas />
-                  </Hidden>
-                </Col>
-                <Col xs={12} lg={8} className="titleCol">
-                  <img src={doodLogo} alt="foodood" className="doodImage" />
-                </Col>
-                <Col xs={12} lg={2} className="titleCol">
-                  <Hidden xs sm md>
-                    <BurgerCanvas />
-                  </Hidden>
-                </Col>
-              </Row>
-            </Container>
-            <Visible xs sm md>
-              <BurgerCanvas />
-            </Visible>
-            {/* <FirstCanvas /> */}
+               I went to school at Long Beach State to recieve my Bachelors in
+               Computer Science as well as a minor in Mathematics.
+             </p>
+           </div> */}
+         </>
+    //   );
+    // case 2:
+    //   return (
+    //     <>
+    //       <div className="extraDetails">
+    //         {props.index}
+    //         <button onClick={closeMoreDetails}>X</button>
+    //         <p>I like doing things and other things and boom! More things!</p>
+    //       </div>
+    //     </>
+    //   );
+    // case 3:
+    //   return (
+    //     <>
+    //       <div className="extraDetails">
+    //         <Container>
+    //           <Row className="titleRow">
+    //             <Col lg={2} className="titleCol">
+    //               <Hidden xs sm md>
+    //                 <BurgerCanvas />
+    //               </Hidden>
+    //             </Col>
+    //             <Col xs={12} lg={8} className="titleCol">
+    //               <img src={doodLogo} alt="foodood" className="doodImage" />
+    //             </Col>
+    //             <Col xs={12} lg={2} className="titleCol">
+    //               <Hidden xs sm md>
+    //                 <BurgerCanvas />
+    //               </Hidden>
+    //             </Col>
+    //           </Row>
+    //         </Container>
+    //         <Visible xs sm md>
+    //           <BurgerCanvas />
+    //         </Visible>
+    //         {/* <FirstCanvas /> */}
 
-            <p>
-              FooDood is a mobile app built with react native to help local
-              businesses grow and consumers eat!
-            </p>
-            <button className="closeDetails" onClick={closeMoreDetails}>
-              Done
-            </button>
-          </div>
-        </>
+    //         <p>
+    //           FooDood is a mobile app built with react native to help local
+    //           businesses grow and consumers eat!
+    //         </p>
+    //         <button className="closeDetails" onClick={closeMoreDetails}>
+    //           Done
+    //         </button>
+    //       </div>
+    //     </>
       );
     case 4:
       return (

@@ -160,9 +160,9 @@ const Layout = () => {
           }}
           className="linkContainer"
         >
-          <Link onClick={OpenMenuProjects} className="link" to="projects">
+          <div className="link" to="projects">
             Projects
-          </Link>
+          </div>
         </motion.div>
         <motion.div
           style={{ top: "45%" }}
@@ -251,8 +251,8 @@ const Layout = () => {
           className="menuSection"
         ></motion.div>
       </div>
-      
-      <Outlet />
+  
+      <Outlet/>
     </>
   );
 };
