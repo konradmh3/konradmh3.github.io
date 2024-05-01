@@ -17,6 +17,9 @@ const Foodood = () => {
         }
     }, [])
 
+    // Found a different solution then the above but might want to employ this solution and test which is better
+
+
     return (
         <div className='foodoodContainer'>
             <BurgerCanvas />
