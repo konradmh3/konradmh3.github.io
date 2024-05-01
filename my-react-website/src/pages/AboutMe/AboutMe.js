@@ -27,13 +27,6 @@ const AboutMe = () => {
   const [clickedIndex, setClickedIndex] = useState(null);
   const [detailBackColor, setDetailBackColor] = useState(null);
   
-  
-  // const history = createBrowserHistory();
-  // history.push('/');
-  
-  // the above is to test on safari with createBrowserHistory
-  // The above solution worked usually wouldnt be needed but needed for safari!
-
   // TO ASSIGN THE CLICKED INDEX TO THE STATE WE WILL NEED TO PASS A FUNCTION TO THE ABOUTMEDESCRIPTION COMPONENT THAT WILL SET THE STATE
   // THIS FUNCTION WILL BE CALLED WHEN THE ABOUTMEDESCRIPTION COMPONENT IS CLICKED
   useEffect(() => {

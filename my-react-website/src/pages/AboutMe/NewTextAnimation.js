@@ -19,9 +19,12 @@ const NewTextAnimation = ( props ) => {
             deleteSpeed: 20,
         }}
         />
-        {props.lttag2}
-        {props.endh1tag}
-        {props.gttag2}
+        <div className="secondH1Tag">
+            {props.lttag2}
+            {props.endh1tag}
+            {props.gttag2}
+        </div>
+        
         </motion.div>
     );
 };

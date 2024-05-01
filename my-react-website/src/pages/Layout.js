@@ -14,8 +14,7 @@ const Layout = () => {
   const [zIndexOfMenu, setZIndexOfMenu] = useState(2);
   const [titleMenuColor, setTitleMenuColor] = useState("rgb(255,255,255)");
   const [currentPage, setCurrentPage] = useState(useLocation().pathname);
-  const [portfolioPosition, setPortfolioPosition] = useState(0)
-
+  const [portfolioPosition, setPortfolioPosition] = useState(0);
 
   useEffect(() => {
     if (menuIsOpen) {
@@ -28,7 +27,7 @@ const Layout = () => {
       setTitleMenuColor("rgb(0, 0, 0)");
       document.body.style.overflow = "hidden";
     } else {
-      setPortfolioPosition(0)
+      setPortfolioPosition(0);
       setNameDuration(1);
       setNameDelay(1);
       setMenuSectionHeight("0vh");
@@ -49,20 +48,27 @@ const Layout = () => {
       // setCurrentPage(useLocation().pathname);
       // console.log(useLocation().pathname);
     }
-    console.log(window.scrollY)
+    console.log(window.scrollY);
     console.log(menuSectionHeight);
   }, [menuIsOpen, currentPage, menuSectionHeight]);
 
   useEffect(() => {
     const handleScroll = () => {
       //perform action on scroll
-      setPortfolioPosition(-1000)
+      // add a case to check if the page is at the top and if so set the title powition to 0
+      if (window.scrollY === 0) {
+        setPortfolioPosition(0);
+      } else {
+        setPortfolioPosition(-1000);
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [])
+  }, []);
 
   function OpenMenu() {
     setMenuIsOpen((menuIsOpen) => !menuIsOpen);
@@ -84,7 +90,6 @@ const Layout = () => {
     // resets page to top when menu is closed
   }
 
-
   return (
     <>
       <div className="top-header-container">
@@ -99,13 +104,13 @@ const Layout = () => {
             animate={{ x: portfolioPosition }}
             transition={{ duration: 1, delay: 0.5 }}
             id="title"
-          > 
+          >
             <span style={{ color: "grey" }}>&lt;</span>
-            <span style={{color: "rgb(21, 110, 173)"}}>h1</span>
+            <span style={{ color: "rgb(21, 110, 173)" }}>h1</span>
             <span style={{ color: "grey" }}>&gt;</span>
             Portfolio
             <span style={{ color: "grey" }}>&lt;/</span>
-            <span style={{color: "rgb(21, 110, 173)"}}>h1</span>
+            <span style={{ color: "rgb(21, 110, 173)" }}>h1</span>
             <span style={{ color: "grey" }}>&gt;</span>
           </motion.div>
         </motion.div>
@@ -132,8 +137,6 @@ const Layout = () => {
           ></motion.div>
         </motion.div>
       </div>
-
-
 
       <div style={{ zIndex: zIndexOfMenu }} className="menuContainer">
         <motion.div
@@ -204,7 +207,7 @@ const Layout = () => {
         </motion.div>
         <motion.div
           style={{ top: "75%" }}
-          initial={{ width: "0vw"}}
+          initial={{ width: "0vw" }}
           animate={{ width: menuIsOpen ? "90vw" : "0vw" }}
           transition={{
             delay: menuIsOpen ? 2 : 0.05,
@@ -221,10 +224,6 @@ const Layout = () => {
             Resume
           </a>
         </motion.div>
-
-
-
-
 
         <motion.div
           initial={{ height: 0 }}
@@ -251,8 +250,8 @@ const Layout = () => {
           className="menuSection"
         ></motion.div>
       </div>
-  
-      <Outlet/>
+
+      <Outlet />
     </>
   );
 };

@@ -117,6 +117,9 @@
   /* rotate this entire div 180 */
 }
 
+.secondH1Tag{
+  align-self: flex-end;
+}
 
 
 /* this is a test of githubs activity feature */
