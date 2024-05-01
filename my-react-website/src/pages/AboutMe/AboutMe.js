@@ -9,6 +9,7 @@ import { useRef } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 const AboutMe = () => {
   const aboutMeRefs = [
@@ -25,6 +26,11 @@ const AboutMe = () => {
   // this will be passed to the new component that will handle the rendering of the details
   const [clickedIndex, setClickedIndex] = useState(null);
   const [detailBackColor, setDetailBackColor] = useState(null);
+  
+  
+  const history = createBrowserHistory();
+  history.push('/');
+  // the above is to test on safari with createBrowserHistory
 
   // TO ASSIGN THE CLICKED INDEX TO THE STATE WE WILL NEED TO PASS A FUNCTION TO THE ABOUTMEDESCRIPTION COMPONENT THAT WILL SET THE STATE
   // THIS FUNCTION WILL BE CALLED WHEN THE ABOUTMEDESCRIPTION COMPONENT IS CLICKED
