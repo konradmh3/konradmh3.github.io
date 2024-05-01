@@ -12,10 +12,12 @@ import Extracurriculars from "./pages/YourBoiPages/Extracurriculars";
 import Schooling from "./pages/YourBoiPages/Schooling";
 import HomeTown from "./pages/YourBoiPages/HomeTown";
 import ASI from "./pages/ExperiencePages/ASI";
+import { useEffect } from "react";
 
 
 
 export default function App() {
+
   return (
     <BrowserRouter>
       <Routes>
