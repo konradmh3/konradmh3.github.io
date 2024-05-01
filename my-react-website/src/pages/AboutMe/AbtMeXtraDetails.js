@@ -5,6 +5,7 @@ import React from "react";
 import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
 import FirstCanvas from "../../scenes/FirstScene";
 import BurgerCanvas from "../../scenes/BurgerScene";
+import { motion } from "framer-motion";
 
 const AbtMeXtraDetails = (props) => {
   const closeMoreDetails = () => {
@@ -70,11 +71,9 @@ const AbtMeXtraDetails = (props) => {
                 </Col>
               </Row>
             </Container>
-
             <Visible xs sm md>
               <BurgerCanvas />
             </Visible>
-
             {/* <FirstCanvas /> */}
 
             <p>

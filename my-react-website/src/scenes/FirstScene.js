@@ -9,7 +9,9 @@ const FirstScene = () => {
         const time = clock.getElapsedTime();
         boxMesh.current.rotation.x = time;
         boxMesh.current.rotation.y = time;
-        // boxMesh.current.rotation.x = 10;
+        // get value that goes from 1 to 1.1
+        boxMesh.current.scale.x = 1 + Math.sin(time) * 0.1;
+
 
     })
     
