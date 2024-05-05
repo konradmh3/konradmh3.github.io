@@ -116,3 +116,90 @@
 }
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
+
+/* MOBILE CSS BELOW */
+.mobileTitleRow{
+    height: 15vh;
+    /* background-color: rgb(186,186,0); */
+    /* background-color: #ff7b00; */
+}
+.centerCol{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.centerColBurger{
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    padding: 0px !important;
+}
+
+.doodLogoMobile{
+    height: 15vh; 
+}
+
+.descRow{
+    /* background-color: rgb(186,186,0); */
+    height: 25vh;
+}
+
+.descriptionMobile{
+    height: 22.5vh;
+    background-color: rgba(100, 100, 100, 0.25);
+    width: 100%;
+    border-radius: 10px;
+}
+.roleMobile{
+    height: 22.5vh;
+    background-color: rgba(100, 100, 100, 0.25);
+    width: 100%;
+    border-radius: 10px;
+}
+.picRow{
+    height: 25vh;
+    /* background-color: rgb(186,186,0); */
+}
+.picsMobile{
+    height: 22.5vh;
+    background-color: rgba(100, 100, 100, 0.25);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.frameworksTitleRow{
+    height: 5vh;
+    /* background-color: rgb(186,186,0); */
+}
+
+.frameworksMobileTitle{
+    /* underline text */
+    text-decoration: underline;
+}
+.centerColFW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frameworksMobileRow{
+    height: 15vh;
+    /* background-color: rgb(186,186,0); */
+}
+.buttonRow{
+    height: 15vh;
+    /* background-color: rgb(186,186,0); */
+}
+.githubLink{
+    height: 12.5vh;
+    background-color: rgba(100, 100, 100, 0.25);
+    width: 100%;
+    border-radius: 10px;
+}
+.websiteLink{
+    height: 12.5vh;
+    background-color: rgba(100, 100, 100, 0.25);
+    width: 100%;
+    border-radius: 10px;
+}
+
