@@ -7,7 +7,12 @@ import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
 
 const Foodood = () => {
-  window.scrollTo(0, 1);
+  // wait one sec then scroll to bottom of page
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 1000);
+  }, []);
   // to get rid of safari mobile bottom bar
   return (
     <div className="foodoodContainer">
