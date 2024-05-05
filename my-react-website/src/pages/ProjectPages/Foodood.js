@@ -7,6 +7,8 @@ import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
 
 const Foodood = () => {
+  window.scrollTo(0, 1);
+  // to get rid of safari mobile bottom bar
   return (
     <div className="foodoodContainer">
       <Container>
