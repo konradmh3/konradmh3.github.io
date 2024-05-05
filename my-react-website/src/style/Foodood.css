@@ -1,9 +1,13 @@
 .foodoodContainer{
-    position: fixed;
+    position: relative;
     z-index: 10;
-    height: 100vh;
+    height: 101vh;
+    /* 101 to allow scroll bec safari is dumb and need scroll to hide url address bar */
     width: 100vw;
-    background-color: #E2B080;
+    background-color: #E2B080;    
+}
+.foodoodContainerNoScroll{
+    overflow: hidden;
 }
 
 .fatherRow{
@@ -187,17 +191,17 @@
     /* background-color: rgb(186,186,0); */
 }
 .buttonRow{
-    height: 10vh;
+    height: 15vh;
     /* background-color: rgb(186,186,0); */
 }
 .githubLink{
-    height: 8vh;
+    height: 12.5vh;
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;
 }
 .websiteLink{
-    height: 8vh;
+    height: 12.5vh;
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;

@@ -7,14 +7,11 @@ import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
 
 const Foodood = () => {
-  // wait one sec then scroll to bottom of page
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, document.body.scrollHeight);
-    }, 1000);
-  }, []);
-  // to get rid of safari mobile bottom bar
+  // Lest hide the scroll bar but still allow scrolling so we cant use overflow:hidden
+  // 
+  
   return (
+    <div className = "foodoodContainerNoScroll">
     <div className="foodoodContainer">
       <Container>
         {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}
@@ -102,7 +99,7 @@ const Foodood = () => {
         </Hidden>
         {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}
         {/* BELOW IS MOBILE/SMALL SCREEN VIEW */}
-        <Hidden md lg xl>
+        <Hidden md lg xxl>
           <Row className="mobileTitleRow">
             <Col className="centerColBurger" xs={2}>
               <BurgerCanvas />
@@ -157,6 +154,7 @@ const Foodood = () => {
         </Hidden>
         {/* ABOVE IS MOBILE/SMALL SCREEN VIEW */}
       </Container>
+    </div>
     </div>
   );
 };
