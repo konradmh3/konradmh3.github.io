@@ -4,14 +4,20 @@ import { useEffect } from "react";
 import { createBrowserHistory } from "history";
 import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Foodood = () => {
-  // Lest hide the scroll bar but still allow scrolling so we cant use overflow:hidden
-  // 
   
   return (
     <div className = "foodoodContainerNoScroll">
     <div className="foodoodContainer">
+      <motion.div initial={{height:"100vh", width:"100vw"}} animate={{height:"0vh", width:"0vw"}} transition={{delay:1, duration:2}}  className="initLogo">
+        <img style={{height: "auto", width: "100%", maxHeight:"100vh", maxWidth:"1500px"}} className="doodLogoInit" src={doodLogo} alt="foodood" />
+      </motion.div>
+
+
+      <motion.div initial={{opacity:0}} animate={{opacity: 100}} transition={{delay: 3, duration: 2}}>
       <Container>
         {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}
         <Hidden xxs xs sm>
@@ -153,6 +159,7 @@ const Foodood = () => {
         </Hidden>
         {/* ABOVE IS MOBILE/SMALL SCREEN VIEW */}
       </Container>
+      </motion.div>
     </div>
     </div>
   );
