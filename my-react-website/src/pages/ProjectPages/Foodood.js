@@ -12,15 +12,16 @@ const Foodood = () => {
   return (
     <div className = "foodoodContainerNoScroll">
     <div className="foodoodContainer">
-      <motion.div initial={{display:"block"}} animate={{display:"none"}} transition={{delay:3, duration:0}}>
+      {/* <motion.div initial={{display:"block"}} animate={{display:"none"}} transition={{delay:3, duration:0}}> */}
       <motion.div initial={{opacity:0}} animate={{opacity:[0, 100, 75, 50, 25, 0]}} transition={{delay:1, duration:2}}  className="initLogo">
         <img style={{height: "auto", width: "100%", maxHeight:"100vh", maxWidth:"1500px"}} className="doodLogoInit" src={doodLogo} alt="foodood" />
       </motion.div>
-      </motion.div>
+      {/* </motion.div> */}
 
 
-      <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
-      <Container>
+      <Container>      
+        <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
+
         {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}
         <Hidden xxs xs sm>
           <Row className="fatherRow">
@@ -159,9 +160,10 @@ const Foodood = () => {
             </Col>
           </Row>
         </Hidden>
-        {/* ABOVE IS MOBILE/SMALL SCREEN VIEW */}
+        {/* ABOVE IS MOBILE/SMALL SCREEN VIEW */}      
+        </motion.div>
+
       </Container>
-      </motion.div>
     </div>
     </div>
   );
