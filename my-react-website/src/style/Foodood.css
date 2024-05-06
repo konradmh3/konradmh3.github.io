@@ -4,7 +4,7 @@
     height: 101vh;
     /* 101 to allow scroll bec safari is dumb and need scroll to hide url address bar */
     width: 100vw;
-    background-color: #E2B080;    
+    background-color: #E0C7A4;    
 }
 .foodoodContainerNoScroll{
     overflow: hidden;
@@ -28,6 +28,7 @@
 }
 .doodLogo{
     height: 20vh; 
+    /* add shadow to logo img */
 }
 /* ^^^^^^^^^^^^^TITLE DOOD LOGO CONTAINERS AND STYLING^^^^^^^^^^^^ */
 
@@ -45,6 +46,7 @@
     width: 95%;
     background-color: rgba(100, 100, 100, 0.25);
     border-radius: 10px;
+    box-shadow: 11px 11px 3px 5px rgb(95,66,39, 1);
 }
 
 .descriptionRow{
@@ -61,6 +63,8 @@
     width: 95%;
     background-color: rgba(100, 100, 100, 0.25);
     border-radius: 10px;
+    box-shadow: 11px 11px 3px 5px rgb(95,66,39, 1);
+
 }
 
 .frameworks{
@@ -71,7 +75,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0px !important;
+    height: 10vh;
 }
 
 .hamburgers{
@@ -82,7 +87,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0px !important;
+    height: 10vh;
+
 }
 
 .projLinks{
@@ -99,6 +106,8 @@
     width: 80%;
     background-color: rgba(100, 100, 100, 0.25);
     border-radius: 10px;
+    box-shadow: 11px 11px 3px 5px rgb(95,66,39, 1);
+
 }
 
 
@@ -117,6 +126,8 @@
     width: 95%;
     background-color: rgba(100, 100, 100, 0.25);
     border-radius: 10px;
+    box-shadow: 11px 11px 3px 5px rgb(95,66,39, 1);
+
 }
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
@@ -130,13 +141,15 @@
 .centerCol{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
+
 .centerColBurger{
     display: flex;
     justify-content: center;
     overflow: visible;
     padding: 0px !important;
+    height: 15vh;
 }
 
 .doodLogoMobile{
@@ -153,12 +166,16 @@
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgb(95,66,39, 1);
+
 }
 .roleMobile{
     height: 22.5vh;
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgb(95,66,39, 1);
+
 }
 .picRow{
     height: 25vh;
@@ -169,6 +186,8 @@
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgb(95,66,39, 1);
+
 }
 
 .frameworksTitleRow{
@@ -199,11 +218,15 @@
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgb(95,66,39, 1);
+
 }
 .websiteLink{
     height: 12.5vh;
     background-color: rgba(100, 100, 100, 0.25);
     width: 100%;
     border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgb(95,66,39, 1);
+
 }
 

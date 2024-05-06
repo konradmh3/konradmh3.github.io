@@ -12,6 +12,7 @@ import Extracurriculars from "./pages/YourBoiPages/Extracurriculars";
 import Schooling from "./pages/YourBoiPages/Schooling";
 import HomeTown from "./pages/YourBoiPages/HomeTown";
 import ASI from "./pages/ExperiencePages/ASI";
+import TestCanvas from "./pages/Testing/TestCanvas";
 import { useEffect } from "react";
 
 
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="hometown" element={<HomeTown />} />
           <Route path="schooling" element={<Schooling />} />
           <Route path="asi" element={<ASI />} />
+          <Route path="testcanvas" element={<TestCanvas />} />
 
           <Route path="*" element={<NoPage />} />
         </Route>

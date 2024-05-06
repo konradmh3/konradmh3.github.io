@@ -1,6 +1,5 @@
 import "../../style/Foodood.css";
 import BurgerCanvas from "../../scenes/BurgerScene";
-
 import { useEffect } from "react";
 import { createBrowserHistory } from "history";
 import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
