@@ -20,6 +20,8 @@ const AboutMe = () => {
     useRef(),
     useRef(),
     useRef(),
+    useRef(),
+    useRef(),
   ];
   const [moreDetailsOpen, setMoreDetailsOpen] = useState(false);
   // here we will add the state that will hold the index of the aboutMeRefs array that is clicked
@@ -59,6 +61,12 @@ const AboutMe = () => {
       case 7:
         goToPage("/asi");
         break;
+      case 8:
+        goToPage("/microcenter");
+      break;
+      case 9:
+        goToPage("/essentia");
+      break;
       default:
         break;
     }
@@ -188,8 +196,28 @@ const AboutMe = () => {
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={7}
         ref={aboutMeRefs[6]}
-        title="ASI"
-        text="Associated Students Inc. for one year."
+        title="Web Developer"
+        text="Web developer at Associated Students Inc. for one year from May 2022 to May 2023."
+      />
+      <AboutMeDescription
+        setDetailBackColor={setDetailBackColor}
+        backColor={"#156EAD"}
+        setClickedIndex={setClickedIndex}
+        setMoreDetailsOpen={setMoreDetailsOpen}
+        index={8}
+        ref={aboutMeRefs[7]}
+        title="Sales Associate"
+        text="Sales associate at a Micro Center from November 2023 to Present."
+      />
+      <AboutMeDescription
+        setDetailBackColor={setDetailBackColor}
+        backColor={"#3C7261"}
+        setClickedIndex={setClickedIndex}
+        setMoreDetailsOpen={setMoreDetailsOpen}
+        index={9}
+        ref={aboutMeRefs[8]}
+        title="Sales Associate"
+        text="Sales associate intern at Essentia Water from May 2023 to August 2023."
       />
       <CodeSubtitles titleClass="Grind" state="0" />
 
