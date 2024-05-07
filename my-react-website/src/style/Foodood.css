@@ -198,6 +198,8 @@
 
 .doodLogoMobile{
     height: 15vh; 
+    filter: drop-shadow(6px 6px 2px rgb(127,99,70));
+
 }
 
 .descRow{
