@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.82a7dcac.css",
-    "main.js": "/static/js/main.e9e66065.js",
+    "main.js": "/static/js/main.a507c7a1.js",
     "static/media/Resume_Konrad_Hernandez1.pdf": "/static/media/Resume_Konrad_Hernandez1.d3d56c84fe27e7115684.pdf",
     "static/media/fooDoodTitle.png": "/static/media/fooDoodTitle.29dd8ee72a4d56d8493b.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.82a7dcac.css",
-    "static/js/main.e9e66065.js"
+    "static/js/main.a507c7a1.js"
   ]
 }
