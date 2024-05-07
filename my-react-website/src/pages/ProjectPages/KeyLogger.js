@@ -1,5 +1,4 @@
 import "../../style/KeyLogger.css";
-import { useEffect } from "react";
 
 
 const KeyLogger = () => {

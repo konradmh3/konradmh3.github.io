@@ -1,11 +1,9 @@
 import "../../style/Foodood.css";
 import BurgerCanvas from "../../scenes/BurgerScene";
-import { useEffect } from "react";
-import { createBrowserHistory } from "history";
-import { Container, Row, Col, Visible, Hidden } from "react-grid-system";
+
+import { Container, Row, Col, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
-import { useState } from "react";
-import { motion } from "framer-motion";
+
 
 const Foodood = () => {
   

@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import NoPage from "./pages/NoPage";
 import AboutMe from "./pages/AboutMe/AboutMe";
@@ -15,7 +15,6 @@ import ASI from "./pages/ExperiencePages/ASI";
 import Essentia from "./pages/ExperiencePages/Essentia";
 import MicroCenter from "./pages/ExperiencePages/MicroCenter";
 import TestCanvas from "./pages/Testing/TestCanvas";
-import { useEffect } from "react";
 
 
 

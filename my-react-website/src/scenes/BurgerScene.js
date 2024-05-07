@@ -3,15 +3,12 @@ import React, { useRef } from "react";
 import "../style/Canvas.css";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useLoader } from "@react-three/fiber";
-import { Clone, OrbitControls, OrthographicCamera } from "@react-three/drei";
-import { BackSide, DoubleSide, Group } from "three";
-import { Visible } from "react-grid-system";
+import { Clone } from "@react-three/drei";
+import { DoubleSide } from "three";
 
 const BurgerScene = () => {
   const burgerFBX = useLoader(FBXLoader, "/assets/burger.fbx"); //load the burger object
   const burgerMesh = useRef();
-  const burgerMesh2 = useRef();
-  const burgerMesh3 = useRef();
 
   // lets add a plane mesh to the scene so we can cast a shadow
 

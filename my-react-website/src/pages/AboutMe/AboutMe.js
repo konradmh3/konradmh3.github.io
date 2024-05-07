@@ -9,7 +9,6 @@ import { useRef } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { createBrowserHistory } from "history";
 
 const AboutMe = () => {
   const aboutMeRefs = [
@@ -28,60 +27,72 @@ const AboutMe = () => {
   // this will be passed to the new component that will handle the rendering of the details
   const [clickedIndex, setClickedIndex] = useState(null);
   const [detailBackColor, setDetailBackColor] = useState(null);
-  
+  const navigate = useNavigate();
+
   // TO ASSIGN THE CLICKED INDEX TO THE STATE WE WILL NEED TO PASS A FUNCTION TO THE ABOUTMEDESCRIPTION COMPONENT THAT WILL SET THE STATE
   // THIS FUNCTION WILL BE CALLED WHEN THE ABOUTMEDESCRIPTION COMPONENT IS CLICKED
   useEffect(() => {
     console.log(clickedIndex);
+
     // document.body.style.overflow = "hidden";
 
     // lets do a case statement to deetermine which route to go to depending on the clicked index
     switch (clickedIndex) {
       case 0:
-        goToPage("/hometown");
+        setTimeout(() => {
+          navigate("/hometown");
+        }, 1750);
         break;
       case 1:
-        goToPage("/schooling");
+        setTimeout(() => {
+          navigate("/schooling");
+        }, 1750);
         break;
       case 2:
-        goToPage("/extracurriculars");
+        setTimeout(() => {
+          navigate("/extracurriculars");
+        }, 1750);
         break;
       case 3:
-        goToPage("/foodood");
+        setTimeout(() => {
+          navigate("/foodood");
+        }, 1750);
         break;
       case 4:
-        goToPage("/reactProjects");
+        setTimeout(() => {
+          navigate("/reactProjects");
+        }, 1750);
         break;
       case 5:
-        goToPage("/stick");
+        setTimeout(() => {
+          navigate("/stick");
+        }, 1750);
         break;
       case 6:
-        goToPage("/keylogger");
+        setTimeout(() => {
+          navigate("/keylogger");
+        }, 1750);
         break;
       case 7:
-        goToPage("/asi");
+        setTimeout(() => {
+          navigate("/asi");
+        }, 1750);
         break;
       case 8:
-        goToPage("/microcenter");
+        setTimeout(() => {
+          navigate("/microcenter");
+        }, 1750);
       break;
       case 9:
-        goToPage("/essentia");
+        setTimeout(() => {
+          navigate("/essentia");
+        }, 1750);
       break;
       default:
         break;
     }
-  }, [clickedIndex]);
+  }, [clickedIndex, navigate]);
 
-  // lets add a function to handle the navigation to the correct page
-  const navigate = useNavigate();
-  const goToPage = (path) => {
-    // lets pause for 1.75 seconds before navigating to the correct page
-    setTimeout(() => {
-      // scroll to the top of the page
-      // window.scrollTo(0, 0);
-      navigate(path);
-    }, 1750);
-  };
 
   return (
     <>

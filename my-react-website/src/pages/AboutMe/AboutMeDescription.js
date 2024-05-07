@@ -4,7 +4,6 @@ import React from "react";
 import "../../style/AboutMe.css";
 import { useInView } from "framer-motion";
 import { forwardRef } from "react";
-import { useNavigate } from "react-router-dom";
 
 
 import { motion } from "framer-motion";
