@@ -20,21 +20,25 @@ const Foodood = () => {
 
 
       <Container>      
-        <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
 
-        {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}
-        <Hidden xxs xs sm>
+        {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}                
+
+        <Hidden xxs xs sm>        
+
           <Row className="fatherRow">
             <Col className="fatherCol1" md={4}>
               <Row className="titleRow">
                 <Col className="titleCol" lg={12}>
+        <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
+
                   <img className="doodLogo" src={doodLogo} alt="foodood" />
+        </motion.div>
                 </Col>
               </Row>
 
               <Row className="imgRow">
                 <Col className="imgCol" lg={12}>
-                  <div className="imgsContainer"></div>
+                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}} className="imgsContainer"></motion.div>
                 </Col>
               </Row>
             </Col>
@@ -42,11 +46,13 @@ const Foodood = () => {
             <Col className="fatherCol2" md={8}>
               <Row className="descriptionRow">
                 <Col className="descriptionCol" lg={12}>
-                  <div className="descriptionContainer"></div>
+                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}} className="descriptionContainer"></motion.div>
                 </Col>
               </Row>
 
-              <Row className="frameworks">
+              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
+                <Row className="frameworks">
+                
                 <Col className="frameworksCol" md={2}>
                   <BurgerCanvas />
                 </Col>
@@ -66,6 +72,8 @@ const Foodood = () => {
                   <BurgerCanvas />
                 </Col>
               </Row>
+              </motion.div>
+              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
 
               <Row className="hamburgers">
                 <Col className="burgerCol" md={2}>
@@ -87,24 +95,27 @@ const Foodood = () => {
                   <BurgerCanvas />
                 </Col>
               </Row>
+              </motion.div>
 
               <Row className="projLinks">
                 <Col className="projLinkCol" md={6}>
-                  <div className="projLinkContainer"></div>
+                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}} className="projLinkContainer"></motion.div>
                 </Col>
                 <Col className="projLinkCol" md={6}>
-                  <div className="projLinkContainer"></div>
+                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}} className="projLinkContainer"></motion.div>
                 </Col>
               </Row>
 
               <Row className="roleRow">
                 <Col className="roleCol" lg={12}>
-                  <div className="roleContainer"></div>
+                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}} className="roleContainer"></motion.div>
                 </Col>
               </Row>
             </Col>
-          </Row>
-        </Hidden>
+          </Row>        
+
+        </Hidden>                
+
         {/* Just going to completely hide the content between these commentss for simplicity for xxs to s */}
         {/* BELOW IS MOBILE/SMALL SCREEN VIEW */}
         <Hidden md lg xxl>
@@ -161,7 +172,6 @@ const Foodood = () => {
           </Row>
         </Hidden>
         {/* ABOVE IS MOBILE/SMALL SCREEN VIEW */}      
-        </motion.div>
 
       </Container>
     </div>

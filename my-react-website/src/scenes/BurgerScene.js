@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "../style/Canvas.css";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useLoader } from "@react-three/fiber";
-import { Clone } from "@react-three/drei";
+import { Clone, OrbitControls } from "@react-three/drei";
 import { BackSide, DoubleSide, Group } from "three";
 import { Visible } from "react-grid-system";
 
@@ -25,7 +25,8 @@ const BurgerScene = () => {
   });
   return (
     <group>
-      <Clone object={burgerFBX} scale={[0.012, 0.012, 0.012]} position={[0, -1, 1.2]} ref={burgerMesh} receiveShadow castShadow/>
+      <Clone object={burgerFBX} scale={[0.012, 0.012, 0.012]} position={[0, -1, 1.7]} ref={burgerMesh} receiveShadow castShadow/>
+      
       {/* 
     Leets add a plane mesh to the scene so we can cast a shadow
     */}
@@ -52,7 +53,8 @@ const BurgerCanvas = () => {
     <Canvas camera={{ position: [0, 0, 6] }} shadows>
       <BurgerScene />
       <ambientLight intensity={.5} />
-      <directionalLight castShadow intensity={4} position={[-1.5, .8, 2]} />
+      <directionalLight castShadow intensity={4} position={[-1.6, .8, 2]} />
+      
     </Canvas>
   );
 };
