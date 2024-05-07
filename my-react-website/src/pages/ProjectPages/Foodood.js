@@ -117,7 +117,7 @@ const Foodood = () => {
             <Col className="centerColBurger" xs={3}>
               <BurgerCanvas />
             </Col>
-            <Col className="centerCol" xs={6}>
+            <Col className="centerColLogo" xs={6}>
               <img className="doodLogoMobile" src={doodLogo} alt="foodood" />
             </Col>
             <Col className="centerColBurger" xs={3}>

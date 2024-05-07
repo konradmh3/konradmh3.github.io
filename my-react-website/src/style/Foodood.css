@@ -187,18 +187,27 @@
     justify-content: center;
     align-items: center;
 }
+.centerColLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
 
 .centerColBurger{
     display: flex;
     justify-content: center;
     overflow: visible;
-    padding: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     height: 15vh;
+
 }
 
 .doodLogoMobile{
     height: 15vh; 
     filter: drop-shadow(6px 6px 2px rgb(127,99,70));
+
 
 }
 
