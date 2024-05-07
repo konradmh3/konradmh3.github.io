@@ -3,21 +3,27 @@ import React, { useRef } from "react";
 import "../style/Canvas.css";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useLoader } from "@react-three/fiber";
-import { Clone, OrbitControls } from "@react-three/drei";
+import { Clone, OrbitControls, OrthographicCamera } from "@react-three/drei";
 import { BackSide, DoubleSide, Group } from "three";
 import { Visible } from "react-grid-system";
 
 const BurgerScene = () => {
   const burgerFBX = useLoader(FBXLoader, "/assets/burger.fbx"); //load the burger object
   const burgerMesh = useRef();
+  const burgerMesh2 = useRef();
+  const burgerMesh3 = useRef();
+
   // lets add a plane mesh to the scene so we can cast a shadow
 
   useFrame(({ clock }) => {
     const time = clock.getElapsedTime();
+
     burgerMesh.current.rotation.y = time;
+
     burgerMesh.current.scale.x = 0.0001 * Math.sin(10 * time) + 0.012;
     burgerMesh.current.scale.y = 0.0001 * Math.sin(10 * time) + 0.012;
     burgerMesh.current.scale.z = 0.0001 * Math.sin(10 * time) + 0.012;
+
 
     // ^ for the above, decreasing the first number decreases amplitude or the amount it fluctuates, increasing the second number increases the speed of the fluctuation,
     // increasing the third number increases the overall size of the object
@@ -27,6 +33,7 @@ const BurgerScene = () => {
   return (
     <group>
       <Clone object={burgerFBX} scale={[0.012, 0.012, 0.012]} position={[0, -1, 1.7]} ref={burgerMesh} receiveShadow castShadow/>
+
       
       {/* 
     Leets add a plane mesh to the scene so we can cast a shadow
@@ -55,6 +62,7 @@ const BurgerCanvas = () => {
       <BurgerScene />
       <ambientLight intensity={.5} />
       <directionalLight castShadow intensity={4} position={[-1.6, .8, 2]} />
+      {/* <OrthographicCamera makeDefault position={[0, 0, 10]} zoom={50} /> */}
       
     </Canvas>
   );
