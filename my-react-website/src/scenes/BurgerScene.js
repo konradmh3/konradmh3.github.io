@@ -18,6 +18,7 @@ const BurgerScene = () => {
     burgerMesh.current.scale.x = 0.0001 * Math.sin(10 * time) + 0.012;
     burgerMesh.current.scale.y = 0.0001 * Math.sin(10 * time) + 0.012;
     burgerMesh.current.scale.z = 0.0001 * Math.sin(10 * time) + 0.012;
+
     // ^ for the above, decreasing the first number decreases amplitude or the amount it fluctuates, increasing the second number increases the speed of the fluctuation,
     // increasing the third number increases the overall size of the object
 

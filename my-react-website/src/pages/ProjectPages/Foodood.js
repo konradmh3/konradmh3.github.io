@@ -50,7 +50,7 @@ const Foodood = () => {
                 </Col>
               </Row>
 
-              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
+              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 5, duration: 2}}>
                 <Row className="frameworks">
                 
                 <Col className="frameworksCol" md={2}>
@@ -73,10 +73,10 @@ const Foodood = () => {
                 </Col>
               </Row>
               </motion.div>
-              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 3, duration: 2}}>
+              {/* <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 5, duration: 2}}> */}
 
-              <Row className="hamburgers">
-                <Col className="burgerCol" md={2}>
+               <Row className="hamburgers">
+               {/* <Col className="burgerCol" md={2}>
                   <BurgerCanvas />
                 </Col>
                 <Col className="burgerCol" md={2}>
@@ -93,9 +93,9 @@ const Foodood = () => {
                 </Col>
                 <Col className="burgerCol" md={2}>
                   <BurgerCanvas />
-                </Col>
+                </Col> */}
               </Row>
-              </motion.div>
+              {/* </motion.div> */}
 
               <Row className="projLinks">
                 <Col className="projLinkCol" md={6}>
