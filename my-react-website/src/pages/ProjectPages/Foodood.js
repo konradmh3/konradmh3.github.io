@@ -13,9 +13,9 @@ const Foodood = () => {
     <div className = "foodoodContainerNoScroll">
     <div className="foodoodContainer">
       {/* <motion.div initial={{display:"block"}} animate={{display:"none"}} transition={{delay:3, duration:0}}> */}
-      <motion.div initial={{opacity:100}} animate={{opacity:0}} transition={{delay:4, duration:2}}  className="initLogo">
+      {/* <motion.div initial={{opacity:100}} animate={{opacity:0}} transition={{delay:4, duration:2}}  className="initLogo">
         <img style={{height: "auto", width: "100%", maxHeight:"100vh", maxWidth:"1500px"}} className="doodLogoInit" src={doodLogo} alt="foodood" />
-      </motion.div>
+      </motion.div> */}
       {/* </motion.div> */}
 
 
@@ -29,16 +29,16 @@ const Foodood = () => {
             <Col className="fatherCol1" md={4}>
               <Row className="titleRow">
                 <Col className="titleCol" lg={12}>
-        <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 6, duration: 2}}>
 
                   <img className="doodLogo" src={doodLogo} alt="foodood" />
-        </motion.div>
+                  {/* <img className="doodLogoShadow" src={doodLogo} alt="foodood" /> */}
+
                 </Col>
               </Row>
 
               <Row className="imgRow">
                 <Col className="imgCol" lg={12}>
-                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 6, duration: 2}} className="imgsContainer"></motion.div>
+                  <div className="imgsContainer"></div>
                 </Col>
               </Row>
             </Col>
@@ -46,11 +46,10 @@ const Foodood = () => {
             <Col className="fatherCol2" md={8}>
               <Row className="descriptionRow">
                 <Col className="descriptionCol" lg={12}>
-                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 6, duration: 2}} className="descriptionContainer"></motion.div>
+                  <div className="descriptionContainer"></div>
                 </Col>
               </Row>
 
-              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 8, duration: 0}}>
                 <Row className="frameworks">
                 
                 <Col className="frameworksCol" md={2}>
@@ -72,8 +71,6 @@ const Foodood = () => {
                   <BurgerCanvas />
                 </Col>
               </Row>
-              </motion.div>
-              <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay:8, duration: 0}}>
 
                <Row className="hamburgers">
                <Col className="burgerCol" md={2}>
@@ -95,20 +92,19 @@ const Foodood = () => {
                   <BurgerCanvas />
                 </Col>
               </Row>
-              </motion.div>
 
               <Row className="projLinks">
                 <Col className="projLinkCol" md={6}>
-                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 6, duration: 2}} className="projLinkContainer"></motion.div>
+                  <div className="projLinkContainer"></div>
                 </Col>
                 <Col className="projLinkCol" md={6}>
-                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 6, duration: 2}} className="projLinkContainer"></motion.div>
+                  <div className="projLinkContainer"></div>
                 </Col>
               </Row>
 
               <Row className="roleRow">
                 <Col className="roleCol" lg={12}>
-                  <motion.div initial={{opacity:0}} animate={{opacity:100}} transition={{delay: 6, duration: 2}} className="roleContainer"></motion.div>
+                  <div className="roleContainer"></div>
                 </Col>
               </Row>
             </Col>
