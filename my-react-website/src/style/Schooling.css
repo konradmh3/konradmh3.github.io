@@ -1,7 +1,93 @@
 .schoolingContainer{
-    position: fixed;
+    position: relative;
     z-index: 10;
-    height: 100vh;
+    height: 101vh;
     width: 100vw;
-    background-color: #616234;
+    background-color: #ECAA1E;
+}
+.schoolingContainerNoScroll{
+    overflow: hidden;
+}
+.titleRowSchool{
+    height: 15vh;
+    /* background-color: #b98618; */
+}
+.titleColSchool{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.csulbLogo{
+    height: auto;
+    max-width: 100%; 
+    max-height: 15vh;
+    position: absolute;
+    z-index: 5;
+    filter: drop-shadow(6px 6px 2px rgb(0, 0, 0));
+    /* lets make the color of logoo inverse */
+    filter: invert(1);
+}
+.contentRowSchool{
+    height: 85vh;
+    /* background-color: #b98618; */
+}
+.coursesRowSchool{
+    height: 85vh;
+    /* background-color: #7c5b13; */
+}
+.coursesSchool{
+    height: 80vh;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.50);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+.descriptionRowSchool{
+    height: 25vh;
+    /* background-color: #684a0a; */
+}
+.descriptionSchool{
+    height: 20vh;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.50);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+.clubsWorkRowSchool{
+    height: 25vh;
+    /* background-color: #e9c26f; */
+}
+.clubsWorkSchool{
+    height: 20vh;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.50);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+.challangesRowSchool{
+    height: 25vh;
+    /* background-color: #4b3e22; */
+}
+.challangesSchool{
+    height: 20vh;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.50);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+.buttonsRowSchool{
+    height: 10vh;
+    /* background-color: #47340a; */
+}
+.buttonSchool{
+    height: 5vh;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
 }

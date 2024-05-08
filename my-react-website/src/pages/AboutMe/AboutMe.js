@@ -126,7 +126,7 @@ const AboutMe = () => {
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
-        backColor={"#616234"}
+        backColor={"#ECAA1E"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={1}

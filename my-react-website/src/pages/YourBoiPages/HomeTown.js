@@ -9,32 +9,32 @@ const HomeTown = () => {
       <div className="homeTownContainer">
         <Container>
           <Row className="homeFatherRow">
-            <Col sm={9}>
+            <Col xs={9}>
               <Row className="titleRowHome">
-                <Col className="titleHomeCol" sm={12}>
+                <Col className="titleHomeCol" xs={12}>
                     <img className="lbLogo" src={lbLogo} alt="Long Beach" />
                 </Col>
               </Row>
               <Row className="lifeInLongBeachRow">
-                <Col className="centerCol" sm={12}>
+                <Col className="centerCol" xs={12}>
                   <div className="lifeInLongBeach">
                   </div>
                 </Col>
               </Row>
               <Row className="favoriteEventsRow">
-                <Col className="centerCol" sm={12}>
+                <Col className="centerCol" xs={12}>
                 <div className="favoriteEvents">
                   </div>
                 </Col>
               </Row>
               <Row className="favoriteThingsRow">
-                <Col className="centerCol" sm={12}>
+                <Col className="centerCol" xs={12}>
                   <div className="favoriteThings">
                   </div>
                 </Col>
               </Row>
               <Row className="todosRow">
-                <Col className="centerCol" sm={12}>
+                <Col className="centerCol" xs={12}>
                   <div className="todos">
                   </div>
                 </Col>
@@ -42,7 +42,7 @@ const HomeTown = () => {
             </Col>
             <Col sm={3}>
               <Row className="linksForActivitiesRow">
-                <Col className="centerCol" sm={12}>
+                <Col className="centerCol" xs={12}>
                   <div className="linksForActivities">
                   </div>
                 </Col>
