@@ -12,7 +12,7 @@
 
 .titleRow{
     height: 20vh;
-    background-color: #e5fac2;
+    /* background-color: #e5fac2; */
 }
 .titleCol{
     display: flex;
@@ -22,7 +22,7 @@
 
 .videoRow{
     height: 35vh;
-    background-color: #b6c799;
+    /* background-color: #b6c799; */
 
 }
 .videoCol{
@@ -34,7 +34,7 @@
 .videoContainerStick{
     height: 30vh;
     width: 80%;
-    background-color: rgba(100, 100, 100, 0.25);
+    background-color: rgba(168, 168, 168, 0.25);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
@@ -42,7 +42,7 @@
 
 .frameWorksRow{
     height: 10vh;
-    background-color: #626b52;
+    /* background-color: #626b52; */
 
 }
 .frameWorksCol{
@@ -54,7 +54,7 @@
 
 .descriptionRow{
     height: 25vh;
-    background-color: #414736;
+    /* background-color: #414736; */
 
 }
 .descriptionCol{
@@ -65,7 +65,7 @@
 .descriptionContainerStick{
     height: 20vh;
     width: 95%;
-    background-color: rgba(100, 100, 100, 0.25);
+    background-color: rgba(168, 168, 168, 0.25);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
@@ -73,7 +73,7 @@
 
 .buttonRow{
     height: 10vh;
-    background-color: #1b1d17;
+    /* background-color: #1b1d17; */
 
 }
 .githubCol{
@@ -91,7 +91,7 @@
 .downloadContainer{
     height: 5vh;
     width: 80%;
-    background-color: rgba(100, 100, 100, 0.25);
+    background-color: rgba(168, 168, 168, 0.25);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
