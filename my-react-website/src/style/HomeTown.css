@@ -1,7 +1,96 @@
 .homeTownContainer{
-    position: fixed;
+    position: relative;
     z-index: 10;
-    height: 100vh;
+    height: 101vh;
     width: 100vw;
-    background-color: #623434;
+    background-color: #6DBAE3;
+}
+.homeTownContainerNoScroll{
+    overflow: hidden;
+}
+
+.homeFatherRow{
+    height: 100vh;
+}
+.titleRowHome{
+    height: 20vh;
+    /* background-color: #6fa4c0; */
+}
+.titleHomeCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.lbLogo{
+    height: auto;
+    max-width: 100%; 
+    max-height: 20vh;
+    filter: drop-shadow(6px 6px 2px rgb(243, 86, 222));
+}
+.lifeInLongBeachRow{
+    height: 20vh;
+    /* background-color: #5b869e; */
+
+}
+.lifeInLongBeach{
+    height: 15vh;
+    width: 80%;
+    background-color: rgba(87, 87, 87, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+.favoriteEventsRow{
+    height: 20vh;    
+    /* background-color: #456272; */
+
+}
+.favoriteEvents{
+    height: 15vh;
+    width: 80%;
+    background-color: rgba(87, 87, 87, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+.favoriteThingsRow{
+    height: 20vh;    
+    /* background-color: #304652; */
+
+}
+.favoriteThings{
+    height: 15vh;
+    width: 80%;
+    background-color: rgba(87, 87, 87, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+.todosRow{
+    height: 20vh;    
+    /* background-color: #182329; */
+
+}
+.todos{
+    height: 15vh;
+    width: 80%;
+    background-color: rgba(87, 87, 87, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+.linksForActivitiesRow{
+    height: 100vh;    
+    /* background-color: #7cc2eb; */
+
+}
+.linksForActivities{
+    height: 90vh;
+    width: 95%;
+    background-color: rgba(87, 87, 87, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
 }

@@ -8,40 +8,40 @@ const Stick = () => {
     <div className="stickContainerNoScroll">
       <div className="stickContainer">
         <Container>
-          <Row className="titleRow">
-            <Col xs={12} className="titleCol">Stick</Col>
+          <Row className="titleRowStick">
+            <Col xs={12} className="titleColStick">Stick</Col>
           </Row>
-          <Row className="videoRow">
-            <Col xs={12} className="videoCol">
+          <Row className="videoRowStick">
+            <Col xs={12} className="videoColStick">
                 <div className="videoContainerStick"></div>
             </Col>
           </Row>
-          <Row className="frameWorksRow">
-            <Col xs={3} className="frameWorksCol">
+          <Row className="frameWorksRowStick">
+            <Col xs={3} className="frameWorksColStick">
                 <FirstScene />
             </Col>
-            <Col xs={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksColStick">
             <FirstScene />
             </Col>
-            <Col xs={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksColStick">
             <FirstScene />
             </Col>
-            <Col xs={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksColStick">
             <FirstScene />
             </Col>
           </Row>
-          <Row className="descriptionRow">
-            <Col xs={12} className="descriptionCol">
+          <Row className="descriptionRowStick">
+            <Col xs={12} className="descriptionColStick">
                 <div className="descriptionContainerStick"></div>
             </Col>
           </Row>
-          <Row className="buttonRow">
-            <Col xs={6} className="githubCol">
-                <div className="downloadContainer">
+          <Row className="buttonRowStick">
+            <Col xs={6} className="githubColStick">
+                <div className="downloadContainerStick">
                 </div>
             </Col>
-            <Col xs={6} className="downloadCol">
-                <div className="downloadContainer">
+            <Col xs={6} className="downloadColStick">
+                <div className="downloadContainerStick">
 
                 </div>
             </Col>

@@ -116,13 +116,13 @@ const AboutMe = () => {
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
-        backColor={"#623434"}
+        backColor={"#6DBAE3"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={0}
         ref={aboutMeRefs[0]}
         title="Home Town"
-        text="My home town is Long Beach, California! I was born here and have lived here for 23 years now!"
+        text="I live in Long Beach, California! I was born here and have lived here for 24 years now! Click me to explore things to do in Long Beach!"
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
