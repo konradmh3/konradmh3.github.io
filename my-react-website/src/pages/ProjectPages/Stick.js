@@ -9,38 +9,38 @@ const Stick = () => {
       <div className="stickContainer">
         <Container>
           <Row className="titleRow">
-            <Col md={12} className="titleCol">Stick</Col>
+            <Col xs={12} className="titleCol">Stick</Col>
           </Row>
           <Row className="videoRow">
-            <Col md={12} className="videoCol">
+            <Col xs={12} className="videoCol">
                 <div className="videoContainerStick"></div>
             </Col>
           </Row>
           <Row className="frameWorksRow">
-            <Col md={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksCol">
                 <FirstScene />
             </Col>
-            <Col md={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksCol">
             <FirstScene />
             </Col>
-            <Col md={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksCol">
             <FirstScene />
             </Col>
-            <Col md={3} className="frameWorksCol">
+            <Col xs={3} className="frameWorksCol">
             <FirstScene />
             </Col>
           </Row>
           <Row className="descriptionRow">
-            <Col md={12} className="descriptionCol">
+            <Col xs={12} className="descriptionCol">
                 <div className="descriptionContainerStick"></div>
             </Col>
           </Row>
           <Row className="buttonRow">
-            <Col md={6} className="githubCol">
+            <Col xs={6} className="githubCol">
                 <div className="downloadContainer">
                 </div>
             </Col>
-            <Col md={6} className="downloadCol">
+            <Col xs={6} className="downloadCol">
                 <div className="downloadContainer">
 
                 </div>
