@@ -1,7 +1,98 @@
 .stickContainer{
-    position: fixed;
+    position: relative;
     z-index: 10;
-    height: 100vh;
+    height: 101vh;
     width: 100vw;
     background-color: #516234;
+}
+
+.stickContainerNoScroll{
+    overflow: hidden;
+}
+
+.titleRow{
+    height: 20vh;
+    background-color: #e5fac2;
+}
+.titleCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoRow{
+    height: 35vh;
+    background-color: #b6c799;
+
+}
+.videoCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainerStick{
+    height: 30vh;
+    width: 80%;
+    background-color: rgba(100, 100, 100, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+
+.frameWorksRow{
+    height: 10vh;
+    background-color: #626b52;
+
+}
+.frameWorksCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.descriptionRow{
+    height: 25vh;
+    background-color: #414736;
+
+}
+.descriptionCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descriptionContainerStick{
+    height: 20vh;
+    width: 95%;
+    background-color: rgba(100, 100, 100, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+
+.buttonRow{
+    height: 10vh;
+    background-color: #1b1d17;
+
+}
+.githubCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadContainer{
+    height: 5vh;
+    width: 80%;
+    background-color: rgba(100, 100, 100, 0.25);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
 }
