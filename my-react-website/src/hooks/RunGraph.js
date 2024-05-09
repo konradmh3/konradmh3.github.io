@@ -33,14 +33,13 @@ const RunGraph = () => {
     let tmr = getTMR();
     data.Activities.forEach((activity) => {
       let daysAgo = Math.floor((tmr - activity.dateEpoch) / 86400);
-      activity.daysAgo = daysAgo;
+      activity.daysAgo = daysAgo;    
+        //   Finally add the distance to the xPositions array so we can show it on the graph!
       xPositions[daysAgo] = (activity.distance/20 * 100).toString() + "%";
     });
-    console.log(data);
   };
 
   addDaysAgo();
-  console.log(xPositions);
 
   return (
     <svg className="graphContainerSVG" width="80%" height="80%">
@@ -96,7 +95,6 @@ const RunGraph = () => {
         <line x1="92.4%" y1="0" x2="92.4%" y2={xPositions[27]} stroke="black" strokeWidth="3" />
         <line x1="95.7%" y1="0" x2="95.7%" y2={xPositions[28]} stroke="black" strokeWidth="3" />
         <line x1="99%" y1="0" x2="99%" y2={xPositions[29]} stroke="black" strokeWidth="3" />
-
 
     </svg>
   );
