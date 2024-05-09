@@ -1,7 +1,66 @@
 .extracurricularsContainer{
-    position: fixed;
+    position: relative;
     z-index: 10;
-    height: 100vh;
+    height: 101vh;
     width: 100vw;
     background-color: #624F34;
 }
+.extracurricularsContainerNoScroll{
+    overflow: hidden;
+}
+.titleRowExtra{
+    height: 10vh;
+}
+.titleColExtra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.descGraphRowExtra{
+    height: 40vh;
+}
+.descExtra{
+    height: 35vh;
+    width: 80%;
+    background-color: rgba(202, 202, 202, 0.651);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+.graphExtra{
+    height: 35vh;
+    width: 90%;
+    background-color: rgba(202, 202, 202, 0.651);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activityPicsRow{
+    height: 25vh;
+}
+.activityPicsExtra{
+    height: 22.5vh;
+    width: 95%;
+    background-color: rgba(202, 202, 202, 0.651);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+.lifePicsRow{
+    height: 25vh;
+}
+.lifePicsExtra{
+    height: 22.5vh;
+    width: 95%;
+    background-color: rgba(202, 202, 202, 0.651);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+}
+
+

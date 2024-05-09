@@ -1,0 +1,5 @@
+.graphContainerSVG{
+    overflow: visible;
+    /* flip this on the horizontal axis */
+    transform: scaley(-1);
+}
