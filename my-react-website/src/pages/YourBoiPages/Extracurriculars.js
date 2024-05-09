@@ -4,16 +4,7 @@ import { Container, Row, Col } from "react-grid-system";
 import RunGraph from "../../hooks/RunGraph";
 
 const Extracurriculars = () => {
-//   const miles = GetStravaStats().Miles;
-//   const totalRuns = GetStravaStats().TotalRuns;
-//   const activities = GetStravaStats().Activities;
-    // UNCOMMENT THE ABOVE LINES WHEN THE DONE DEVING HOOK IS FINISHED
-//  GETTING TO MANY REQ ERROR ALSO FIGURE OUT A WAY TO JUST CALL THIS ONCE AND STORE THE DATA IN A VARIABLE
-// THEN SEPERATE THE DATA INTO MILES, TOTALRUNS, AND ACTIVITIES
 
-//   console.log(activities);
-  // all activities are stored in the activities array, each activity is an object with name, distance, and date
-  // we can now use this for our svg graph
 
   return (
     // <GetStravaActivities />

@@ -51,7 +51,7 @@ const GetStravaStats = () => {
       // while we go through each activity we will add miles, name, and date to each activity object
       stravaData.forEach((activity) => {
         miles += activity.distance * 0.000621371;
-        activities.push({name: activity.name, distance: (activity.distance * 0.000621371), date: activity.start_date_local});
+        activities.push({name: activity.name, distance: (activity.distance * 0.000621371), date: activity.start_date_local, dateEpoch: getDateEpoch(activity.start_date)});
       });
 
 
@@ -62,6 +62,11 @@ const GetStravaStats = () => {
       Activities: activities,
     });
     }
+  }
+
+  const getDateEpoch = (date) => {
+    let miliEpoch = new Date(date).getTime();
+    return miliEpoch/1000;
   }
 
 
