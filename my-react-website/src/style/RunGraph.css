@@ -1,5 +1,10 @@
 .graphContainerSVG{
     overflow: visible;
     /* flip this on the horizontal axis */
-    transform: scaley(-1);
+    transform: scaleY(-1);
+}
+
+.mileTextScaling{
+    transform: scaleY(-1);
+    font-size: 15px;
 }
