@@ -3,6 +3,7 @@ import GetStravaStats from "./GetStravaStats";
 
 const RunGraph = () => {
   const xPositions = Array(30).fill(null);
+  // console.log(xPositions);
 
   const data = GetStravaStats();
   // const miles = data.Miles;
@@ -36,12 +37,11 @@ const RunGraph = () => {
       //   Finally add the distance to the xPositions array so we can show it on the graph!
       //realized that the above line doesnt account for multiple runs on the same day so to fix
       // lets check if point in array is null if it is then add the distance to it and if its not then add the distance to the existing distance
-      if (xPositions[daysAgo] === null) {
+      if (xPositions[daysAgo] === null || xPositions[daysAgo] === undefined) {
         xPositions[daysAgo] = ((activity.distance / 20) * 100).toString() + "%";
       } else {
-        let newDistance =
-          (activity.distance / 20) * 100 +
-          parseInt(xPositions[daysAgo].slice(0, -1));
+        let newDistance = (activity.distance / 20) * 100 + parseInt(xPositions[daysAgo].slice(0, -1));
+        // rewrite the above line wwithout using slice
         xPositions[daysAgo] = newDistance.toString() + "%";
       }
     });
