@@ -28,13 +28,25 @@
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
 }
-.graphExtra{
+.runningExtra{
     height: 35vh;
-    width: 90%;
+    width: 95%;
     background-color: rgba(202, 202, 202, 0.651);
     /* opacity: 0.5; */
-    border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    display: flex;
+    border-radius: 10px;
+}
+.graphExtra{
+ height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statsExtra{
+ height: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

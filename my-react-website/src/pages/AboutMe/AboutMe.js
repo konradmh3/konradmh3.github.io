@@ -50,7 +50,7 @@ const AboutMe = () => {
         break;
       case 2:
         setTimeout(() => {
-          navigate("/extracurriculars");
+          navigate("/hobbies");
         }, 1750);
         break;
       case 3:
@@ -141,7 +141,7 @@ const AboutMe = () => {
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={2}
         ref={aboutMeRefs[2]}
-        title="Extracurriculars"
+        title="Hobbies"
         text="I like doing things and other things and boom! More things!"
       />
       <CodeSubtitles titleClass="AboutMe" state="0" />

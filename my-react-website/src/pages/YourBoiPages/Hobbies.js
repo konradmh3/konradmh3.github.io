@@ -3,7 +3,7 @@ import GetStravaStats from "../../hooks/GetStravaStats";
 import { Container, Row, Col } from "react-grid-system";
 import RunGraph from "../../hooks/RunGraph";
 
-const Extracurriculars = () => {
+const Hobbies = () => {
 
 
   return (
@@ -13,17 +13,18 @@ const Extracurriculars = () => {
         <Container>
           <Row className="titleRowExtra">
             <Col className="titleColExtra" xs={12}>
-              <h1>Extracurriculars</h1>
+              <h1>Hobbies</h1>
             </Col>
           </Row>
           <Row className="descGraphRowExtra">
-            <Col className="centerCol" xs={4}>
+            {/* <Col className="centerCol" xs={4}>
               <div className="descExtra"></div>
-            </Col>
-            <Col className="centerCol" xs={8}>
-              <div className="graphExtra">
+            </Col> */}
+            <Col className="centerCol" xs={12}>
+              <div className="runningExtra">
                 {/* This is where we will put our svg graph displaying 30 days of data from 0 to 20 miles*/}
-                <RunGraph />
+                <div className="graphExtra"><RunGraph /></div>
+                <div className="statsExtra"></div>
               </div>
             </Col>
           </Row>
@@ -43,4 +44,4 @@ const Extracurriculars = () => {
   );
 };
 
-export default Extracurriculars;
+export default Hobbies;

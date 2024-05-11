@@ -8,7 +8,7 @@ import Foodood from "./pages/ProjectPages/Foodood";
 import KeyLogger from "./pages/ProjectPages/KeyLogger";
 import ReactProjects from "./pages/ProjectPages/ReactProjects";
 import Stick from "./pages/ProjectPages/Stick";
-import Extracurriculars from "./pages/YourBoiPages/Extracurriculars";
+import Hobbies from "./pages/YourBoiPages/Hobbies";
 import Schooling from "./pages/YourBoiPages/Schooling";
 import HomeTown from "./pages/YourBoiPages/HomeTown";
 import ASI from "./pages/ExperiencePages/ASI";
@@ -30,7 +30,7 @@ export default function App() {
           <Route path="keylogger" element={<KeyLogger />} />
           <Route path="stick" element={<Stick />} />
           <Route path="reactprojects" element={<ReactProjects />} />
-          <Route path="extracurriculars" element={<Extracurriculars />} />
+          <Route path="hobbies" element={<Hobbies />} />
           <Route path="hometown" element={<HomeTown />} />
           <Route path="schooling" element={<Schooling />} />
           <Route path="asi" element={<ASI />} />
