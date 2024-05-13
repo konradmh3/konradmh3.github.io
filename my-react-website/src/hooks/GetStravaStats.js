@@ -12,12 +12,12 @@ const GetStravaStats = () => {
 
   let clientID = 126353;
   let clientSecret = "07bdcf420899ca46d80ac03ad9110a1f942fcc27";
-  let days30Ago = Math.floor(Date.now() / 1000) - 2592000;
 
   const refreshToken = "6cac852b70f598449a8b3cb5955a21467b618e03";
   const callRefreshToken = `https://www.strava.com/oauth/token?client_id=${clientID}&client_secret=${clientSecret}&refresh_token=${refreshToken}&grant_type=refresh_token`
 
-  useEffect(() => {
+  useEffect(() => {  
+    const days30Ago = Math.floor(Date.now() / 1000) - 2592000;
     const callActivities = `https://www.strava.com/api/v3/athlete/activities?after=${days30Ago}&access_token=`;
     const getActivities = (accessToken) => {
       fetch(callActivities + accessToken)

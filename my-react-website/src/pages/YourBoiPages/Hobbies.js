@@ -1,5 +1,4 @@
 import "../../style/Extracurriculars.css";
-import GetStravaStats from "../../hooks/GetStravaStats";
 import { Container, Row, Col } from "react-grid-system";
 import RunGraph from "../../hooks/RunGraph";
 

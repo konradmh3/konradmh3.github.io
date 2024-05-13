@@ -56,9 +56,10 @@ const RunGraph = () => {
     <svg className="graphContainerSVG" width="80%" height="80%">      
       {/* REACT FORLOOP */}
       {/* 5 miles Line */}
-      {gridLines.map((line) => (
+      {gridLines.map((line, index) => (
           <>
           <line
+          index={index}
             x1="0"
             y1={line[0]}
             x2="99%"
