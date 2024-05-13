@@ -3,7 +3,7 @@
     z-index: 10;
     height: 101vh;
     width: 100vw;
-    background-color: #624F34;
+    background-color: rgb(252,98,24);
 }
 .extracurricularsContainerNoScroll{
     overflow: hidden;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .descGraphRowExtra{
     height: 40vh;
@@ -23,7 +23,7 @@
 .descExtra{
     height: 35vh;
     width: 80%;
-    background-color: rgba(202, 202, 202, 0.651);
+    background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
@@ -31,24 +31,50 @@
 .runningExtra{
     height: 35vh;
     width: 95%;
-    background-color: rgba(202, 202, 202, 0.651);
+    background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
     display: flex;
     border-radius: 10px;
 }
 .graphExtra{
- height: 100%;
+ height: 35vh;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .statsExtra{
- height: 100%;
+ height: 35vh;
     width: 50%;
+
+    
+}
+.runningText{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.distance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -59,7 +85,7 @@
 .activityPicsExtra{
     height: 22.5vh;
     width: 95%;
-    background-color: rgba(202, 202, 202, 0.651);
+    background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
@@ -70,7 +96,7 @@
 .lifePicsExtra{
     height: 22.5vh;
     width: 95%;
-    background-color: rgba(202, 202, 202, 0.651);
+    background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);

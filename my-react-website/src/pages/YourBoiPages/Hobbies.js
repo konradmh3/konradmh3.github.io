@@ -32,10 +32,16 @@ const Hobbies = () => {
                   <RunGraph setSelectedRun={setSelectedRun} />
                   </div>
                 <div className="statsExtra">
-                  <h1>Stats</h1>
-                  <h2>Selected Run: {selectedRun ? selectedRun.name : "None"}</h2>
-                  <h2>Distance: {selectedRun ? selectedRun.distance.toFixed(2) : "None"} miles</h2>
-                  <h2>Date: {selectedRun ? selectedRun.date.split("T")[0].split("-")[1]+"/"+selectedRun.date.split("T")[0].split("-")[2]+"/"+selectedRun.date.split("T")[0].split("-")[0] : "None"}</h2>
+                  <p className="runningText">
+                    Running is a hobby I have picked up these past couple months!
+                    I have been running 5 days a week and have been tracking my progress.
+                    Running is a great way to stay in shape and keep your mind focused and clear of distractions.
+                    The graph uses the Strava API to pull my last 30 days of running data and display it. Check it out to see my progress!
+                  </p>
+                  <div className="stats">Stats</div>
+                  <div className="selected">Selected Run: {selectedRun ? selectedRun.name : "None"}</div>
+                  <div className="distance">Distance: {selectedRun ? selectedRun.distance.toFixed(2) : "None"} miles</div>
+                  <div className="date">Date: {selectedRun ? selectedRun.date.split("T")[0].split("-")[1]+"/"+selectedRun.date.split("T")[0].split("-")[2]+"/"+selectedRun.date.split("T")[0].split("-")[0] : "None"}</div>
                 </div>
               </div>
             </Col>

@@ -41,7 +41,7 @@ const RunGraph = (props) => {
 
 
   const handleMouseEnter = (e) => {
-    e.target.style.stroke = "rgb(98,79,52, 0.25)";
+    e.target.style.stroke = "rgb(252,98,24, .25)";
     // console.log(e.target);
     //log the key of the line which is under fiberNode
     // console.log(e._targetInst.key);
@@ -83,7 +83,7 @@ const RunGraph = (props) => {
           y1="0"
           x2={line}
           y2={yPosition[index]}
-          stroke="black"
+          stroke="rgb(252,82,0)"
           strokeWidth="1%"
         />
       ))}  
