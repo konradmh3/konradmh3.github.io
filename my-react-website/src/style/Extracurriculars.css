@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    font-size: 2.5vw;
+    font-weight: 600;
 }
 .descGraphRowExtra{
     height: 40vh;
@@ -47,26 +49,32 @@
 .statsExtra{
  height: 35vh;
     width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* lets style the scroll bar to have 0 opacity */
+
 
     
 }
 .runningText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 15vh;
     text-align: center;
+    /* shrink font depending on container size */
+    /* lets set the font size to scale at 2vw but also have a max font size of 20px like so: */
+    font-size: 1.26vw;
+
+    padding-right: 10px;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
 
 }
-.stats{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
+
 .selected{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
 }
 .distance{
     display: flex;

@@ -18,7 +18,7 @@ const Hobbies = () => {
         <Container>
           <Row className="titleRowExtra">
             <Col className="titleColExtra" xs={12}>
-              <h1>Hobbies</h1>
+              Hobbies
             </Col>
           </Row>
           <Row className="descGraphRowExtra">
@@ -38,9 +38,8 @@ const Hobbies = () => {
                     Running is a great way to stay in shape and keep your mind focused and clear of distractions.
                     The graph uses the Strava API to pull my last 30 days of running data and display it. Check it out to see my progress!
                   </p>
-                  <div className="stats">Stats</div>
-                  <div className="selected">Selected Run: {selectedRun ? selectedRun.name : "None"}</div>
-                  <div className="distance">Distance: {selectedRun ? selectedRun.distance.toFixed(2) : "None"} miles</div>
+                  <div className="selected">{selectedRun ? selectedRun.name : "None"}</div>
+                  <div className="distance">Distance: {selectedRun ? selectedRun.distance.toFixed(2) + " miles" : "None"}</div>
                   <div className="date">Date: {selectedRun ? selectedRun.date.split("T")[0].split("-")[1]+"/"+selectedRun.date.split("T")[0].split("-")[2]+"/"+selectedRun.date.split("T")[0].split("-")[0] : "None"}</div>
                 </div>
               </div>
