@@ -8,6 +8,9 @@ const RunGraph = (props) => {
   const gridLines = [["25%", "-25%", "5"], ["50%", "-50%", "10"], ["75%", "-75%", "15"], ["100%", "-100%", "20"]];
   const distanceLines = Array(30).fill(null).map((_, index) => {
    return `${(index + 1) * 3.3}%`;
+  //  the above line helps us create an array of 30 elements, each element is a string that represents a percentage of the svg width
+  // this is better than hardcoding the values because it allows us to change the number of lines easily
+  // the action of compressing the array of 30 elements into a string is called mapping
   });
 
   const getTMR = () => {
