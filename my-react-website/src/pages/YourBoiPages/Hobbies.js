@@ -1,9 +1,15 @@
 import "../../style/Extracurriculars.css";
 import { Container, Row, Col } from "react-grid-system";
 import RunGraph from "../../hooks/RunGraph";
+import { useEffect, useState } from "react";
 
 const Hobbies = () => {
+  const [selectedRun, setSelectedRun] = useState(null);
 
+  useEffect(() => {
+    console.log(selectedRun);
+  }
+  , [selectedRun]);
 
   return (
     // <GetStravaActivities />
@@ -22,8 +28,15 @@ const Hobbies = () => {
             <Col className="centerCol" xs={12}>
               <div className="runningExtra">
                 {/* This is where we will put our svg graph displaying 30 days of data from 0 to 20 miles*/}
-                <div className="graphExtra"><RunGraph /></div>
-                <div className="statsExtra"></div>
+                <div className="graphExtra">
+                  <RunGraph setSelectedRun={setSelectedRun} />
+                  </div>
+                <div className="statsExtra">
+                  <h1>Stats</h1>
+                  <h2>Selected Run: {selectedRun ? selectedRun.name : "None"}</h2>
+                  <h2>Distance: {selectedRun ? selectedRun.distance.toFixed(2) : "None"} miles</h2>
+                  <h2>Date: {selectedRun ? selectedRun.date.split("T")[0].split("-")[1]+"/"+selectedRun.date.split("T")[0].split("-")[2]+"/"+selectedRun.date.split("T")[0].split("-")[0] : "None"}</h2>
+                </div>
               </div>
             </Col>
           </Row>

@@ -1,7 +1,8 @@
 import "../style/RunGraph.css";
 import GetStravaStats from "./GetStravaStats";
 
-const RunGraph = () => {
+
+const RunGraph = (props) => {
   const yPosition = Array(30).fill(null);
   const data = GetStravaStats();
   const gridLines = [["25%", "-25%", "5"], ["50%", "-50%", "10"], ["75%", "-75%", "15"], ["100%", "-100%", "20"]];
@@ -37,16 +38,17 @@ const RunGraph = () => {
 
 
   const handleMouseEnter = (e) => {
-    e.target.style.stroke = "red";
-    console.log(e.target);
+    e.target.style.stroke = "rgb(98,79,52, 0.25)";
+    // console.log(e.target);
     //log the key of the line which is under fiberNode
-    console.log(e._targetInst.key);
+    // console.log(e._targetInst.key);
     //console log the data object where the object.activity.daysAgo is equal to the key of the line
-    console.log(data.Activities.find((activity) => activity.daysAgo === parseInt(e._targetInst.key)));
+    // console.log(data.Activities.find((activity) => activity.daysAgo === parseInt(e._targetInst.key)));
+    props.setSelectedRun(data.Activities.find((activity) => activity.daysAgo === parseInt(e._targetInst.key)));
   }
 
   const handleMouseLeave = (e) => {
-    e.target.style.stroke = "black";
+    e.target.style.stroke = "rgba(256, 0, 0, 0)";
   }
 
 
@@ -55,11 +57,10 @@ const RunGraph = () => {
   return (
     <svg className="graphContainerSVG" width="80%" height="80%">      
       {/* REACT FORLOOP */}
-      {/* 5 miles Line */}
-      {gridLines.map((line, index) => (
-          <>
+      {/* miles Line */}
+      {gridLines.map((line) => (
           <line
-          index={index}
+            key={line}
             x1="0"
             y1={line[0]}
             x2="99%"
@@ -67,25 +68,38 @@ const RunGraph = () => {
             stroke="grey"
             strokeWidth={1}
           />
-          <text className="mileTextScaling" x="100%" y={line[1]} fill="black">{line[2]}</text>
-          </>
+        ))}
+        {gridLines.map((line, index) => (
+          <text key={index} className="mileTextScaling" x="100%" y={line[1]} fill="black">{line[2]}</text>
         ))}
     
-      {/* the below line components represent the miles ran on graph */}
       {distanceLines.map((line, index) => (
         <line
-        // 29-index is used so that the key is equal to days ago of the run
-          key={29 - index}
+          key={29 - index + 30}
           x1={line}
           y1="0"
           x2={line}
-          y2={yPosition[distanceLines.indexOf(line)]}
+          y2={yPosition[index]}
           stroke="black"
           strokeWidth="1%"
+        />
+      ))}  
+      {distanceLines.map((line, index) => (
+        yPosition[index] !== null ? (
+        <line
+          key={29 - index}
+          x1={line}
+          y1="0%"
+          x2={line}
+          y2="100%"
+          stroke="rgba(256, 0, 0, 0)"
+          strokeWidth="3.3%"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />
-      ))}  
+        ) : null
+      ))}
+
       {/* Y Axis */}
       <line
         x1="0"
