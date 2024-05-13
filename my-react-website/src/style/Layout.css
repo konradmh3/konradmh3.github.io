@@ -1,4 +1,6 @@
-
+::-webkit-scrollbar {
+    width: 0px;
+}
 .top-header-container {
     display: flex;
     justify-content: space-between;

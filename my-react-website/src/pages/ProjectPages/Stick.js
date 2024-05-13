@@ -1,9 +1,13 @@
 import { Container, Row, Col } from "react-grid-system";
 import FirstScene from "../../scenes/FirstScene";
+import { useEffect } from "react";
 
 import "../../style/Stick.css";
 
 const Stick = () => {
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, []);
   return (
     <div className="stickContainerNoScroll">
       <div className="stickContainer">

@@ -1,9 +1,12 @@
 import "../../style/Schooling.css";
 import { Container, Row, Col } from "react-grid-system";
 import csulbLogo from "../../assets/logoCSULB.png";
-
+import { useEffect } from "react";
 
 const Schooling = () => {
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, []);
   return (
     <div className="schoolingContainerNoScroll">
       <div className="schoolingContainer">

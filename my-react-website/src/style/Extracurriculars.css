@@ -1,9 +1,12 @@
+/* lets edit the scroll bar color */
+
 .extracurricularsContainer{
     position: relative;
     z-index: 10;
     height: 101vh;
     width: 100vw;
     background-color: rgb(252,98,24);
+    scrollbar-width: thin;
 }
 .extracurricularsContainerNoScroll{
     overflow: hidden;
@@ -20,10 +23,10 @@
     font-weight: 600;
 }
 .descGraphRowExtra{
-    height: 40vh;
+    height: 35vh;
 }
 .descExtra{
-    height: 35vh;
+    height: 32.5vh;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
@@ -31,7 +34,7 @@
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
 }
 .runningExtra{
-    height: 35vh;
+    height: 32.5vh;
     width: 95%;
     background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
@@ -40,35 +43,21 @@
     border-radius: 10px;
 }
 .graphExtra{
- height: 35vh;
+ height: 32.5vh;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .statsExtra{
- height: 35vh;
+ height: 32.5vh;
     width: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* lets style the scroll bar to have 0 opacity */
-
-
-    
 }
-.runningText{
-    height: 15vh;
-    text-align: center;
-    /* shrink font depending on container size */
-    /* lets set the font size to scale at 2vw but also have a max font size of 20px like so: */
-    font-size: 2vh;
 
-    padding-right: 10px;
-    overflow-y: scroll;
-    scrollbar-color: transparent transparent;
-
-}
 
 .selected{
     display: flex;
@@ -88,22 +77,22 @@
 }
 
 .activityPicsRow{
-    height: 25vh;
+    height: 27.5vh;
 }
 .activityPicsExtra{
-    height: 22.5vh;
-    width: 95%;
+    height: 25vh;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
 }
 .lifePicsRow{
-    height: 25vh;
+    height: 27.5vh;
 }
 .lifePicsExtra{
-    height: 22.5vh;
-    width: 95%;
+    height: 25vh;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.801);
     /* opacity: 0.5; */
     border-radius: 10px;

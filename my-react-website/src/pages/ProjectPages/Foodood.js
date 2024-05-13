@@ -1,12 +1,14 @@
 import "../../style/Foodood.css";
 import BurgerCanvas from "../../scenes/BurgerScene";
-
+import { useEffect } from "react";
 import { Container, Row, Col, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
 
 
 const Foodood = () => {
-  
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, []);
   return (
     <div className = "foodoodContainerNoScroll">
     <div className="foodoodContainer">

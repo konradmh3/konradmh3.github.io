@@ -1,9 +1,12 @@
 import "../../style/HomeTown.css";
 import { Container, Row, Col } from "react-grid-system";
 import lbLogo from "../../assets/lbLogoPink.png";
-
+import { useEffect } from "react";
 
 const HomeTown = () => {
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, []);
   return (
     <div className="homeTownContainerNoScroll">
       <div className="homeTownContainer">
@@ -40,7 +43,7 @@ const HomeTown = () => {
                 </Col>
               </Row>
             </Col>
-            <Col sm={3}>
+            <Col xs={3}>
               <Row className="linksForActivitiesRow">
                 <Col className="centerCol" xs={12}>
                   <div className="linksForActivities">
