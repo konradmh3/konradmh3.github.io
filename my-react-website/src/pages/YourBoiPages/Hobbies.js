@@ -6,16 +6,10 @@ import { useEffect, useState } from "react";
 const Hobbies = () => {
   const [selectedRun, setSelectedRun] = useState(null);
 
-  useEffect(() => {
-    console.log(selectedRun);
-  }
-  , [selectedRun]);
-
   // lets scroll to bottom of page
   useEffect(() => {
     window.scrollTo(0, document.body.scrollHeight);
   }, []);
-
 
   return (
     // <GetStravaActivities />
@@ -43,7 +37,9 @@ const Hobbies = () => {
           </Row>
           <Row className="activityPicsRow">
             <Col className="centerCol" xs={8}>
-              <div className="activityPicsExtra"></div>
+              <div className="activityTextExtra">
+                Running has become one of my favorite hobbies. I started running in March 2024 and have been running consistently since. I have ran almost every day since then and I am training for the Long Beach Marathon in October 2024.
+              </div>
             </Col>
             <Col className="centerCol" xs={4}>
               <div className="activityPicsExtra"></div>

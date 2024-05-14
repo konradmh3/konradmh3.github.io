@@ -23,7 +23,7 @@ const Layout = () => {
       setMenuSectionHeight("100vh");
       setPageNamedisplayed(0);
       setZIndexOfMenu(2);
-      console.log(currentPage);
+      // console.log(currentPage);
       setTitleMenuColor("rgb(0, 0, 0)");
       document.body.style.overflow = "hidden";
     } else {
@@ -33,7 +33,7 @@ const Layout = () => {
       setMenuSectionHeight("0vh");
       setPageNamedisplayed(1);
       setZIndexOfMenu(0);
-      console.log(currentPage);
+      // console.log(currentPage);
       window.scrollTo(0, 0);
 
       if (currentPage === "/") {
@@ -48,8 +48,8 @@ const Layout = () => {
       // setCurrentPage(useLocation().pathname);
       // console.log(useLocation().pathname);
     }
-    console.log(window.scrollY);
-    console.log(menuSectionHeight);
+    // console.log(window.scrollY);
+    // console.log(menuSectionHeight);
   }, [menuIsOpen, currentPage, menuSectionHeight]);
 
   useEffect(() => {
