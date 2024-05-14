@@ -28,7 +28,7 @@
 .descExtra{
     height: 32.5vh;
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(255,255,255);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
@@ -36,7 +36,7 @@
 .runningExtra{
     height: 32.5vh;
     width: 95%;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(255,255,255);
     /* opacity: 0.5; */
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
     display: flex;
@@ -82,7 +82,7 @@
 .activityTextExtra{
     height: 25vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(255,255,255);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
@@ -94,10 +94,13 @@
 .activityPicsExtra{
     height: 25vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(255,255,255);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    overflow-y: scroll;
+    /* lets change width of scroll */
+    scrollbar-width: 0px;
 }
 .lifePicsRow{
     height: 27.5vh;
@@ -105,10 +108,8 @@
 .lifePicsExtra{
     height: 25vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgb(255,255,255);
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
 }
-
-

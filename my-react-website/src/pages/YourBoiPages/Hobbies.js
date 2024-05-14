@@ -2,6 +2,7 @@ import "../../style/Extracurriculars.css";
 import { Container, Row, Col } from "react-grid-system";
 import RunGraph from "../../hooks/RunGraph";
 import { useEffect, useState } from "react";
+// import EmbedActivity from "../../hooks/EmbedActivity";
 
 const Hobbies = () => {
   const [selectedRun, setSelectedRun] = useState(null);
@@ -42,7 +43,12 @@ const Hobbies = () => {
               </div>
             </Col>
             <Col className="centerCol" xs={4}>
-              <div className="activityPicsExtra"></div>
+              <div className="activityPicsExtra">
+                {/* <EmbedActivity activityId="11408724867" />
+                <EmbedActivity activityId="11400755334" />
+                <EmbedActivity activityId="11397899532" /> */}``
+
+              </div>
             </Col>
           </Row>
           <Row className="lifePicsRow">

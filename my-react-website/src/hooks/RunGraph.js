@@ -6,8 +6,8 @@ const RunGraph = (props) => {
   const yPosition = Array(30).fill(null);
   const data = GetStravaStats();
   const gridLines = [["25%", "-25%", "5"], ["50%", "-50%", "10"], ["75%", "-75%", "15"], ["100%", "-100%", "20"]];
-  const distanceLines = Array(30).fill(null).map((_, index) => {
-   return `${(index + 1) * 3.3}%`;
+  const distanceLines = Array.from({ length: 30 }, (v, i) => {
+    return (2 + i * 3.33).toString() + "%";
   //  the above line helps us create an array of 30 elements, each element is a string that represents a percentage of the svg width
   // this is better than hardcoding the values because it allows us to change the number of lines easily
   // the action of compressing the array of 30 elements into a string is called mapping
@@ -42,12 +42,11 @@ const RunGraph = (props) => {
 
   const handleMouseEnter = (e) => {
     e.target.style.stroke = "rgb(252,98,24, .25)";
-    // console.log(e.target);
-    //log the key of the line which is under fiberNode
-    // console.log(e._targetInst.key);
-    //console log the data object where the object.activity.daysAgo is equal to the key of the line
-    // console.log(data.Activities.find((activity) => activity.daysAgo === parseInt(e._targetInst.key)));
-    props.setSelectedRun(data.Activities.find((activity) => activity.daysAgo === parseInt(e._targetInst.key)));
+
+    props.setSelectedRun(data.Activities.find((activity) => activity.daysAgo === parseInt(29-e._targetInst.key)));
+    console.log(yPosition)
+    console.log(data.Activities.find((activity) => activity.daysAgo === parseInt(29-e._targetInst.key)));
+    console.log(parseInt(29-e._targetInst.key))
   }
 
   const handleMouseLeave = (e) => {
@@ -82,15 +81,15 @@ const RunGraph = (props) => {
           x1={line}
           y1="0"
           x2={line}
-          y2={yPosition[index]}
+          y2={yPosition[index + 1]}
           stroke="rgb(252,82,0)"
           strokeWidth="1%"
         />
       ))}  
       {distanceLines.map((line, index) => (
-        yPosition[index] !== null ? (
+        // yPosition[index] !== null ? (
         <line
-          key={29 - index}
+          key={index}
           x1={line}
           y1="0%"
           x2={line}
@@ -100,8 +99,8 @@ const RunGraph = (props) => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />
-        ) : null
-      ))}
+        //  ) : null
+      ))} 
 
       {/* Y Axis */}
       <line

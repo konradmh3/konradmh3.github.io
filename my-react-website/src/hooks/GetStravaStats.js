@@ -37,44 +37,39 @@ const GetStravaStats = () => {
   }, [callRefreshToken]);
 
 
-
-
-
-  const setAllStats = () => {
-    if (isLoading) return 0;
-
-    if (!isLoading && stravaData!==null) {
-      // console.log(stravaData);
-
-      let miles = 0;
-      let activities = [];
-      // while we go through each activity we will add miles, name, and date to each activity object
-      stravaData.forEach((activity) => {
-        miles += activity.distance * 0.000621371;
-        activities.push({name: activity.name, distance: (activity.distance * 0.000621371), date: activity.start_date_local, dateEpoch: getDateEpoch(activity.start_date)});
-      });
-
-
-    let totalRuns = stravaData.length;
-    setArrayStats({
-      Miles: [miles],
-      TotalRuns: [totalRuns],
-      Activities: activities,
-    });
-    }
-  }
-
   const getDateEpoch = (date) => {
     let miliEpoch = new Date(date).getTime();
     return miliEpoch/1000;
   }
 
 
-
-
   useEffect(() => {
+    const setAllStats = () => {
+      if (isLoading) return 0;
+  
+      if (!isLoading && stravaData!==null) {
+        // console.log(stravaData);
+  
+        let miles = 0;
+        let activities = [];
+        // while we go through each activity we will add miles, name, and date to each activity object
+        stravaData.forEach((activity) => {
+          miles += activity.distance * 0.000621371;
+          activities.push({name: activity.name, distance: (activity.distance * 0.000621371), date: activity.start_date_local, dateEpoch: getDateEpoch(activity.start_date)});
+        });
+  
+  
+      let totalRuns = stravaData.length;
+      setArrayStats({
+        Miles: [miles],
+        TotalRuns: [totalRuns],
+        Activities: activities,
+      });
+      }
+    }
     setAllStats();
-  }, [isLoading, stravaData]);
+  }
+  , [stravaData, isLoading]);
 
 
 
