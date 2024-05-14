@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.99807e08.css",
-    "main.js": "/static/js/main.050bfb3f.js",
+    "main.css": "/static/css/main.564b5ca0.css",
+    "main.js": "/static/js/main.ea9c1be6.js",
     "static/media/Resume_Konrad_Hernandez1.pdf": "/static/media/Resume_Konrad_Hernandez1.d3d56c84fe27e7115684.pdf",
     "static/media/fooDoodTitle.png": "/static/media/fooDoodTitle.29dd8ee72a4d56d8493b.png",
     "static/media/lbLogoPink.png": "/static/media/lbLogoPink.74556b4c3cbe56699fdc.png",
@@ -9,7 +9,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.99807e08.css",
-    "static/js/main.050bfb3f.js"
+    "static/css/main.564b5ca0.css",
+    "static/js/main.ea9c1be6.js"
   ]
 }
