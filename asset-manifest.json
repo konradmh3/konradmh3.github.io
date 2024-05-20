@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b21b73b5.css",
-    "main.js": "/static/js/main.fd965796.js",
-    "static/media/Resume_Konrad_Hernandez1.pdf": "/static/media/Resume_Konrad_Hernandez1.d3d56c84fe27e7115684.pdf",
+    "main.css": "/static/css/main.1ca8c1a1.css",
+    "main.js": "/static/js/main.d36dc2d7.js",
+    "static/media/Resume_Konrad_Hernandez.pdf": "/static/media/Resume_Konrad_Hernandez.d9574cf0708df10e43cd.pdf",
     "static/media/fooDoodTitle.png": "/static/media/fooDoodTitle.29dd8ee72a4d56d8493b.png",
     "static/media/lbLogoPink.png": "/static/media/lbLogoPink.74556b4c3cbe56699fdc.png",
     "static/media/logoCSULB.png": "/static/media/logoCSULB.270a9253b91e07de280f.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.b21b73b5.css",
-    "static/js/main.fd965796.js"
+    "static/css/main.1ca8c1a1.css",
+    "static/js/main.d36dc2d7.js"
   ]
 }
