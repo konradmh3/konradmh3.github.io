@@ -24,7 +24,7 @@
     max-height: 15vh;
     position: absolute;
     z-index: 5;
-    filter: drop-shadow(6px 6px 2px rgb(0, 0, 0));
+    filter: drop-shadow(6px 6px 2px rgb(236,0,140));
     /* lets make the color of logoo inverse */
     /* filter: invert(1); */
 }

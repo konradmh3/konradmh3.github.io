@@ -19,7 +19,9 @@
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    font-size: 5vh;
+    font-size: calc(1.8vw + 1.8vh + 1.8vmin);
+  font-family: "Chakra Petch", sans-serif;
+    /* font-size: 5vh; */
     font-weight: 600;
 }
 .descGraphRowExtra{
@@ -60,20 +62,27 @@
 
 
 .selected{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-weight: 600;
+    font-size: calc(1.1vw + 1.1vh + 1.1vmin);
+  font-family: "Chakra Petch", sans-serif;
 }
 .distance{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    font-size: calc(1vw + 1vh + 1vmin);
+  font-family: "Chakra Petch", sans-serif;
 }
 .date{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    font-size: calc(1vw + 1vh + 1vmin);
+  font-family: "Chakra Petch", sans-serif;
+  
 }
 
 .activityPicsRow{
@@ -90,6 +99,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: calc(.8vw + .8vh + .8vmin);
+    font-family: "Chakra Petch", sans-serif;
+
+
 }
 .activityPicsExtra{
     height: 25vh;
