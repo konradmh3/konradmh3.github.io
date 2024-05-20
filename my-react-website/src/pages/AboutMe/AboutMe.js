@@ -21,6 +21,8 @@ const AboutMe = () => {
     useRef(),
     useRef(),
     useRef(),
+    useRef(),
+    useRef(),
   ];
   const [moreDetailsOpen, setMoreDetailsOpen] = useState(false);
   // here we will add the state that will hold the index of the aboutMeRefs array that is clicked
@@ -86,6 +88,11 @@ const AboutMe = () => {
       case 9:
         setTimeout(() => {
           navigate("/essentia");
+        }, 1750);
+      break;
+      case 10:
+        setTimeout(() => {
+          navigate("/jarvis");
         }, 1750);
       break;
       default:
@@ -154,16 +161,6 @@ const AboutMe = () => {
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
-        backColor={"#E0C7A4"}
-        setClickedIndex={setClickedIndex}
-        setMoreDetailsOpen={setMoreDetailsOpen}
-        index={3}
-        ref={aboutMeRefs[3]}
-        title="FoodDood"
-        text="FooDood is a mobile app built with react native to help local businesses grow and consumers eat!"
-      />
-      <AboutMeDescription
-        setDetailBackColor={setDetailBackColor}
         backColor={"#346234"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
@@ -174,13 +171,23 @@ const AboutMe = () => {
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
-        backColor={"#516234"}
+        backColor={"rgb(163,116,76)"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
-        index={5}
-        ref={aboutMeRefs[5]}
-        title="Stick"
-        text="Stick is a 2D platformer built with unity!"
+        index={10}
+        ref={aboutMeRefs[10]}
+        title="Jarvis"
+        text="Home automation project!"
+      />
+      <AboutMeDescription
+        setDetailBackColor={setDetailBackColor}
+        backColor={"#E0C7A4"}
+        setClickedIndex={setClickedIndex}
+        setMoreDetailsOpen={setMoreDetailsOpen}
+        index={3}
+        ref={aboutMeRefs[3]}
+        title="FoodDood"
+        text="FooDood is a mobile app built with react native to help local businesses grow and consumers eat!"
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
@@ -188,9 +195,22 @@ const AboutMe = () => {
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={6}
-        ref={aboutMeRefs[5]}
+        ref={aboutMeRefs[6]}
         title="Keylogger"
         text="Keylogger concept!"
+      />
+      
+      
+      
+      <AboutMeDescription
+        setDetailBackColor={setDetailBackColor}
+        backColor={"#516234"}
+        setClickedIndex={setClickedIndex}
+        setMoreDetailsOpen={setMoreDetailsOpen}
+        index={5}
+        ref={aboutMeRefs[5]}
+        title="Stick"
+        text="Stick is a 2D platformer built with unity!"
       />
       <CodeSubtitles titleClass="Grind" state="0" />
 
@@ -200,23 +220,14 @@ const AboutMe = () => {
         propText='"Experience"'
         state="1"
       />
-      <AboutMeDescription
-        setDetailBackColor={setDetailBackColor}
-        backColor={"#98A09E"}
-        setClickedIndex={setClickedIndex}
-        setMoreDetailsOpen={setMoreDetailsOpen}
-        index={7}
-        ref={aboutMeRefs[6]}
-        title="Web Developer"
-        text="Web developer at Associated Students Inc. for one year from May 2022 to May 2023."
-      />
+      
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
         backColor={"#156EAD"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={8}
-        ref={aboutMeRefs[7]}
+        ref={aboutMeRefs[8]}
         title="Sales Associate"
         text="Sales associate at a Micro Center from November 2023 to Present."
       />
@@ -226,9 +237,19 @@ const AboutMe = () => {
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
         index={9}
-        ref={aboutMeRefs[8]}
+        ref={aboutMeRefs[9]}
         title="Sales Associate"
         text="Sales associate intern at Essentia Water from May 2023 to August 2023."
+      />
+      <AboutMeDescription
+        setDetailBackColor={setDetailBackColor}
+        backColor={"#98A09E"}
+        setClickedIndex={setClickedIndex}
+        setMoreDetailsOpen={setMoreDetailsOpen}
+        index={7}
+        ref={aboutMeRefs[7]}
+        title="Web Developer"
+        text="Web developer at Associated Students Inc. for one year from May 2022 to May 2023."
       />
       <CodeSubtitles titleClass="Grind" state="0" />
 

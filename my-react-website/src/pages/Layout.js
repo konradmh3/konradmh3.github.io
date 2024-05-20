@@ -153,7 +153,7 @@ const Layout = () => {
             About Me
           </Link>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           style={{ top: "30%" }}
           initial={{ width: "0vw" }}
           animate={{ width: menuIsOpen ? "90vw" : "0vw" }}
@@ -166,7 +166,7 @@ const Layout = () => {
           <div className="link" to="projects">
             Projects
           </div>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           style={{ top: "45%" }}
           initial={{ width: "0vw" }}
@@ -217,7 +217,7 @@ const Layout = () => {
         >
           <a
             className="link"
-            href={require("../assets/Resume_Konrad_Hernandez1.pdf")}
+            href={require("../assets/Resume_Konrad_Hernandez.pdf")}
             target="_blank"
             rel="noreferrer"
           >

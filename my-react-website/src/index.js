@@ -15,6 +15,7 @@ import ASI from "./pages/ExperiencePages/ASI";
 import Essentia from "./pages/ExperiencePages/Essentia";
 import MicroCenter from "./pages/ExperiencePages/MicroCenter";
 import TestCanvas from "./pages/Testing/TestCanvas";
+import Jarvis from "./pages/ProjectPages/Jarvis";
 
 
 
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="microcenter" element={<MicroCenter />} />
           <Route path="essentia" element={<Essentia />} />
           <Route path="testcanvas" element={<TestCanvas />} />
+          <Route path="jarvis" element={<Jarvis />} />
 
           <Route path="*" element={<NoPage />} />
         </Route>
