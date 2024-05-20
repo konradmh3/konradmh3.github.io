@@ -11,43 +11,41 @@ const HomeTown = () => {
     <div className="homeTownContainerNoScroll">
       <div className="homeTownContainer">
         <Container>
-          <Row className="homeFatherRow">
-            <Col xs={9}>
-              <Row className="titleRowHome">
-                <Col className="titleHomeCol" xs={12}>
-                    <img className="lbLogo" src={lbLogo} alt="Long Beach" />
-                </Col>
-              </Row>
-              <Row className="lifeInLongBeachRow">
+          <Row className="titleRowHomeTown">
+            <Col className="titleColHomeTown" xs={12}>
+                <img className="lbLogo" src={lbLogo} alt="lbLogo" />
+            </Col>
+          </Row>
+          <Row className="contentRowHomeTown">
+            <Col xs={4}>
+              <Row className="coursesRowHomeTown">
                 <Col className="centerCol" xs={12}>
-                  <div className="lifeInLongBeach">
-                  </div>
-                </Col>
-              </Row>
-              <Row className="favoriteEventsRow">
-                <Col className="centerCol" xs={12}>
-                <div className="favoriteEvents">
-                  </div>
-                </Col>
-              </Row>
-              <Row className="favoriteThingsRow">
-                <Col className="centerCol" xs={12}>
-                  <div className="favoriteThings">
-                  </div>
-                </Col>
-              </Row>
-              <Row className="todosRow">
-                <Col className="centerCol" xs={12}>
-                  <div className="todos">
-                  </div>
+                    <div className="coursesHomeTown"></div>
                 </Col>
               </Row>
             </Col>
-            <Col xs={3}>
-              <Row className="linksForActivitiesRow">
+            <Col xs={8}>
+              <Row className="descriptionRowHomeTown">
                 <Col className="centerCol" xs={12}>
-                  <div className="linksForActivities">
-                  </div>
+                    <div className="descriptionHomeTown"></div>
+                </Col>
+              </Row>
+              <Row className="clubsWorkRowHomeTown">
+                <Col className="centerCol" xs={12}>
+                    <div className="clubsWorkHomeTown"></div>
+                </Col>
+              </Row>
+              <Row className="challangesRowHomeTown">
+                <Col className="centerCol" xs={12}>
+                    <div className="challangesHomeTown"></div>
+                </Col>
+              </Row>
+              <Row className="buttonsRowHomeTown">
+                <Col className="centerCol" xs={6}>
+                    <div className="buttonHomeTown"></div>
+                </Col>
+                <Col className="centerCol" xs={6}>
+                    <div className="buttonHomeTown"></div>
                 </Col>
               </Row>
             </Col>

@@ -8,89 +8,86 @@
 .homeTownContainerNoScroll{
     overflow: hidden;
 }
-
-.homeFatherRow{
-    height: 100vh;
+.titleRowHomeTown{
+    height: 15vh;
+    /* background-color: #b98618; */
 }
-.titleRowHome{
-    height: 20vh;
-    /* background-color: #6fa4c0; */
-}
-.titleHomeCol{
+.titleColHomeTown{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-
 }
 .lbLogo{
     height: auto;
     max-width: 100%; 
-    max-height: 20vh;
-    filter: drop-shadow(6px 6px 2px rgb(243, 86, 222));
+    max-height: 15vh;
+    position: absolute;
+    z-index: 5;
+    filter: drop-shadow(6px 6px 2px rgb(0, 0, 0));
+    /* lets make the color of logoo inverse */
+    /* filter: invert(1); */
 }
-.lifeInLongBeachRow{
+.contentRowHomeTown{
+    height: 85vh;
+    /* background-color: #b98618; */
+}
+.coursesRowHomeTown{
+    height: 85vh;
+    /* background-color: #7c5b13; */
+}
+.coursesHomeTown{
+    height: 80vh;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.50);
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+}
+.descriptionRowHomeTown{
+    height: 25vh;
+    /* background-color: #684a0a; */
+}
+.descriptionHomeTown{
     height: 20vh;
-    /* background-color: #5b869e; */
-
-}
-.lifeInLongBeach{
-    height: 15vh;
     width: 95%;
-    background-color: rgba(87, 87, 87, 0.25);
+    background-color: rgba(255, 255, 255, 0.50);
     /* opacity: 0.5; */
     border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
 }
-.favoriteEventsRow{
-    height: 20vh;    
-    /* background-color: #456272; */
-
+.clubsWorkRowHomeTown{
+    height: 25vh;
+    /* background-color: #e9c26f; */
 }
-.favoriteEvents{
-    height: 15vh;
+.clubsWorkHomeTown{
+    height: 20vh;
     width: 95%;
-    background-color: rgba(87, 87, 87, 0.25);
+    background-color: rgba(255, 255, 255, 0.50);
     /* opacity: 0.5; */
     border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
 }
-.favoriteThingsRow{
-    height: 20vh;    
-    /* background-color: #304652; */
-
+.challangesRowHomeTown{
+    height: 25vh;
+    /* background-color: #4b3e22; */
 }
-.favoriteThings{
-    height: 15vh;
+.challangesHomeTown{
+    height: 20vh;
     width: 95%;
-    background-color: rgba(87, 87, 87, 0.25);
+    background-color: rgba(255, 255, 255, 0.50);
     /* opacity: 0.5; */
     border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
 }
-.todosRow{
-    height: 20vh;    
-    /* background-color: #182329; */
-
+.buttonsRowHomeTown{
+    height: 10vh;
+    /* background-color: #47340a; */
 }
-.todos{
-    height: 15vh;
-    width: 95%;
-    background-color: rgba(87, 87, 87, 0.25);
-    /* opacity: 0.5; */
+.buttonHomeTown{
+    height: 5vh;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.50);
     border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
-}
-.linksForActivitiesRow{
-    height: 100vh;    
-    /* background-color: #7cc2eb; */
-
-}
-.linksForActivities{
-    height: 90vh;
-    width: 95%;
-    background-color: rgba(87, 87, 87, 0.25);
-    /* opacity: 0.5; */
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.50);
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
 }

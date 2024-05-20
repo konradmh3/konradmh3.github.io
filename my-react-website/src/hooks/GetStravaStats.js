@@ -17,7 +17,7 @@ const GetStravaStats = () => {
   const callRefreshToken = `https://www.strava.com/oauth/token?client_id=${clientID}&client_secret=${clientSecret}&refresh_token=${refreshToken}&grant_type=refresh_token`
 
   useEffect(() => {  
-    const days30Ago = Math.floor(Date.now() / 1000) - 2592000;
+    const days30Ago = Math.floor(Date.now() / 1000) - 2505600;
     const callActivities = `https://www.strava.com/api/v3/athlete/activities?after=${days30Ago}&access_token=`;
     const getActivities = (accessToken) => {
       fetch(callActivities + accessToken)

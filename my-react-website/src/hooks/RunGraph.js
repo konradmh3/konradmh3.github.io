@@ -5,6 +5,7 @@ import GetStravaStats from "./GetStravaStats";
 const RunGraph = (props) => {
   const yPosition = Array(30).fill(null);
   const data = GetStravaStats();
+  console.log(data);
   const gridLines = [["25%", "-25%", "5"], ["50%", "-50%", "10"], ["75%", "-75%", "15"], ["100%", "-100%", "20"]];
   const distanceLines = Array.from({ length: 30 }, (v, i) => {
     return (2 + i * 3.33).toString() + "%";
@@ -81,7 +82,7 @@ const RunGraph = (props) => {
           x1={line}
           y1="0"
           x2={line}
-          y2={yPosition[index + 1]}
+          y2={yPosition[index]}
           stroke="rgb(252,82,0)"
           strokeWidth="1%"
         />
