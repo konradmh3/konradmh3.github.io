@@ -84,13 +84,13 @@
 }
 .githubColReact{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .downloadColReact{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -101,5 +101,7 @@
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
-    max-width: 175px;
+    max-width: 200px;
+    cursor: pointer;
+    border-color: rgb(55, 78, 55);
 }

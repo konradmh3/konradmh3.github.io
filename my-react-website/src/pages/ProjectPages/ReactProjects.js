@@ -2,6 +2,7 @@ import "../../style/ReactProjects.css";
 import { useEffect } from "react";
 import { Container, Row, Col } from "react-grid-system";
 import FirstScene from "../../scenes/FirstScene";
+import { motion } from "framer-motion";
 
 const ReactProjects = () => {
   useEffect(() => {
@@ -42,10 +43,10 @@ const ReactProjects = () => {
             </Row>
             <Row className="buttonRowReact">
               <Col xs={6} className="githubColReact">
-                <div className="downloadContainerReact"></div>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerReact"></motion.button>
               </Col>
               <Col xs={6} className="downloadColReact">
-                <div className="downloadContainerReact"></div>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerReact"></motion.button>
               </Col>
             </Row>
           </Container>
