@@ -37,6 +37,9 @@
 }
 
 .videoContainerStick{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     height: 30vh;
     width: 80%;
     background-color: rgba(168, 168, 168, 0.25);
@@ -74,6 +77,9 @@
     /* opacity: 0.5; */
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .buttonRowStick{
@@ -101,4 +107,8 @@
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
     max-width: 175px;
+}
+
+.ytplayer{
+    border-radius: 10px;
 }
