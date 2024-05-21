@@ -64,10 +64,10 @@ const Stick = () => {
           </Row>
           <Row className="buttonRowStick">
             <Col xs={6} className="githubColStick">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerStick"></motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerStick">Source Code</motion.button>
             </Col>
             <Col xs={6} className="downloadColStick">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerStick"></motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerStick">Play Stick!</motion.button>
             </Col>
           </Row>
         </Container>
