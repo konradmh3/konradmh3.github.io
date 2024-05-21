@@ -107,6 +107,8 @@
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
     max-width: 175px;
+    cursor: pointer;
+    border-color: rgb(75, 83, 59);
 }
 
 .ytplayer{

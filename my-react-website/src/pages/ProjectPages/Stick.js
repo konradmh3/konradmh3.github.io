@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-grid-system";
 import FirstScene from "../../scenes/FirstScene";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 import "../../style/Stick.css";
 
@@ -63,10 +64,10 @@ const Stick = () => {
           </Row>
           <Row className="buttonRowStick">
             <Col xs={6} className="githubColStick">
-              <div className="downloadContainerStick"></div>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerStick"></motion.button>
             </Col>
             <Col xs={6} className="downloadColStick">
-              <div className="downloadContainerStick"></div>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerStick"></motion.button>
             </Col>
           </Row>
         </Container>
