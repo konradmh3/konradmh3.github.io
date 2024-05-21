@@ -88,6 +88,10 @@
   background-color: rgba(100, 100, 100, 0.25);
   border-radius: 10px;
   box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+  padding: 1%;
+  font-size: calc(1px + 0.6vw + 0.5vh + 0.5vmin);
+  font-family: "Chakra Petch", sans-serif;
+  overflow-x: scroll;
 }
 
 .frameworks {
@@ -131,6 +135,8 @@
   box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
   cursor: pointer;
   border-color: rgb(165, 149, 127);
+  font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  font-family: "Chakra Petch", sans-serif;
 }
 
 /* **********ROLE DOOD LOGO CONTAINERS AND STYLING************* */

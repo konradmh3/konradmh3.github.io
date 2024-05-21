@@ -47,7 +47,14 @@ const Foodood = () => {
             <Col className="fatherCol2" md={8}>
               <Row className="descriptionRow">
                 <Col className="descriptionCol" lg={12}>
-                  <div className="descriptionContainer"></div>
+                  <div className="descriptionContainer">
+                  <b>Technology:</b> React Native, TypeScript, FireBase, Expo, TailwindCSS, Python<br></br>
+<b>Description:</b> FooDood is a mobile application that combines the concept of Tinder-swiping with selecting something to eat.<br></br>
+<b>Implementation:</b> Developed frontend components using React Native and TypeScript, ensuring a smooth and responsive user
+interface. Employed Expo for cross-platform development, optimizing app performance across various devices. Implemented swipe
+gestures and animation logic, enhancing user experience and engagement. Led the team as scrum master hosting weekly meetings
+to discuss accomplished and future tasks in order to keep the team communicating while also streamlining workflow.
+                  </div>
                 </Col>
               </Row>
 
@@ -96,10 +103,10 @@ const Foodood = () => {
 
               <Row className="projLinks">
                 <Col className="projLinkCol" md={6}>
-                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="projLinkContainer"></motion.button>
+                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="projLinkContainer">Source Code</motion.button>
                 </Col>
                 <Col className="projLinkCol" md={6}>
-                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="projLinkContainer"></motion.button>
+                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="projLinkContainer">Foodood Website</motion.button>
                 </Col>
               </Row>
 
