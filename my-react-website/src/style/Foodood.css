@@ -1,53 +1,46 @@
-.foodoodContainer{
-    position: relative;
-    z-index: 10;
-    height: 101vh;
-    /* 101 to allow scroll bec safari is dumb and need scroll to hide url address bar */
-    width: 100vw;
-    background-color: #E0C7A4;    
-
+.foodoodContainer {
+  position: relative;
+  z-index: 10;
+  height: 101vh;
+  /* 101 to allow scroll bec safari is dumb and need scroll to hide url address bar */
+  width: 100vw;
+  background-color: #e0c7a4;
 }
-.foodoodContainerNoScroll{
-    overflow: hidden;
-    /* position: absolute; */
-
-    
+.foodoodContainerNoScroll {
+  overflow: hidden;
+  /* position: absolute; */
 }
 
-.fatherRow{
-    height: 100vh;
-    /* background-color: #E2f081; */
+.fatherRow {
+  height: 100vh;
+  /* background-color: #E2f081; */
 }
-
 
 /* **********TITLE DOOD LOGO CONTAINERS AND STYLING************* */
-.titleRow{
-    height: 20vh;
-    /* background-color: rgb(186,186,0); */
+.titleRow {
+  height: 20vh;
+  /* background-color: rgb(186,186,0); */
 }
-.titleCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    
+.titleCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
-.doodLogo{
-    /* width: 100%;  */
-    /* add shadow to logo img */
-    height: auto;
-    max-width: 100%; 
+.doodLogo {
+  /* width: 100%;  */
+  /* add shadow to logo img */
+  height: auto;
+  max-width: 100%;
 
-    max-height: 20vh;
-    position: absolute;
-    z-index: 5;
-    filter: drop-shadow(6px 6px 2px rgb(127,99,70));
-    /* box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75); */
-    
+  max-height: 20vh;
+  position: absolute;
+  z-index: 5;
+  filter: drop-shadow(6px 6px 2px rgb(127, 99, 70));
+  /* box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75); */
 
-    /* backdrop-filter: blur(3px); */
-    /* background-color: rgb(224,199,164, .5); */
-     
+  /* backdrop-filter: blur(3px); */
+  /* background-color: rgb(224,199,164, .5); */
 }
 /* .doodLogoShadow{
     height: auto;
@@ -60,228 +53,219 @@
 } */
 /* ^^^^^^^^^^^^^TITLE DOOD LOGO CONTAINERS AND STYLING^^^^^^^^^^^^ */
 
-.imgRow{
-    height: 80vh;
-    /* background-color: rgb(0,186,186); */
+.imgRow {
+  height: 80vh;
+  /* background-color: rgb(0,186,186); */
 }
-.imgCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imgCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.imgsContainer{
-    height: 75vh;
-    width: 95%;
-    background-color: rgba(100, 100, 100, 0.25);
-    /* opacity: 0.5; */
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-    /* backdrop-filter: blur(3px); */
-    /* blur */
-}
-
-.descriptionRow{
-    height: 35vh;
-    /* background-color: rgb(0,186,0); */
-}
-.descriptionCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.descriptionContainer{
-    height: 30vh;
-    width: 95%;
-    background-color: rgba(100, 100, 100, 0.25);
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
+.imgsContainer {
+  height: 75vh;
+  width: 95%;
+  background-color: rgba(100, 100, 100, 0.25);
+  /* opacity: 0.5; */
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+  /* backdrop-filter: blur(3px); */
+  /* blur */
 }
 
-.frameworks{
-    height: 10vh;
-    /* background-color: rgb(186,0,186); */
+.descriptionRow {
+  height: 35vh;
+  /* background-color: rgb(0,186,0); */
 }
-.frameworksCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px !important;
-    height: 10vh;
+.descriptionCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.hamburgers{
-    height: 10vh;
-    /* background-color: rgb(186,0,0); */
-}
-.burgerCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px !important;
-    height: 10vh;
-
+.descriptionContainer {
+  height: 30vh;
+  width: 95%;
+  background-color: rgba(100, 100, 100, 0.25);
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
 }
 
-.projLinks{
-    height: 10vh;
-    /* background-color: rgb(0,0,186); */
+.frameworks {
+  height: 10vh;
+  /* background-color: rgb(186,0,186); */
 }
-.projLinkCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.projLinkContainer{
-    height: 8vh;
-    width: 80%;
-    background-color: rgba(100, 100, 100, 0.25);
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
+.frameworksCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  height: 10vh;
 }
 
+.hamburgers {
+  height: 10vh;
+  /* background-color: rgb(186,0,0); */
+}
+.burgerCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  height: 10vh;
+}
+
+.projLinks {
+  height: 10vh;
+  /* background-color: rgb(0,0,186); */
+}
+.projLinkCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projLinkContainer {
+  height: 8vh;
+  width: 80%;
+  background-color: rgba(100, 100, 100, 0.25);
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+  cursor: pointer;
+  border-color: rgb(165, 149, 127);
+}
 
 /* **********ROLE DOOD LOGO CONTAINERS AND STYLING************* */
-.roleRow{
-    height: 35vh;
-    /* background-color: rgb(0,0,0); */
+.roleRow {
+  height: 35vh;
+  /* background-color: rgb(0,0,0); */
 }
-.roleCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.roleCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.roleContainer{
-    height: 30vh;
-    width: 95%;
-    background-color: rgba(100, 100, 100, 0.25);
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
+.roleContainer {
+  height: 30vh;
+  width: 95%;
+  background-color: rgba(100, 100, 100, 0.25);
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+}
 
-}
-
-.initLogo{
-    /* lets keep it centered on the screen no matter the size */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.initLogo {
+  /* lets keep it centered on the screen no matter the size */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
-
 /* MOBILE CSS BELOW */
-.mobileTitleRow{
-    height: 15vh;
-    /* background-color: rgb(186,186,0); */
-    /* background-color: #ff7b00; */
+.mobileTitleRow {
+  height: 15vh;
+  /* background-color: rgb(186,186,0); */
+  /* background-color: #ff7b00; */
 }
-.centerCol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.centerCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.centerColLogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
-}
-
-.centerColBurger{
-    display: flex;
-    justify-content: center;
-    overflow: visible;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    height: 15vh;
-
+.centerColLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
 }
 
-.doodLogoMobile{
-    height: 15vh; 
-    filter: drop-shadow(6px 6px 2px rgb(127,99,70));
-
-
+.centerColBurger {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  height: 15vh;
 }
 
-.descRow{
-    /* background-color: rgb(186,186,0); */
-    height: 25vh;
+.doodLogoMobile {
+  height: 15vh;
+  filter: drop-shadow(6px 6px 2px rgb(127, 99, 70));
 }
 
-.descriptionMobile{
-    height: 22.5vh;
-    background-color: rgba(100, 100, 100, 0.25);
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
-}
-.roleMobile{
-    height: 22.5vh;
-    background-color: rgba(100, 100, 100, 0.25);
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
-}
-.picRow{
-    height: 25vh;
-    /* background-color: rgb(186,186,0); */
-}
-.picsMobile{
-    height: 22.5vh;
-    background-color: rgba(100, 100, 100, 0.25);
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
+.descRow {
+  /* background-color: rgb(186,186,0); */
+  height: 25vh;
 }
 
-.frameworksTitleRow{
-    height: 5vh;
-    /* background-color: rgb(186,186,0); */
+.descriptionMobile {
+  height: 22.5vh;
+  background-color: rgba(100, 100, 100, 0.25);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+}
+.roleMobile {
+  height: 22.5vh;
+  background-color: rgba(100, 100, 100, 0.25);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+}
+.picRow {
+  height: 25vh;
+  /* background-color: rgb(186,186,0); */
+}
+.picsMobile {
+  height: 22.5vh;
+  background-color: rgba(100, 100, 100, 0.25);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
 }
 
-.frameworksMobileTitle{
-    /* underline text */
-    text-decoration: underline;
-}
-.centerColFW{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.frameworksTitleRow {
+  height: 5vh;
+  /* background-color: rgb(186,186,0); */
 }
 
-.frameworksMobileRow{
-    height: 15vh;
-    /* background-color: rgb(186,186,0); */
+.frameworksMobileTitle {
+  /* underline text */
+  text-decoration: underline;
 }
-.buttonRow{
-    height: 15vh;
-    /* background-color: rgb(186,186,0); */
-}
-.githubLink{
-    height: 12.5vh;
-    background-color: rgba(100, 100, 100, 0.25);
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
-}
-.websiteLink{
-    height: 12.5vh;
-    background-color: rgba(100, 100, 100, 0.25);
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 8px 8px 3px 3px rgb(95,66,39, .75);
-
+.centerColFW {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.frameworksMobileRow {
+  height: 15vh;
+  /* background-color: rgb(186,186,0); */
+}
+.buttonRow {
+  height: 15vh;
+  /* background-color: rgb(186,186,0); */
+}
+.githubLink {
+  height: 10vh;
+  background-color: rgba(100, 100, 100, 0.25);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+  cursor: pointer;
+  border-color: rgb(165, 149, 127);
+}
+.websiteLink {
+  height: 10vh;
+  background-color: rgba(100, 100, 100, 0.25);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 3px 3px rgb(95, 66, 39, 0.75);
+  cursor: pointer;
+  border-color: rgb(165, 149, 127);
+}

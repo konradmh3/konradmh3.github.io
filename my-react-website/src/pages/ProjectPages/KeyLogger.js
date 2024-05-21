@@ -39,9 +39,12 @@ const KeyLogger = () => {
           <Row className="descriptionRowKeyLogger">
             <Col xs={12} className="descriptionColKeyLogger">
               <div className="descriptionContainerKeyLogger">
-              <b>Technology:</b> Python, Flask, REST API, HTML, JavaScript<br></br>
-<b>Description:</b> Designed and implemented a keylogger malware project with Python-based keylogger, Flask server with REST API
-endpoints, and HTML page for keystroke visualization, facilitating cross-platform deployment through PyInstaller.
+                <b>Technology:</b> Python, Flask, REST API, HTML, JavaScript
+                <br></br>
+                <b>Description:</b> Designed and implemented a keylogger malware
+                project with Python-based keylogger, Flask server with REST API
+                endpoints, and HTML page for keystroke visualization,
+                facilitating cross-platform deployment through PyInstaller.
               </div>
             </Col>
           </Row>

@@ -3,6 +3,7 @@ import BurgerCanvas from "../../scenes/BurgerScene";
 import { useEffect } from "react";
 import { Container, Row, Col, Hidden } from "react-grid-system";
 import doodLogo from "../../assets/fooDoodTitle.png";
+import { motion } from "framer-motion";
 
 
 const Foodood = () => {
@@ -95,10 +96,10 @@ const Foodood = () => {
 
               <Row className="projLinks">
                 <Col className="projLinkCol" md={6}>
-                  <div className="projLinkContainer"></div>
+                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="projLinkContainer"></motion.button>
                 </Col>
                 <Col className="projLinkCol" md={6}>
-                  <div className="projLinkContainer"></div>
+                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="projLinkContainer"></motion.button>
                 </Col>
               </Row>
 
@@ -160,10 +161,10 @@ const Foodood = () => {
           </Row>
           <Row className="buttonRow">
             <Col className="centerCol" xs={6}>
-              <div className="githubLink"></div>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="githubLink"></motion.button>
             </Col>
             <Col className="centerCol" xs={6}>
-              <div className="websiteLink"></div>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="websiteLink"></motion.button>
             </Col>
           </Row>
         </Hidden>
