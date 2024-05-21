@@ -2,6 +2,7 @@ import "../../style/KeyLogger.css";
 import { useEffect } from "react";
 import { Container, Row, Col } from "react-grid-system";
 import FirstScene from "../../scenes/FirstScene";
+import { motion } from "framer-motion";
 
 const KeyLogger = () => {
   useEffect(() => {
@@ -50,10 +51,10 @@ const KeyLogger = () => {
           </Row>
           <Row className="buttonRowKeyLogger">
             <Col xs={6} className="githubColKeyLogger">
-              <div className="downloadContainerKeyLogger"></div>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}  className="downloadContainerKeyLogger"></motion.button>
             </Col>
             <Col xs={6} className="downloadColKeyLogger">
-              <div className="downloadContainerKeyLogger"></div>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}  className="downloadContainerKeyLogger"></motion.button>
             </Col>
           </Row>
         </Container>

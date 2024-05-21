@@ -2,6 +2,7 @@ import "../../style/Jarvis.css";
 import { useEffect } from "react";
 import { Container, Row, Col } from "react-grid-system";
 import FirstScene from "../../scenes/FirstScene";
+import { motion } from "framer-motion";
 
 const Jarvis = () => {
   useEffect(() => {
@@ -54,10 +55,10 @@ const Jarvis = () => {
           </Row>
           <Row className="buttonRowJarvis">
             <Col xs={6} className="githubColJarvis">
-              <div className="downloadContainerJarvis"></div>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerJarvis"></motion.button>
             </Col>
             <Col xs={6} className="downloadColJarvis">
-              <div className="downloadContainerJarvis"></div>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerJarvis"></motion.button>
             </Col>
           </Row>
         </Container>

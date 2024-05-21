@@ -88,13 +88,13 @@
 }
 .githubColJarvis{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .downloadColJarvis{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -106,4 +106,6 @@
     border-radius: 10px;
     box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.75);
     max-width: 175px;
+    cursor: pointer;
+    border-color: rgb(124, 98, 75);
 }

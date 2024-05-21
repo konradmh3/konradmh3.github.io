@@ -220,16 +220,15 @@ const AboutMe = () => {
         propText='"Experience"'
         state="1"
       />
-      
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
-        backColor={"#156EAD"}
+        backColor={"#98A09E"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
-        index={8}
-        ref={aboutMeRefs[8]}
-        title="Sales Associate"
-        text="Sales associate at a Micro Center from November 2023 to Present."
+        index={7}
+        ref={aboutMeRefs[7]}
+        title="Web Developer"
+        text="Web developer at Associated Students Inc. for one year from May 2022 to May 2023."
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
@@ -243,14 +242,16 @@ const AboutMe = () => {
       />
       <AboutMeDescription
         setDetailBackColor={setDetailBackColor}
-        backColor={"#98A09E"}
+        backColor={"#156EAD"}
         setClickedIndex={setClickedIndex}
         setMoreDetailsOpen={setMoreDetailsOpen}
-        index={7}
-        ref={aboutMeRefs[7]}
-        title="Web Developer"
-        text="Web developer at Associated Students Inc. for one year from May 2022 to May 2023."
+        index={8}
+        ref={aboutMeRefs[8]}
+        title="Sales Associate"
+        text="Sales associate at a Micro Center from November 2023 to Present."
       />
+      
+      
       <CodeSubtitles titleClass="Grind" state="0" />
 
       <motion.div
