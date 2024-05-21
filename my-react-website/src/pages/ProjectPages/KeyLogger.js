@@ -51,10 +51,10 @@ const KeyLogger = () => {
           </Row>
           <Row className="buttonRowKeyLogger">
             <Col xs={6} className="githubColKeyLogger">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}  className="downloadContainerKeyLogger"></motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}  className="downloadContainerKeyLogger">Source Code</motion.button>
             </Col>
             <Col xs={6} className="downloadColKeyLogger">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}  className="downloadContainerKeyLogger"></motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}  className="downloadContainerKeyLogger">Learn Python!</motion.button>
             </Col>
           </Row>
         </Container>

@@ -55,10 +55,10 @@ const Jarvis = () => {
           </Row>
           <Row className="buttonRowJarvis">
             <Col xs={6} className="githubColJarvis">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerJarvis"></motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerJarvis">Source Code</motion.button>
             </Col>
             <Col xs={6} className="downloadColJarvis">
-              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerJarvis"></motion.button>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="downloadContainerJarvis">Learn C++!</motion.button>
             </Col>
           </Row>
         </Container>
