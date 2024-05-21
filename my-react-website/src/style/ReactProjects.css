@@ -19,6 +19,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
+    font-size: calc(1.8vw + 1.8vh + 1.8vmin);
+  font-family: "Chakra Petch", sans-serif;
+    /* font-size: 5vh; */
+    font-weight: 600;
 }
 
 .videoRowReact{

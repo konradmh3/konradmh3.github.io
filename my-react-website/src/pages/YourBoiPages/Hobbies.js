@@ -31,7 +31,7 @@ const Hobbies = () => {
                 <div className="statsExtra">
                   <div className="selected">{selectedRun ? selectedRun.name : "Hover over the graph see run details!"}</div>
                   <div className="distance"> {selectedRun ? <><b>Distance:</b> {selectedRun.distance.toFixed(2)} mi</>: ""}</div>
-                  <div className="date"> {selectedRun ? <><b>Date:</b>{selectedRun.date.split("T")[0].split("-")[1]}/{selectedRun.date.split("T")[0].split("-")[2]}/{selectedRun.date.split("T")[0].split("-")[0]} </>: ""}</div>
+                  <div className="date"> {selectedRun ? <><b>Date:</b> {selectedRun.date.split("T")[0].split("-")[1]}/{selectedRun.date.split("T")[0].split("-")[2]}/{selectedRun.date.split("T")[0].split("-")[0]} </>: ""}</div>
                 </div>
               </div>
             </Col>
