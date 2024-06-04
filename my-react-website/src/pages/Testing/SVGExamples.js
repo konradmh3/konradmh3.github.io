@@ -3,6 +3,7 @@ import "../../style/Testing.css";
 // lets usse framer motion to animate the svg
 import { motion } from "framer-motion";
 import bounce from "./bouncing-circles.svg";
+import sun from "./sun.svg";
 
 const SVGExample = () => {
   return (
@@ -10,12 +11,11 @@ const SVGExample = () => {
       <div className="svgpage-container">
         <div className="SVGTitle">First Animated SVG:</div>
         <svg
-          style={{ backgroundColor: "white", borderRadius: "10px"}}
+          style={{ backgroundColor: "white", borderRadius: "10px" }}
           width="200"
           height="200"
         >
-          <g
-          >
+          <g>
             <circle
               cx="100"
               cy="100"
@@ -25,14 +25,20 @@ const SVGExample = () => {
               fill="red"
             />
             <polygon points="80 110, 100 90, 120, 110" fill="lime" />
-            <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="5s" repeatCount="indefinite" />
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 100 100"
+              to="360 100 100"
+              dur="5s"
+              repeatCount="indefinite"
+            />
           </g>
-        
         </svg>
 
         <div className="SVGTitle">Sun:</div>
         <motion.svg
-          style={{ backgroundColor: "rgb(132,199,227)", borderRadius: "10px"}}
+          style={{ backgroundColor: "rgb(132,199,227)", borderRadius: "10px" }}
           width="200"
           height="200"
           initial={{ opacity: 0 }}
@@ -122,10 +128,22 @@ const SVGExample = () => {
             </motion.g>
           </motion.g>
         </motion.svg>
+        <div style={{ width: 300 }} className="SVGTitle">Sun as OBJ:</div>
+        <object
+          style={{ borderRadius: "10px" }}
+          data={sun}
+          type="image/svg+xml"
+          height="200"
+        ></object>
+        <div style={{ width: 300 }} className="SVGDescription">Converted From React inline svg with framer for animation to svg file using ChatGPT!</div>
         <div className="SVGTitle">Bouncing IMG Circles:</div>
-        <img style={{height:200}} src={bounce} alt="bouncing circles" />
-        <div style={{width:300}} className="SVGTitle">Bouncing OBJ Circles:(allow access to predefined scripts in svg file)</div>
+        <img style={{ height: 200 }} src={bounce} alt="bouncing circles" />
+        <div style={{ width: 300 }} className="SVGTitle">
+          Bouncing OBJ Circles:
+        </div>
         <object data={bounce} type="image/svg+xml" height="200"></object>
+        <div style={{ width: 300 }} className="SVGDescription">OBJ vs IMG allows access to predefined scripts in svg file!</div>
+
       </div>
     </>
   );
