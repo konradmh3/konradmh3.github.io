@@ -6,3 +6,22 @@
   width: 100vw;
   /* background-color: #E2B080; */
 }
+
+.svgpage-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height:  fit-content;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.SVGTitle{
+  color: #bbbbbb;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+}

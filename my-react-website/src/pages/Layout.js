@@ -43,6 +43,9 @@ const Layout = () => {
       } else if (currentPage === "/projects") {
         // disable scrolling with mouse wheel and remove scroll bar:
         document.body.style.overflow = "hidden";
+      } else if (currentPage === "/svgexamples") {
+        setPortfolioPosition(-1000);
+
       }
 
       // setCurrentPage(useLocation().pathname);
