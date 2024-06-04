@@ -59,7 +59,7 @@ const Layout = () => {
     const handleScroll = () => {
       //perform action on scroll
       // add a case to check if the page is at the top and if so set the title powition to 0
-      if (window.scrollY === 0) {
+      if (window.scrollY === 0 && currentPage !== "/svgexamples") {
         setPortfolioPosition(0);
       } else {
         setPortfolioPosition(-1000);
