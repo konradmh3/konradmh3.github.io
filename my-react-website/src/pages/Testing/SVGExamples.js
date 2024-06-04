@@ -149,10 +149,11 @@ const SVGExample = () => {
 
         </motion.svg>
 
-        <div className="SVGTitle">Waves with Sun:</div>
+        <div className="SVGTitle">Waves with Sun (scalable):</div>
         <motion.svg style={{ backgroundColor: "rgb(132,199,227)", borderRadius: "10px" }}
-          width="400"
-          height="200"
+          width="50vw"
+          height="25vw"
+          viewBox="0 0 400 200"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}>
