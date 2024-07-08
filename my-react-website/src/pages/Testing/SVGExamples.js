@@ -247,9 +247,9 @@ const SVGExample = () => {
 
         <div className="SVGTitle">Bouncing IMG Circles:</div>
         <img style={{ height: 200 }} src={bounce} alt="bouncing circles" />
-        <div style={{ width: 300 }} className="SVGTitle">
-          Bouncing OBJ Circles:
-        </div>
+
+
+        <div style={{ width: 300 }} className="SVGTitle">Bouncing OBJ Circles:</div>
         <object data={bounce} type="image/svg+xml" height="200"></object>
         <div style={{ width: 300 }} className="SVGDescription">OBJ vs IMG allows access to predefined scripts in svg file!</div>
 
