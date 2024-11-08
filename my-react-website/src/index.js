@@ -17,6 +17,7 @@ import MicroCenter from "./pages/ExperiencePages/MicroCenter";
 import TestCanvas from "./pages/Testing/TestCanvas";
 import SVGExamples from "./pages/Testing/SVGExamples";
 import Jarvis from "./pages/ProjectPages/Jarvis";
+import MFEs from "./pages/ProjectPages/MFEs";
 
 
 
@@ -41,7 +42,7 @@ export default function App() {
           <Route path="testcanvas" element={<TestCanvas />} />
           <Route path="jarvis" element={<Jarvis />} />
           <Route path="svgexamples" element={<SVGExamples />} />
-
+          <Route path="mfes" element={<MFEs />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

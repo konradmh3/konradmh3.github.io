@@ -1,0 +1,12 @@
+.MFEsContainer{
+    position: relative;
+    z-index: 10;
+    height: 101vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+
+.MFEsContainerNoScroll{
+    overflow: hidden;
+}

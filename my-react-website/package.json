@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv-webpack": "^8.1.0",
     "framer-motion": "^10.18.0",
     "history": "^5.3.0",
     "react": "^18.2.0",
@@ -17,14 +19,17 @@
     "three": "^0.163.0",
     "typewriter-effect": "^2.21.0",
     "use-history": "^1.4.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^6.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,6 +51,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "babel-loader": "^9.2.1",
     "gh-pages": "^6.1.1",
     "react-router-dom": "^6.23.0"
   }
